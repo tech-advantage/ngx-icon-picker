@@ -1,0 +1,99 @@
+.icon-picker * {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 11px;
+}
+
+.icon-picker {
+  position: absolute;
+  z-index: 100000;
+  top: 250px;
+  left: 30px;
+  width: 230px;
+  height: auto;
+  border: #777 solid 1px;
+  cursor: default;
+  background-color: #fff;
+  user-select: none;
+
+  i {
+    position: relative;
+    cursor: default;
+  }
+
+  .arrow {
+    position: absolute;
+    z-index: 999999;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .arrow-right {
+    top: 10px;
+    left: -20px;
+    border-width: 5px 10px;
+    border-color: rgba(0, 0, 0, 0) #777 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  }
+
+  .arrow-left {
+    top: 10px;
+    left: 100%;
+    border-width: 5px 10px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #777;
+  }
+
+  .arrow-bottom {
+    top: -20px;
+    left: 10px;
+    border-width: 10px 5px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #777 rgba(0, 0, 0, 0);
+  }
+
+  .arrow-top {
+    left: 10px;
+    border-width: 10px 5px;
+    border-color: #777 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    //top: 289px;
+  }
+
+  div.icon-search {
+    padding: 5px;
+  }
+
+  div.icon-grid {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+
+    div {
+      margin: 2px;
+
+      button {
+        width: 33px;
+        padding: 6px 10px;
+      }
+    }
+  }
+
+  div.cursor-sv {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: #ddd solid 1px;
+    cursor: default;
+  }
+
+  div.cursor {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: #222 solid 2px;
+    cursor: default;
+  }
+
+}

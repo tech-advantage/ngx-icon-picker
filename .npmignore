@@ -1,0 +1,16 @@
+.*
+*.tgz
+*.iml
+
+.idea/
+src/
+config/
+example/
+
+package/
+npm-debug.log
+node_modules/
+
+tslint.json
+stylelint.json
+yarn.lock

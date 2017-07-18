@@ -1,0 +1,26 @@
+<div class="icon-picker" #dialogPopup
+     [hidden]="!show"
+     [style.visibility]="this.hidden ? 'hidden' : 'visible'"
+     [style.height.px]="ipHeight"
+     [style.width.px]="ipWidth"
+     [style.top.px]="top"
+     [style.left.px]="left"
+     [style.position]="position">
+
+  <div class="arrow arrow-{{ipPosition}}" [style.top.px]="arrowTop"></div>
+
+  <div class="icon-search">
+    <input type="text" class="form-control input-sm" [text] [value]="search" (newValue)="setSearch($event)" [placeholder]="ipPlaceHolder">
+  </div>
+  <div class="icon-grid" [ngStyle]="{'max-height.px': ipMaxHeight}">
+    <div *ngFor="let icon of icons | searchIcon:search">
+      <button *ngIf="icon" class="btn btn-default" type="button" title="{{ icon.name }}"
+              [ngClass]="{active : icon === selectedIcon}"
+              (click)="selectIcon(icon)" >
+        <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"></span>
+        <span *ngIf="icon.type === iconType.BOOTSTRAP" class="glyphicon glyphicon-{{icon.id}}"></span>
+      </button>
+    </div>
+  </div>
+
+</div>
