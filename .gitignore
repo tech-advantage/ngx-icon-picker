@@ -3,6 +3,7 @@
 # compiled output
 dist/
 bundles/
+src/lib/*.js
 
 # dependencies
 package/
@@ -31,7 +32,6 @@ node_modules/
 /connect.lock
 /coverage/*
 /libpeerconnection.log
-npm-debug.log
 testem.log
 /typings
 .sonar
