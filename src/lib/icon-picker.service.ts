@@ -4094,7 +4094,6 @@ export class IconPickerService {
         'name': 'Diner\'s Club Credit Card',
         'id'  : 'cc-diners-club'
       },
-      ,
       {
         'name'  : 'Clone',
         'id'    : 'clone',
