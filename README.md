@@ -143,9 +143,7 @@ export class AppComponent implements OnInit {
   }
 }
 ```
-* Start your project with `yarn start` (or `npm start`)
-
-You should see : 
+* Start your project with `yarn start` (or `npm start`) and go to _localhost:4200_
 
 ![demo_01](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_01.jpg)
 
