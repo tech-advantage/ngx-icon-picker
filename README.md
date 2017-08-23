@@ -147,12 +147,12 @@ export class AppComponent implements OnInit {
 
 You should see : 
 
-![demo_01](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/readme/doc/demo_01.jpg)
+![demo_01](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/master/doc/demo_01.jpg)
 
 * You should now be able to change icon by clicking input field :
 
-![demo_02](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/readme/doc/demo_02.jpg)
+![demo_02](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/master/doc/demo_02.jpg)
 
-![demo_03](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/readme/doc/demo_03.jpg)
+![demo_03](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/master/doc/demo_03.jpg)
 
-![demo_04](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/readme/doc/demo_04.jpg)
+![demo_04](https://raw.githubusercontent.com/tech-advantage/ngx-icon-picker/master/doc/demo_04.jpg)
