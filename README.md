@@ -2,7 +2,7 @@
 
 <a href="https://badge.fury.io/js/ngx-icon-picker"><img src="https://badge.fury.io/js/ngx-icon-picker.svg" align="right" alt="npm version" height="18"></a>
 
-* ==> **Do not use: still in work in progress :)**
+* ==> **Library still in work in progress**
 * Largely inspired by [ngx-color-picker](https://github.com/zefoy/ngx-color-picker)
 
 Angular IconPicker Directive/Component with no dependencies required.
