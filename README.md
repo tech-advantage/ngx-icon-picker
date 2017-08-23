@@ -65,7 +65,7 @@ Version of @angular/cli used is V1.2.0.
   ```
       "bootstrap": "3.3.7",
       "font-awesome": "4.7.0",
-      "ngx-icon-picker": "0.0.5-1",
+      "ngx-icon-picker": "0.0.6",
   ```
 * Install dependancies : `yarn install` (or `npm install`).
 * Update *styles.less* with :
