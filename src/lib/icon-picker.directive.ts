@@ -41,6 +41,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
 
   ngOnInit() {
     this.iconPicker = this.iconPicker || this.ipFallbackIcon || 'fa fa-user-plus';
+    this.iconPickerSelect.emit(this.iconPicker);
   }
 
   onClick() {
