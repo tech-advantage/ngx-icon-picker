@@ -5,6 +5,10 @@
 * ==> **Library still in work in progress**
 * Largely inspired by [ngx-color-picker](https://github.com/zefoy/ngx-color-picker)
 
+
+![demo_02](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_02.jpg)
+
+
 Angular IconPicker Directive/Component with no dependencies required.
 
 This is an Icon Picker Directive/Component for Angular 2+.
