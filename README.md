@@ -180,7 +180,7 @@ npm run inline
 ```bash
 npm link
 cd example
-npm link ngx-color-picker
+npm link ngx-icon-picker
 ```
 
 ### Running the example
