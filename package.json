@@ -3,7 +3,7 @@
   "description": "Icon picker widget for Angular (version 2 and newer)",
   "bugs": "https://github.com/tech-advantage/ngx-icon-picker/issues",
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "bundles/ngx-icon-picker.umd.js",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -21,7 +21,7 @@
     "lint": "npm run lint:js && npm run lint:scss",
     "build": "npm run build:umd && npm run build:aot",
     "deploy": "npm run build && npm run inline && npm publish",
-    "inline": "ng2-inline --compress -b dist/lib/ -o ./ 'dist/lib/*.js'",
+    "inline": "ng2-inline --compress -b dist/lib/ -o ./ \"dist/lib/*.js\"",
     "release": "npm version -m 'New release with version %s'",
     "lint:ts": "tslint 'src/**/*.ts'",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
@@ -36,6 +36,7 @@
     "url": "https://github.com/tech-advantage/ngx-icon-picker.git"
   },
   "devDependencies": {
+    "@angular/cli": "^1.6.5",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
@@ -59,7 +60,7 @@
     "tslint": "~4.5.0",
     "typescript": "2.2.2",
     "watch": "~1.0.0",
-    "webpack": "~2.3.0",
+    "webpack": "~2.6.0",
     "zone.js": "~0.8.0"
   },
   "peerDependencies": {
