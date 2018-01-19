@@ -65,11 +65,18 @@ Available inputs and output :
 Version of @angular/cli used is V1.2.0.
 
 * Generate a new project (here we use LESS preprocessor) : `ng new myproject --style less`
+* `cd myproject`
 * Update *package.json* with : 
   ```
       "bootstrap": "3.3.7",
       "font-awesome": "4.7.0",
-      "ngx-icon-picker": "0.0.6",
+      "ngx-icon-picker": "0.0.8",
+  ```
+  or with npm command :
+  ```
+  npm install --save bootstrap@3.3.7
+  npm install --save font-awesome@4.7.0
+  npm install --save ngx-icon-picker@0.0.8
   ```
 * Install dependancies : `yarn install` (or `npm install`).
 * Update *styles.less* with :
@@ -158,3 +165,29 @@ export class AppComponent implements OnInit {
 ![demo_03](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_03.jpg)
 
 ![demo_04](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_04.jpg)
+
+
+### Build the library
+
+```bash
+npm install
+npm run build
+npm run inline
+```
+
+### Library development
+
+```bash
+npm link
+cd example
+npm link ngx-color-picker
+```
+
+### Running the example
+
+```bash
+cd example
+npm install
+npm start
+```
+go to _localhost:4200_

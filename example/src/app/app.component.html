@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>Angular Icon Picker Directive/Component</h1>
+  <h4>Angular IconPicker Directive/Component with no dependencies required</h4>
+  <a class="btn btn-primary" href="https://github.com/tech-advantage/ngx-icon-picker" target="blank">View on Github</a>
+  <hr>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon</label>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i [ngClass]="iconCss.value"></i>
+          </span>
+          <input type="text" name="iconCss" class="form-control" formControlName="iconCss" [iconPicker]="icon" [ipPosition]="'bottom'"
+            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIcon" (iconPickerSelect)="onIconPickerSelect($event)"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker in an application.
+      </pre>
+    </div>
+  </div>

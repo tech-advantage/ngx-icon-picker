@@ -10,6 +10,11 @@ package/
 npm-debug.log
 node_modules/
 
+# example
+example/dist/
+example/npm-debug.log
+example/node_modules/
+
 # IDEs and editors
 /.idea
 *.iml
