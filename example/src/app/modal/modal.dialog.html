@@ -1,0 +1,24 @@
+<button type="button" class="btn btn-primary" (click)="openModal(template)">Icon Picker in Modal dialog</button>
+
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Icon Picker Selector</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Example to select an icon in a modal dialog
+    <div [formGroup]="myFormGroup">
+      <label>Icon</label>
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i [ngClass]="iconCss.value"></i>
+        </span>
+        <input type="text" name="iconCss" class="form-control" formControlName="iconCss" [iconPicker]="icon" [ipPosition]="'bottom'"
+          [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIcon" (iconPickerSelect)="onIconPickerSelect($event)"
+        />
+      </div>
+    </div>
+  </div>
+</ng-template>
