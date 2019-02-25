@@ -1,12 +1,8 @@
-# Angular Icon Picker
+# Angular Icon Picker With Font Awesome 5
 
-<a href="https://badge.fury.io/js/ngx-icon-picker"><img src="https://badge.fury.io/js/ngx-icon-picker.svg" align="right" alt="npm version" height="18"></a>
 
 * ==> **Library still in work in progress**
-* Largely inspired by [ngx-color-picker](https://github.com/zefoy/ngx-color-picker)
-
-
-![demo_02](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_02.jpg)
+* Largely inspired by [ngx-icon-picker](https://github.com/tech-advantage/ngx-icon-picker)
 
 
 Angular IconPicker Directive/Component with no dependencies required.
@@ -15,11 +11,7 @@ This is an Icon Picker Directive/Component for Angular 2+.
 
 ### Installing and usage
 
-    npm install ngx-icon-picker --save
-    
-Or with yarn : 
-
-    yarn add ngx-icon-picker
+    npm install https://github.com/NoelToy/ngx-icon-picker-fontawesome5/tarball/master --save
     
 ##### Load the module for your app:
 
@@ -50,7 +42,7 @@ Available inputs and output :
 [ipHeight]                   // Use this option to force icon picker dialog height (default: 'auto').
 [ipMaxHeight]                // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon): 'fa', 'bs', 'all' (default: 'all').
+[ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon /Font AWesome5): 'fa', 'bs', 'fa5','all' (default: 'all').
 [ipFallbackIcon]             // Is used when the icon is undefined (default: 'fa fa-user-plus').
 [ipPosition]                 // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
 [ipPlaceHolder]              // Search input placeholder (default: 'Search icon...').
@@ -62,7 +54,7 @@ Available inputs and output :
     
 ### Installing from a brand new @angular/cli project
 
-Version of @angular/cli used is V1.2.0.
+Version of @angular/cli used is V1.7.4.
 
 * Generate a new project (here we use LESS preprocessor) : `ng new myproject --style less`
 * `cd myproject`
@@ -70,13 +62,11 @@ Version of @angular/cli used is V1.2.0.
   ```
       "bootstrap": "3.3.7",
       "font-awesome": "4.7.0",
-      "ngx-icon-picker": "0.0.8",
   ```
   or with npm command :
   ```
   npm install --save bootstrap@3.3.7
   npm install --save font-awesome@4.7.0
-  npm install --save ngx-icon-picker@0.0.8
   ```
 * Install dependancies : `yarn install` (or `npm install`).
 * Update *styles.less* with :
@@ -142,7 +132,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class AppComponent implements OnInit {
   myFormGroup: FormGroup;
   iconCss = new FormControl();
-  fallbackIcon = 'fa fa-book';
+  fallbackIcon = 'fa fa-user';
   icon: string;
 
   ngOnInit(): void {
@@ -156,38 +146,11 @@ export class AppComponent implements OnInit {
 ```
 * Start your project with `yarn start` (or `npm start`) and go to _localhost:4200_
 
-![demo_01](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_01.jpg)
-
-* You should now be able to change icon by clicking input field :
-
-![demo_02](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_02.jpg)
-
-![demo_03](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_03.jpg)
-
-![demo_04](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_04.jpg)
-
-
-### Build the library
+### Install the library
 
 ```bash
 npm install
-npm run build
-npm run inline
 ```
 
-### Library development
-
-```bash
-npm link
-cd example
-npm link ngx-icon-picker
-```
-
-### Running the example
-
-```bash
-cd example
-npm install
-npm start
 ```
 go to _localhost:4200_

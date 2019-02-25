@@ -19,6 +19,7 @@
               (click)="selectIcon(icon)" >
         <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"></span>
         <span *ngIf="icon.type === iconType.BOOTSTRAP" class="glyphicon glyphicon-{{icon.id}}"></span>
+        <span *ngIf="icon.type === iconType.FONT_AWESEOME5" class="{{icon.id}}"></span>
       </button>
     </div>
   </div>
