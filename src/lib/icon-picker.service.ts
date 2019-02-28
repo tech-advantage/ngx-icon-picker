@@ -23,7 +23,13 @@ export class IconPickerService {
       });
       icons = icons.concat(bsIcons);
     }
-
+    if(ipIconPack === 'fa5' || ipIconPack === 'all'){
+      const fa5Icons=this.getFa5Icons().map(icon=>{
+        icon.type=IconType.FONT_AWESEOME5;
+        return icon
+      });
+      icons=icons.concat(fa5Icons);
+    }
     return icons;
   }
 
@@ -5619,6 +5625,7601 @@ export class IconPickerService {
         'name': 'Tree-deciduous'
       }
     ];
+  }
+
+  private getFa5Icons(): Icon[] {
+
+    return [
+      {
+        "name":"Accessible-icon",
+        "id":"fab fa-accessible-icon",
+        "filter":[
+           "accessibility",
+           "accessible",
+           "icon"
+        ]
+     },
+     {
+        "name":"American-sign-language-interpreting",
+        "id":"fas fa-american-sign-language-interpreting",
+        "filter":[
+           "accessibility",
+           "american",
+           "sign",
+           "language",
+           "interpreting"
+        ]
+     },
+     {
+        "name":"Assistive-listening-systems",
+        "id":"fas fa-assistive-listening-systems",
+        "filter":[
+           "accessibility",
+           "assistive",
+           "listening",
+           "systems"
+        ]
+     },
+     {
+        "name":"Audio-description",
+        "id":"fas fa-audio-description",
+        "filter":[
+           "accessibility",
+           "audio",
+           "description"
+        ]
+     },
+     {
+        "name":"Blind",
+        "id":"fas fa-blind",
+        "filter":[
+           "accessibility",
+           "blind"
+        ]
+     },
+     {
+        "name":"Braille",
+        "id":"fas fa-braille",
+        "filter":[
+           "accessibility",
+           "braille"
+        ]
+     },
+     {
+        "name":"Closed-captioning",
+        "id":"fas fa-closed-captioning",
+        "filter":[
+           "accessibility",
+           "closed",
+           "captioning"
+        ]
+     },
+     {
+        "name":"Closed-captioning",
+        "id":"far fa-closed-captioning",
+        "filter":[
+           "accessibility",
+           "closed",
+           "captioning"
+        ]
+     },
+     {
+        "name":"Deaf",
+        "id":"fas fa-deaf",
+        "filter":[
+           "accessibility",
+           "deaf"
+        ]
+     },
+     {
+        "name":"Low-vision",
+        "id":"fas fa-low-vision",
+        "filter":[
+           "accessibility",
+           "low",
+           "vision"
+        ]
+     },
+     {
+        "name":"Phone-volume",
+        "id":"fas fa-phone-volume",
+        "filter":[
+           "accessibility",
+           "phone",
+           "volume"
+        ]
+     },
+     {
+        "name":"Question-circle",
+        "id":"fas fa-question-circle",
+        "filter":[
+           "accessibility",
+           "question",
+           "circle"
+        ]
+     },
+     {
+        "name":"Question-circle",
+        "id":"far fa-question-circle",
+        "filter":[
+           "accessibility",
+           "question",
+           "circle"
+        ]
+     },
+     {
+        "name":"Sign-language",
+        "id":"fas fa-sign-language",
+        "filter":[
+           "accessibility",
+           "sign",
+           "language"
+        ]
+     },
+     {
+        "name":"Tty",
+        "id":"fas fa-tty",
+        "filter":[
+           "accessibility",
+           "tty"
+        ]
+     },
+     {
+        "name":"Universal-access",
+        "id":"fas fa-universal-access",
+        "filter":[
+           "accessibility",
+           "universal",
+           "access"
+        ]
+     },
+     {
+        "name":"Wheelchair",
+        "id":"fas fa-wheelchair",
+        "filter":[
+           "accessibility",
+           "wheelchair"
+        ]
+     },
+     {
+        "name":"Angle-double-down",
+        "id":"fas fa-angle-double-down",
+        "filter":[
+           "arrows",
+           "angle",
+           "double",
+           "down"
+        ]
+     },
+     {
+        "name":"Angle-double-left",
+        "id":"fas fa-angle-double-left",
+        "filter":[
+           "arrows",
+           "angle",
+           "double",
+           "left"
+        ]
+     },
+     {
+        "name":"Angle-double-right",
+        "id":"fas fa-angle-double-right",
+        "filter":[
+           "arrows",
+           "angle",
+           "double",
+           "right"
+        ]
+     },
+     {
+        "name":"Angle-double-up",
+        "id":"fas fa-angle-double-up",
+        "filter":[
+           "arrows",
+           "angle",
+           "double",
+           "up"
+        ]
+     },
+     {
+        "name":"Angle-down",
+        "id":"fas fa-angle-down",
+        "filter":[
+           "arrows",
+           "angle",
+           "down"
+        ]
+     },
+     {
+        "name":"Angle-left",
+        "id":"fas fa-angle-left",
+        "filter":[
+           "arrows",
+           "angle",
+           "left"
+        ]
+     },
+     {
+        "name":"Angle-right",
+        "id":"fas fa-angle-right",
+        "filter":[
+           "arrows",
+           "angle",
+           "right"
+        ]
+     },
+     {
+        "name":"Angle-up",
+        "id":"fas fa-angle-up",
+        "filter":[
+           "arrows",
+           "angle",
+           "up"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-down",
+        "id":"fas fa-arrow-alt-circle-down",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "down"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-down",
+        "id":"far fa-arrow-alt-circle-down",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "down"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-left",
+        "id":"fas fa-arrow-alt-circle-left",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "left"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-left",
+        "id":"far fa-arrow-alt-circle-left",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "left"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-right",
+        "id":"fas fa-arrow-alt-circle-right",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "right"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-right",
+        "id":"far fa-arrow-alt-circle-right",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "right"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-up",
+        "id":"fas fa-arrow-alt-circle-up",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "up"
+        ]
+     },
+     {
+        "name":"Arrow-alt-circle-up",
+        "id":"far fa-arrow-alt-circle-up",
+        "filter":[
+           "arrows",
+           "arrow",
+           "alt",
+           "circle",
+           "up"
+        ]
+     },
+     {
+        "name":"Arrow-circle-down",
+        "id":"fas fa-arrow-circle-down",
+        "filter":[
+           "arrows",
+           "arrow",
+           "circle",
+           "down"
+        ]
+     },
+     {
+        "name":"Arrow-circle-left",
+        "id":"fas fa-arrow-circle-left",
+        "filter":[
+           "arrows",
+           "arrow",
+           "circle",
+           "left"
+        ]
+     },
+     {
+        "name":"Arrow-circle-right",
+        "id":"fas fa-arrow-circle-right",
+        "filter":[
+           "arrows",
+           "arrow",
+           "circle",
+           "right"
+        ]
+     },
+     {
+        "name":"Arrow-circle-up",
+        "id":"fas fa-arrow-circle-up",
+        "filter":[
+           "arrows",
+           "arrow",
+           "circle",
+           "up"
+        ]
+     },
+     {
+        "name":"Arrow-down",
+        "id":"fas fa-arrow-down",
+        "filter":[
+           "arrows",
+           "arrow",
+           "down"
+        ]
+     },
+     {
+        "name":"Arrow-left",
+        "id":"fas fa-arrow-left",
+        "filter":[
+           "arrows",
+           "arrow",
+           "left"
+        ]
+     },
+     {
+        "name":"Arrow-right",
+        "id":"fas fa-arrow-right",
+        "filter":[
+           "arrows",
+           "arrow",
+           "right"
+        ]
+     },
+     {
+        "name":"Arrow-up",
+        "id":"fas fa-arrow-up",
+        "filter":[
+           "arrows",
+           "arrow",
+           "up"
+        ]
+     },
+     {
+        "name":"Arrows-alt",
+        "id":"fas fa-arrows-alt",
+        "filter":[
+           "arrows",
+           "arrows",
+           "alt"
+        ]
+     },
+     {
+        "name":"Arrows-alt-h",
+        "id":"fas fa-arrows-alt-h",
+        "filter":[
+           "arrows",
+           "arrows",
+           "alt",
+           "h"
+        ]
+     },
+     {
+        "name":"Arrows-alt-v",
+        "id":"fas fa-arrows-alt-v",
+        "filter":[
+           "arrows",
+           "arrows",
+           "alt",
+           "v"
+        ]
+     },
+     {
+        "name":"Caret-down",
+        "id":"fas fa-caret-down",
+        "filter":[
+           "arrows",
+           "caret",
+           "down"
+        ]
+     },
+     {
+        "name":"Caret-left",
+        "id":"fas fa-caret-left",
+        "filter":[
+           "arrows",
+           "caret",
+           "left"
+        ]
+     },
+     {
+        "name":"Caret-right",
+        "id":"fas fa-caret-right",
+        "filter":[
+           "arrows",
+           "caret",
+           "right"
+        ]
+     },
+     {
+        "name":"Caret-square-down",
+        "id":"fas fa-caret-square-down",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "down"
+        ]
+     },
+     {
+        "name":"Caret-square-down",
+        "id":"far fa-caret-square-down",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "down"
+        ]
+     },
+     {
+        "name":"Caret-square-left",
+        "id":"fas fa-caret-square-left",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "left"
+        ]
+     },
+     {
+        "name":"Caret-square-left",
+        "id":"far fa-caret-square-left",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "left"
+        ]
+     },
+     {
+        "name":"Caret-square-right",
+        "id":"fas fa-caret-square-right",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "right"
+        ]
+     },
+     {
+        "name":"Caret-square-right",
+        "id":"far fa-caret-square-right",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "right"
+        ]
+     },
+     {
+        "name":"Caret-square-up",
+        "id":"fas fa-caret-square-up",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "up"
+        ]
+     },
+     {
+        "name":"Caret-square-up",
+        "id":"far fa-caret-square-up",
+        "filter":[
+           "arrows",
+           "caret",
+           "square",
+           "up"
+        ]
+     },
+     {
+        "name":"Caret-up",
+        "id":"fas fa-caret-up",
+        "filter":[
+           "arrows",
+           "caret",
+           "up"
+        ]
+     },
+     {
+        "name":"Cart-arrow-down",
+        "id":"fas fa-cart-arrow-down",
+        "filter":[
+           "arrows",
+           "cart",
+           "arrow",
+           "down"
+        ]
+     },
+     {
+        "name":"Chart-line",
+        "id":"fas fa-chart-line",
+        "filter":[
+           "arrows",
+           "chart",
+           "line"
+        ]
+     },
+     {
+        "name":"Chevron-circle-down",
+        "id":"fas fa-chevron-circle-down",
+        "filter":[
+           "arrows",
+           "chevron",
+           "circle",
+           "down"
+        ]
+     },
+     {
+        "name":"Chevron-circle-left",
+        "id":"fas fa-chevron-circle-left",
+        "filter":[
+           "arrows",
+           "chevron",
+           "circle",
+           "left"
+        ]
+     },
+     {
+        "name":"Chevron-circle-right",
+        "id":"fas fa-chevron-circle-right",
+        "filter":[
+           "arrows",
+           "chevron",
+           "circle",
+           "right"
+        ]
+     },
+     {
+        "name":"Chevron-circle-up",
+        "id":"fas fa-chevron-circle-up",
+        "filter":[
+           "arrows",
+           "chevron",
+           "circle",
+           "up"
+        ]
+     },
+     {
+        "name":"Chevron-down",
+        "id":"fas fa-chevron-down",
+        "filter":[
+           "arrows",
+           "chevron",
+           "down"
+        ]
+     },
+     {
+        "name":"Chevron-left",
+        "id":"fas fa-chevron-left",
+        "filter":[
+           "arrows",
+           "chevron",
+           "left"
+        ]
+     },
+     {
+        "name":"Chevron-right",
+        "id":"fas fa-chevron-right",
+        "filter":[
+           "arrows",
+           "chevron",
+           "right"
+        ]
+     },
+     {
+        "name":"Chevron-up",
+        "id":"fas fa-chevron-up",
+        "filter":[
+           "arrows",
+           "chevron",
+           "up"
+        ]
+     },
+     {
+        "name":"Cloud-download-alt",
+        "id":"fas fa-cloud-download-alt",
+        "filter":[
+           "arrows",
+           "cloud",
+           "download",
+           "alt"
+        ]
+     },
+     {
+        "name":"Cloud-upload-alt",
+        "id":"fas fa-cloud-upload-alt",
+        "filter":[
+           "arrows",
+           "cloud",
+           "upload",
+           "alt"
+        ]
+     },
+     {
+        "name":"Download",
+        "id":"fas fa-download",
+        "filter":[
+           "arrows",
+           "download"
+        ]
+     },
+     {
+        "name":"Exchange-alt",
+        "id":"fas fa-exchange-alt",
+        "filter":[
+           "arrows",
+           "exchange",
+           "alt"
+        ]
+     },
+     {
+        "name":"Expand-arrows-alt",
+        "id":"fas fa-expand-arrows-alt",
+        "filter":[
+           "arrows",
+           "expand",
+           "arrows",
+           "alt"
+        ]
+     },
+     {
+        "name":"External-link-alt",
+        "id":"fas fa-external-link-alt",
+        "filter":[
+           "arrows",
+           "external",
+           "link",
+           "alt"
+        ]
+     },
+     {
+        "name":"External-link-square-alt",
+        "id":"fas fa-external-link-square-alt",
+        "filter":[
+           "arrows",
+           "external",
+           "link",
+           "square",
+           "alt"
+        ]
+     },
+     {
+        "name":"Hand-point-down",
+        "id":"fas fa-hand-point-down",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "down"
+        ]
+     },
+     {
+        "name":"Hand-point-down",
+        "id":"far fa-hand-point-down",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "down"
+        ]
+     },
+     {
+        "name":"Hand-point-left",
+        "id":"fas fa-hand-point-left",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "left"
+        ]
+     },
+     {
+        "name":"Hand-point-left",
+        "id":"far fa-hand-point-left",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "left"
+        ]
+     },
+     {
+        "name":"Hand-point-right",
+        "id":"fas fa-hand-point-right",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "right"
+        ]
+     },
+     {
+        "name":"Hand-point-right",
+        "id":"far fa-hand-point-right",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "right"
+        ]
+     },
+     {
+        "name":"Hand-point-up",
+        "id":"fas fa-hand-point-up",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "up"
+        ]
+     },
+     {
+        "name":"Hand-point-up",
+        "id":"far fa-hand-point-up",
+        "filter":[
+           "arrows",
+           "hand",
+           "point",
+           "up"
+        ]
+     },
+     {
+        "name":"Hand-pointer",
+        "id":"fas fa-hand-pointer",
+        "filter":[
+           "arrows",
+           "hand",
+           "pointer"
+        ]
+     },
+     {
+        "name":"Hand-pointer",
+        "id":"far fa-hand-pointer",
+        "filter":[
+           "arrows",
+           "hand",
+           "pointer"
+        ]
+     },
+     {
+        "name":"History",
+        "id":"fas fa-history",
+        "filter":[
+           "arrows",
+           "history"
+        ]
+     },
+     {
+        "name":"Level-down-alt",
+        "id":"fas fa-level-down-alt",
+        "filter":[
+           "arrows",
+           "level",
+           "down",
+           "alt"
+        ]
+     },
+     {
+        "name":"Level-up-alt",
+        "id":"fas fa-level-up-alt",
+        "filter":[
+           "arrows",
+           "level",
+           "up",
+           "alt"
+        ]
+     },
+     {
+        "name":"Location-arrow",
+        "id":"fas fa-location-arrow",
+        "filter":[
+           "arrows",
+           "location",
+           "arrow"
+        ]
+     },
+     {
+        "name":"Long-arrow-alt-down",
+        "id":"fas fa-long-arrow-alt-down",
+        "filter":[
+           "arrows",
+           "long",
+           "arrow",
+           "alt",
+           "down"
+        ]
+     },
+     {
+        "name":"Long-arrow-alt-left",
+        "id":"fas fa-long-arrow-alt-left",
+        "filter":[
+           "arrows",
+           "long",
+           "arrow",
+           "alt",
+           "left"
+        ]
+     },
+     {
+        "name":"Long-arrow-alt-right",
+        "id":"fas fa-long-arrow-alt-right",
+        "filter":[
+           "arrows",
+           "long",
+           "arrow",
+           "alt",
+           "right"
+        ]
+     },
+     {
+        "name":"Long-arrow-alt-up",
+        "id":"fas fa-long-arrow-alt-up",
+        "filter":[
+           "arrows",
+           "long",
+           "arrow",
+           "alt",
+           "up"
+        ]
+     },
+     {
+        "name":"Mouse-pointer",
+        "id":"fas fa-mouse-pointer",
+        "filter":[
+           "arrows",
+           "mouse",
+           "pointer"
+        ]
+     },
+     {
+        "name":"Play",
+        "id":"fas fa-play",
+        "filter":[
+           "arrows",
+           "play"
+        ]
+     },
+     {
+        "name":"Random",
+        "id":"fas fa-random",
+        "filter":[
+           "arrows",
+           "random"
+        ]
+     },
+     {
+        "name":"Recycle",
+        "id":"fas fa-recycle",
+        "filter":[
+           "arrows",
+           "recycle"
+        ]
+     },
+     {
+        "name":"Redo",
+        "id":"fas fa-redo",
+        "filter":[
+           "arrows",
+           "redo"
+        ]
+     },
+     {
+        "name":"Redo-alt",
+        "id":"fas fa-redo-alt",
+        "filter":[
+           "arrows",
+           "redo",
+           "alt"
+        ]
+     },
+     {
+        "name":"Reply",
+        "id":"fas fa-reply",
+        "filter":[
+           "arrows",
+           "reply"
+        ]
+     },
+     {
+        "name":"Reply-all",
+        "id":"fas fa-reply-all",
+        "filter":[
+           "arrows",
+           "reply",
+           "all"
+        ]
+     },
+     {
+        "name":"Retweet",
+        "id":"fas fa-retweet",
+        "filter":[
+           "arrows",
+           "retweet"
+        ]
+     },
+     {
+        "name":"Share",
+        "id":"fas fa-share",
+        "filter":[
+           "arrows",
+           "share"
+        ]
+     },
+     {
+        "name":"Share-square",
+        "id":"fas fa-share-square",
+        "filter":[
+           "arrows",
+           "share",
+           "square"
+        ]
+     },
+     {
+        "name":"Share-square",
+        "id":"far fa-share-square",
+        "filter":[
+           "arrows",
+           "share",
+           "square"
+        ]
+     },
+     {
+        "name":"Sign-in-alt",
+        "id":"fas fa-sign-in-alt",
+        "filter":[
+           "arrows",
+           "sign",
+           "in",
+           "alt"
+        ]
+     },
+     {
+        "name":"Sign-out-alt",
+        "id":"fas fa-sign-out-alt",
+        "filter":[
+           "arrows",
+           "sign",
+           "out",
+           "alt"
+        ]
+     },
+     {
+        "name":"Sort",
+        "id":"fas fa-sort",
+        "filter":[
+           "arrows",
+           "sort"
+        ]
+     },
+     {
+        "name":"Sort-alpha-down",
+        "id":"fas fa-sort-alpha-down",
+        "filter":[
+           "arrows",
+           "sort",
+           "alpha",
+           "down"
+        ]
+     },
+     {
+        "name":"Sort-alpha-up",
+        "id":"fas fa-sort-alpha-up",
+        "filter":[
+           "arrows",
+           "sort",
+           "alpha",
+           "up"
+        ]
+     },
+     {
+        "name":"Sort-amount-down",
+        "id":"fas fa-sort-amount-down",
+        "filter":[
+           "arrows",
+           "sort",
+           "amount",
+           "down"
+        ]
+     },
+     {
+        "name":"Sort-amount-up",
+        "id":"fas fa-sort-amount-up",
+        "filter":[
+           "arrows",
+           "sort",
+           "amount",
+           "up"
+        ]
+     },
+     {
+        "name":"Sort-down",
+        "id":"fas fa-sort-down",
+        "filter":[
+           "arrows",
+           "sort",
+           "down"
+        ]
+     },
+     {
+        "name":"Sort-numeric-down",
+        "id":"fas fa-sort-numeric-down",
+        "filter":[
+           "arrows",
+           "sort",
+           "numeric",
+           "down"
+        ]
+     },
+     {
+        "name":"Sort-numeric-up",
+        "id":"fas fa-sort-numeric-up",
+        "filter":[
+           "arrows",
+           "sort",
+           "numeric",
+           "up"
+        ]
+     },
+     {
+        "name":"Sort-up",
+        "id":"fas fa-sort-up",
+        "filter":[
+           "arrows",
+           "sort",
+           "up"
+        ]
+     },
+     {
+        "name":"Sync",
+        "id":"fas fa-sync",
+        "filter":[
+           "arrows",
+           "sync"
+        ]
+     },
+     {
+        "name":"Sync-alt",
+        "id":"fas fa-sync-alt",
+        "filter":[
+           "arrows",
+           "sync",
+           "alt"
+        ]
+     },
+     {
+        "name":"Text-height",
+        "id":"fas fa-text-height",
+        "filter":[
+           "arrows",
+           "text",
+           "height"
+        ]
+     },
+     {
+        "name":"Text-width",
+        "id":"fas fa-text-width",
+        "filter":[
+           "arrows",
+           "text",
+           "width"
+        ]
+     },
+     {
+        "name":"Undo",
+        "id":"fas fa-undo",
+        "filter":[
+           "arrows",
+           "undo"
+        ]
+     },
+     {
+        "name":"Undo-alt",
+        "id":"fas fa-undo-alt",
+        "filter":[
+           "arrows",
+           "undo",
+           "alt"
+        ]
+     },
+     {
+        "name":"Upload",
+        "id":"fas fa-upload",
+        "filter":[
+           "arrows",
+           "upload"
+        ]
+     },
+     {
+        "name":"Backward",
+        "id":"fas fa-backward",
+        "filter":[
+           "audio & video",
+           "backward"
+        ]
+     },
+     {
+        "name":"Circle",
+        "id":"fas fa-circle",
+        "filter":[
+           "audio & video",
+           "circle"
+        ]
+     },
+     {
+        "name":"Circle",
+        "id":"far fa-circle",
+        "filter":[
+           "audio & video",
+           "circle"
+        ]
+     },
+     {
+        "name":"Compress",
+        "id":"fas fa-compress",
+        "filter":[
+           "audio & video",
+           "compress"
+        ]
+     },
+     {
+        "name":"Eject",
+        "id":"fas fa-eject",
+        "filter":[
+           "audio & video",
+           "eject"
+        ]
+     },
+     {
+        "name":"Expand",
+        "id":"fas fa-expand",
+        "filter":[
+           "audio & video",
+           "expand"
+        ]
+     },
+     {
+        "name":"Fast-backward",
+        "id":"fas fa-fast-backward",
+        "filter":[
+           "audio & video",
+           "fast",
+           "backward"
+        ]
+     },
+     {
+        "name":"Fast-forward",
+        "id":"fas fa-fast-forward",
+        "filter":[
+           "audio & video",
+           "fast",
+           "forward"
+        ]
+     },
+     {
+        "name":"File-audio",
+        "id":"fas fa-file-audio",
+        "filter":[
+           "audio & video",
+           "file",
+           "audio"
+        ]
+     },
+     {
+        "name":"File-audio",
+        "id":"far fa-file-audio",
+        "filter":[
+           "audio & video",
+           "file",
+           "audio"
+        ]
+     },
+     {
+        "name":"File-video",
+        "id":"fas fa-file-video",
+        "filter":[
+           "audio & video",
+           "file",
+           "video"
+        ]
+     },
+     {
+        "name":"File-video",
+        "id":"far fa-file-video",
+        "filter":[
+           "audio & video",
+           "file",
+           "video"
+        ]
+     },
+     {
+        "name":"Film",
+        "id":"fas fa-film",
+        "filter":[
+           "audio & video",
+           "film"
+        ]
+     },
+     {
+        "name":"Forward",
+        "id":"fas fa-forward",
+        "filter":[
+           "audio & video",
+           "forward"
+        ]
+     },
+     {
+        "name":"Headphones",
+        "id":"fas fa-headphones",
+        "filter":[
+           "audio & video",
+           "headphones"
+        ]
+     },
+     {
+        "name":"Microphone",
+        "id":"fas fa-microphone",
+        "filter":[
+           "audio & video",
+           "microphone"
+        ]
+     },
+     {
+        "name":"Microphone-slash",
+        "id":"fas fa-microphone-slash",
+        "filter":[
+           "audio & video",
+           "microphone",
+           "slash"
+        ]
+     },
+     {
+        "name":"Music",
+        "id":"fas fa-music",
+        "filter":[
+           "audio & video",
+           "music"
+        ]
+     },
+     {
+        "name":"Pause",
+        "id":"fas fa-pause",
+        "filter":[
+           "audio & video",
+           "pause"
+        ]
+     },
+     {
+        "name":"Pause-circle",
+        "id":"fas fa-pause-circle",
+        "filter":[
+           "audio & video",
+           "pause",
+           "circle"
+        ]
+     },
+     {
+        "name":"Pause-circle",
+        "id":"far fa-pause-circle",
+        "filter":[
+           "audio & video",
+           "pause",
+           "circle"
+        ]
+     },
+     {
+        "name":"Play-circle",
+        "id":"fas fa-play-circle",
+        "filter":[
+           "audio & video",
+           "play",
+           "circle"
+        ]
+     },
+     {
+        "name":"Play-circle",
+        "id":"far fa-play-circle",
+        "filter":[
+           "audio & video",
+           "play",
+           "circle"
+        ]
+     },
+     {
+        "name":"Podcast",
+        "id":"fas fa-podcast",
+        "filter":[
+           "audio & video",
+           "podcast"
+        ]
+     },
+     {
+        "name":"Rss",
+        "id":"fas fa-rss",
+        "filter":[
+           "audio & video",
+           "rss"
+        ]
+     },
+     {
+        "name":"Rss-square",
+        "id":"fas fa-rss-square",
+        "filter":[
+           "audio & video",
+           "rss",
+           "square"
+        ]
+     },
+     {
+        "name":"Step-backward",
+        "id":"fas fa-step-backward",
+        "filter":[
+           "audio & video",
+           "step",
+           "backward"
+        ]
+     },
+     {
+        "name":"Step-forward",
+        "id":"fas fa-step-forward",
+        "filter":[
+           "audio & video",
+           "step",
+           "forward"
+        ]
+     },
+     {
+        "name":"Stop",
+        "id":"fas fa-stop",
+        "filter":[
+           "audio & video",
+           "stop"
+        ]
+     },
+     {
+        "name":"Stop-circle",
+        "id":"fas fa-stop-circle",
+        "filter":[
+           "audio & video",
+           "stop",
+           "circle"
+        ]
+     },
+     {
+        "name":"Stop-circle",
+        "id":"far fa-stop-circle",
+        "filter":[
+           "audio & video",
+           "stop",
+           "circle"
+        ]
+     },
+     {
+        "name":"Video",
+        "id":"fas fa-video",
+        "filter":[
+           "audio & video",
+           "video"
+        ]
+     },
+     {
+        "name":"Volume-down",
+        "id":"fas fa-volume-down",
+        "filter":[
+           "audio & video",
+           "volume",
+           "down"
+        ]
+     },
+     {
+        "name":"Volume-off",
+        "id":"fas fa-volume-off",
+        "filter":[
+           "audio & video",
+           "volume",
+           "off"
+        ]
+     },
+     {
+        "name":"Volume-up",
+        "id":"fas fa-volume-up",
+        "filter":[
+           "audio & video",
+           "volume",
+           "up"
+        ]
+     },
+     {
+        "name":"Youtube",
+        "id":"fab fa-youtube",
+        "filter":[
+           "audio & video",
+           "youtube"
+        ]
+     },
+     {
+        "name":"Address-book",
+        "id":"fas fa-address-book",
+        "filter":[
+           "business",
+           "address",
+           "book"
+        ]
+     },
+     {
+        "name":"Address-book",
+        "id":"far fa-address-book",
+        "filter":[
+           "business",
+           "address",
+           "book"
+        ]
+     },
+     {
+        "name":"Address-card",
+        "id":"fas fa-address-card",
+        "filter":[
+           "business",
+           "address",
+           "card"
+        ]
+     },
+     {
+        "name":"Address-card",
+        "id":"far fa-address-card",
+        "filter":[
+           "business",
+           "address",
+           "card"
+        ]
+     },
+     {
+        "name":"Archive",
+        "id":"fas fa-archive",
+        "filter":[
+           "business",
+           "archive"
+        ]
+     },
+     {
+        "name":"Balance-scale",
+        "id":"fas fa-balance-scale",
+        "filter":[
+           "business",
+           "balance",
+           "scale"
+        ]
+     },
+     {
+        "name":"Birthday-cake",
+        "id":"fas fa-birthday-cake",
+        "filter":[
+           "business",
+           "birthday",
+           "cake"
+        ]
+     },
+     {
+        "name":"Book",
+        "id":"fas fa-book",
+        "filter":[
+           "business",
+           "book"
+        ]
+     },
+     {
+        "name":"Briefcase",
+        "id":"fas fa-briefcase",
+        "filter":[
+           "business",
+           "briefcase"
+        ]
+     },
+     {
+        "name":"Building",
+        "id":"fas fa-building",
+        "filter":[
+           "business",
+           "building"
+        ]
+     },
+     {
+        "name":"Building",
+        "id":"far fa-building",
+        "filter":[
+           "business",
+           "building"
+        ]
+     },
+     {
+        "name":"Bullhorn",
+        "id":"fas fa-bullhorn",
+        "filter":[
+           "business",
+           "bullhorn"
+        ]
+     },
+     {
+        "name":"Bullseye",
+        "id":"fas fa-bullseye",
+        "filter":[
+           "business",
+           "bullseye"
+        ]
+     },
+     {
+        "name":"Calculator",
+        "id":"fas fa-calculator",
+        "filter":[
+           "business",
+           "calculator"
+        ]
+     },
+     {
+        "name":"Calendar",
+        "id":"fas fa-calendar",
+        "filter":[
+           "business",
+           "calendar"
+        ]
+     },
+     {
+        "name":"Calendar",
+        "id":"far fa-calendar",
+        "filter":[
+           "business",
+           "calendar"
+        ]
+     },
+     {
+        "name":"Calendar-alt",
+        "id":"fas fa-calendar-alt",
+        "filter":[
+           "business",
+           "calendar",
+           "alt"
+        ]
+     },
+     {
+        "name":"Calendar-alt",
+        "id":"far fa-calendar-alt",
+        "filter":[
+           "business",
+           "calendar",
+           "alt"
+        ]
+     },
+     {
+        "name":"Certificate",
+        "id":"fas fa-certificate",
+        "filter":[
+           "business",
+           "certificate"
+        ]
+     },
+     {
+        "name":"Chart-area",
+        "id":"fas fa-chart-area",
+        "filter":[
+           "business",
+           "chart",
+           "area"
+        ]
+     },
+     {
+        "name":"Chart-bar",
+        "id":"fas fa-chart-bar",
+        "filter":[
+           "business",
+           "chart",
+           "bar"
+        ]
+     },
+     {
+        "name":"Chart-bar",
+        "id":"far fa-chart-bar",
+        "filter":[
+           "business",
+           "chart",
+           "bar"
+        ]
+     },
+     {
+        "name":"Chart-pie",
+        "id":"fas fa-chart-pie",
+        "filter":[
+           "business",
+           "chart",
+           "pie"
+        ]
+     },
+     {
+        "name":"Clipboard",
+        "id":"fas fa-clipboard",
+        "filter":[
+           "business",
+           "clipboard"
+        ]
+     },
+     {
+        "name":"Clipboard",
+        "id":"far fa-clipboard",
+        "filter":[
+           "business",
+           "clipboard"
+        ]
+     },
+     {
+        "name":"Coffee",
+        "id":"fas fa-coffee",
+        "filter":[
+           "business",
+           "coffee"
+        ]
+     },
+     {
+        "name":"Columns",
+        "id":"fas fa-columns",
+        "filter":[
+           "business",
+           "columns"
+        ]
+     },
+     {
+        "name":"Compass",
+        "id":"fas fa-compass",
+        "filter":[
+           "business",
+           "compass"
+        ]
+     },
+     {
+        "name":"Compass",
+        "id":"far fa-compass",
+        "filter":[
+           "business",
+           "compass"
+        ]
+     },
+     {
+        "name":"Copy",
+        "id":"fas fa-copy",
+        "filter":[
+           "business",
+           "copy"
+        ]
+     },
+     {
+        "name":"Copy",
+        "id":"far fa-copy",
+        "filter":[
+           "business",
+           "copy"
+        ]
+     },
+     {
+        "name":"Copyright",
+        "id":"fas fa-copyright",
+        "filter":[
+           "business",
+           "copyright"
+        ]
+     },
+     {
+        "name":"Copyright",
+        "id":"far fa-copyright",
+        "filter":[
+           "business",
+           "copyright"
+        ]
+     },
+     {
+        "name":"Cut",
+        "id":"fas fa-cut",
+        "filter":[
+           "business",
+           "cut"
+        ]
+     },
+     {
+        "name":"Edit",
+        "id":"fas fa-edit",
+        "filter":[
+           "business",
+           "edit"
+        ]
+     },
+     {
+        "name":"Edit",
+        "id":"far fa-edit",
+        "filter":[
+           "business",
+           "edit"
+        ]
+     },
+     {
+        "name":"Envelope",
+        "id":"fas fa-envelope",
+        "filter":[
+           "business",
+           "envelope"
+        ]
+     },
+     {
+        "name":"Envelope",
+        "id":"far fa-envelope",
+        "filter":[
+           "business",
+           "envelope"
+        ]
+     },
+     {
+        "name":"Envelope-open",
+        "id":"fas fa-envelope-open",
+        "filter":[
+           "business",
+           "envelope",
+           "open"
+        ]
+     },
+     {
+        "name":"Envelope-open",
+        "id":"far fa-envelope-open",
+        "filter":[
+           "business",
+           "envelope",
+           "open"
+        ]
+     },
+     {
+        "name":"Envelope-square",
+        "id":"fas fa-envelope-square",
+        "filter":[
+           "business",
+           "envelope",
+           "square"
+        ]
+     },
+     {
+        "name":"Eraser",
+        "id":"fas fa-eraser",
+        "filter":[
+           "business",
+           "eraser"
+        ]
+     },
+     {
+        "name":"Fax",
+        "id":"fas fa-fax",
+        "filter":[
+           "business",
+           "fax"
+        ]
+     },
+     {
+        "name":"File",
+        "id":"fas fa-file",
+        "filter":[
+           "business",
+           "file"
+        ]
+     },
+     {
+        "name":"File",
+        "id":"far fa-file",
+        "filter":[
+           "business",
+           "file"
+        ]
+     },
+     {
+        "name":"File-alt",
+        "id":"fas fa-file-alt",
+        "filter":[
+           "business",
+           "file",
+           "alt"
+        ]
+     },
+     {
+        "name":"File-alt",
+        "id":"far fa-file-alt",
+        "filter":[
+           "business",
+           "file",
+           "alt"
+        ]
+     },
+     {
+        "name":"Folder",
+        "id":"fas fa-folder",
+        "filter":[
+           "business",
+           "folder"
+        ]
+     },
+     {
+        "name":"Folder",
+        "id":"far fa-folder",
+        "filter":[
+           "business",
+           "folder"
+        ]
+     },
+     {
+        "name":"Folder-open",
+        "id":"fas fa-folder-open",
+        "filter":[
+           "business",
+           "folder",
+           "open"
+        ]
+     },
+     {
+        "name":"Folder-open",
+        "id":"far fa-folder-open",
+        "filter":[
+           "business",
+           "folder",
+           "open"
+        ]
+     },
+     {
+        "name":"Globe",
+        "id":"fas fa-globe",
+        "filter":[
+           "business",
+           "globe"
+        ]
+     },
+     {
+        "name":"Industry",
+        "id":"fas fa-industry",
+        "filter":[
+           "business",
+           "industry"
+        ]
+     },
+     {
+        "name":"Paperclip",
+        "id":"fas fa-paperclip",
+        "filter":[
+           "business",
+           "paperclip"
+        ]
+     },
+     {
+        "name":"Paste",
+        "id":"fas fa-paste",
+        "filter":[
+           "business",
+           "paste"
+        ]
+     },
+     {
+        "name":"Pen-square",
+        "id":"fas fa-pen-square",
+        "filter":[
+           "business",
+           "pen",
+           "square"
+        ]
+     },
+     {
+        "name":"Pencil-alt",
+        "id":"fas fa-pencil-alt",
+        "filter":[
+           "business",
+           "pencil",
+           "alt"
+        ]
+     },
+     {
+        "name":"Percent",
+        "id":"fas fa-percent",
+        "filter":[
+           "business",
+           "percent"
+        ]
+     },
+     {
+        "name":"Phone",
+        "id":"fas fa-phone",
+        "filter":[
+           "business",
+           "phone"
+        ]
+     },
+     {
+        "name":"Phone-square",
+        "id":"fas fa-phone-square",
+        "filter":[
+           "business",
+           "phone",
+           "square"
+        ]
+     },
+     {
+        "name":"Registered",
+        "id":"fas fa-registered",
+        "filter":[
+           "business",
+           "registered"
+        ]
+     },
+     {
+        "name":"Registered",
+        "id":"far fa-registered",
+        "filter":[
+           "business",
+           "registered"
+        ]
+     },
+     {
+        "name":"Save",
+        "id":"fas fa-save",
+        "filter":[
+           "business",
+           "save"
+        ]
+     },
+     {
+        "name":"Save",
+        "id":"far fa-save",
+        "filter":[
+           "business",
+           "save"
+        ]
+     },
+     {
+        "name":"Sitemap",
+        "id":"fas fa-sitemap",
+        "filter":[
+           "business",
+           "sitemap"
+        ]
+     },
+     {
+        "name":"Sticky-note",
+        "id":"fas fa-sticky-note",
+        "filter":[
+           "business",
+           "sticky",
+           "note"
+        ]
+     },
+     {
+        "name":"Sticky-note",
+        "id":"far fa-sticky-note",
+        "filter":[
+           "business",
+           "sticky",
+           "note"
+        ]
+     },
+     {
+        "name":"Suitcase",
+        "id":"fas fa-suitcase",
+        "filter":[
+           "business",
+           "suitcase"
+        ]
+     },
+     {
+        "name":"Table",
+        "id":"fas fa-table",
+        "filter":[
+           "business",
+           "table"
+        ]
+     },
+     {
+        "name":"Tag",
+        "id":"fas fa-tag",
+        "filter":[
+           "business",
+           "tag"
+        ]
+     },
+     {
+        "name":"Tags",
+        "id":"fas fa-tags",
+        "filter":[
+           "business",
+           "tags"
+        ]
+     },
+     {
+        "name":"Tasks",
+        "id":"fas fa-tasks",
+        "filter":[
+           "business",
+           "tasks"
+        ]
+     },
+     {
+        "name":"Thumbtack",
+        "id":"fas fa-thumbtack",
+        "filter":[
+           "business",
+           "thumbtack"
+        ]
+     },
+     {
+        "name":"Trademark",
+        "id":"fas fa-trademark",
+        "filter":[
+           "business",
+           "trademark"
+        ]
+     },
+     {
+        "name":"Chess",
+        "id":"fas fa-chess",
+        "filter":[
+           "chess",
+           "chess"
+        ]
+     },
+     {
+        "name":"Chess-bishop",
+        "id":"fas fa-chess-bishop",
+        "filter":[
+           "chess",
+           "chess",
+           "bishop"
+        ]
+     },
+     {
+        "name":"Chess-board",
+        "id":"fas fa-chess-board",
+        "filter":[
+           "chess",
+           "chess",
+           "board"
+        ]
+     },
+     {
+        "name":"Chess-king",
+        "id":"fas fa-chess-king",
+        "filter":[
+           "chess",
+           "chess",
+           "king"
+        ]
+     },
+     {
+        "name":"Chess-knight",
+        "id":"fas fa-chess-knight",
+        "filter":[
+           "chess",
+           "chess",
+           "knight"
+        ]
+     },
+     {
+        "name":"Chess-pawn",
+        "id":"fas fa-chess-pawn",
+        "filter":[
+           "chess",
+           "chess",
+           "pawn"
+        ]
+     },
+     {
+        "name":"Chess-queen",
+        "id":"fas fa-chess-queen",
+        "filter":[
+           "chess",
+           "chess",
+           "queen"
+        ]
+     },
+     {
+        "name":"Chess-rook",
+        "id":"fas fa-chess-rook",
+        "filter":[
+           "chess",
+           "chess",
+           "rook"
+        ]
+     },
+     {
+        "name":"Square-full",
+        "id":"fas fa-square-full",
+        "filter":[
+           "chess",
+           "square",
+           "full"
+        ]
+     },
+     {
+        "name":"Barcode",
+        "id":"fas fa-barcode",
+        "filter":[
+           "code",
+           "barcode"
+        ]
+     },
+     {
+        "name":"Bath",
+        "id":"fas fa-bath",
+        "filter":[
+           "code",
+           "bath"
+        ]
+     },
+     {
+        "name":"Bug",
+        "id":"fas fa-bug",
+        "filter":[
+           "code",
+           "bug"
+        ]
+     },
+     {
+        "name":"Code",
+        "id":"fas fa-code",
+        "filter":[
+           "code",
+           "code"
+        ]
+     },
+     {
+        "name":"Code-branch",
+        "id":"fas fa-code-branch",
+        "filter":[
+           "code",
+           "code",
+           "branch"
+        ]
+     },
+     {
+        "name":"File-code",
+        "id":"fas fa-file-code",
+        "filter":[
+           "code",
+           "file",
+           "code"
+        ]
+     },
+     {
+        "name":"File-code",
+        "id":"far fa-file-code",
+        "filter":[
+           "code",
+           "file",
+           "code"
+        ]
+     },
+     {
+        "name":"Filter",
+        "id":"fas fa-filter",
+        "filter":[
+           "code",
+           "filter"
+        ]
+     },
+     {
+        "name":"Fire-extinguisher",
+        "id":"fas fa-fire-extinguisher",
+        "filter":[
+           "code",
+           "fire",
+           "extinguisher"
+        ]
+     },
+     {
+        "name":"Keyboard",
+        "id":"fas fa-keyboard",
+        "filter":[
+           "code",
+           "keyboard"
+        ]
+     },
+     {
+        "name":"Keyboard",
+        "id":"far fa-keyboard",
+        "filter":[
+           "code",
+           "keyboard"
+        ]
+     },
+     {
+        "name":"Microchip",
+        "id":"fas fa-microchip",
+        "filter":[
+           "code",
+           "microchip"
+        ]
+     },
+     {
+        "name":"Qrcode",
+        "id":"fas fa-qrcode",
+        "filter":[
+           "code",
+           "qrcode"
+        ]
+     },
+     {
+        "name":"Shield-alt",
+        "id":"fas fa-shield-alt",
+        "filter":[
+           "code",
+           "shield",
+           "alt"
+        ]
+     },
+     {
+        "name":"Terminal",
+        "id":"fas fa-terminal",
+        "filter":[
+           "code",
+           "terminal"
+        ]
+     },
+     {
+        "name":"User-secret",
+        "id":"fas fa-user-secret",
+        "filter":[
+           "code",
+           "user",
+           "secret"
+        ]
+     },
+     {
+        "name":"Window-close",
+        "id":"fas fa-window-close",
+        "filter":[
+           "code",
+           "window",
+           "close"
+        ]
+     },
+     {
+        "name":"Window-close",
+        "id":"far fa-window-close",
+        "filter":[
+           "code",
+           "window",
+           "close"
+        ]
+     },
+     {
+        "name":"Window-maximize",
+        "id":"fas fa-window-maximize",
+        "filter":[
+           "code",
+           "window",
+           "maximize"
+        ]
+     },
+     {
+        "name":"Window-maximize",
+        "id":"far fa-window-maximize",
+        "filter":[
+           "code",
+           "window",
+           "maximize"
+        ]
+     },
+     {
+        "name":"Window-minimize",
+        "id":"fas fa-window-minimize",
+        "filter":[
+           "code",
+           "window",
+           "minimize"
+        ]
+     },
+     {
+        "name":"Window-minimize",
+        "id":"far fa-window-minimize",
+        "filter":[
+           "code",
+           "window",
+           "minimize"
+        ]
+     },
+     {
+        "name":"Window-restore",
+        "id":"fas fa-window-restore",
+        "filter":[
+           "code",
+           "window",
+           "restore"
+        ]
+     },
+     {
+        "name":"Window-restore",
+        "id":"far fa-window-restore",
+        "filter":[
+           "code",
+           "window",
+           "restore"
+        ]
+     },
+     {
+        "name":"At",
+        "id":"fas fa-at",
+        "filter":[
+           "communication",
+           "at"
+        ]
+     },
+     {
+        "name":"Bell",
+        "id":"fas fa-bell",
+        "filter":[
+           "communication",
+           "bell"
+        ]
+     },
+     {
+        "name":"Bell",
+        "id":"far fa-bell",
+        "filter":[
+           "communication",
+           "bell"
+        ]
+     },
+     {
+        "name":"Bell-slash",
+        "id":"fas fa-bell-slash",
+        "filter":[
+           "communication",
+           "bell",
+           "slash"
+        ]
+     },
+     {
+        "name":"Bell-slash",
+        "id":"far fa-bell-slash",
+        "filter":[
+           "communication",
+           "bell",
+           "slash"
+        ]
+     },
+     {
+        "name":"Bluetooth",
+        "id":"fab fa-bluetooth",
+        "filter":[
+           "communication",
+           "bluetooth"
+        ]
+     },
+     {
+        "name":"Bluetooth-b",
+        "id":"fab fa-bluetooth-b",
+        "filter":[
+           "communication",
+           "bluetooth",
+           "b"
+        ]
+     },
+     {
+        "name":"Comment",
+        "id":"fas fa-comment",
+        "filter":[
+           "communication",
+           "comment"
+        ]
+     },
+     {
+        "name":"Comment",
+        "id":"far fa-comment",
+        "filter":[
+           "communication",
+           "comment"
+        ]
+     },
+     {
+        "name":"Comment-alt",
+        "id":"fas fa-comment-alt",
+        "filter":[
+           "communication",
+           "comment",
+           "alt"
+        ]
+     },
+     {
+        "name":"Comment-alt",
+        "id":"far fa-comment-alt",
+        "filter":[
+           "communication",
+           "comment",
+           "alt"
+        ]
+     },
+     {
+        "name":"Comments",
+        "id":"fas fa-comments",
+        "filter":[
+           "communication",
+           "comments"
+        ]
+     },
+     {
+        "name":"Comments",
+        "id":"far fa-comments",
+        "filter":[
+           "communication",
+           "comments"
+        ]
+     },
+     {
+        "name":"Inbox",
+        "id":"fas fa-inbox",
+        "filter":[
+           "communication",
+           "inbox"
+        ]
+     },
+     {
+        "name":"Language",
+        "id":"fas fa-language",
+        "filter":[
+           "communication",
+           "language"
+        ]
+     },
+     {
+        "name":"Mobile",
+        "id":"fas fa-mobile",
+        "filter":[
+           "communication",
+           "mobile"
+        ]
+     },
+     {
+        "name":"Mobile-alt",
+        "id":"fas fa-mobile-alt",
+        "filter":[
+           "communication",
+           "mobile",
+           "alt"
+        ]
+     },
+     {
+        "name":"Paper-plane",
+        "id":"fas fa-paper-plane",
+        "filter":[
+           "communication",
+           "paper",
+           "plane"
+        ]
+     },
+     {
+        "name":"Paper-plane",
+        "id":"far fa-paper-plane",
+        "filter":[
+           "communication",
+           "paper",
+           "plane"
+        ]
+     },
+     {
+        "name":"Wifi",
+        "id":"fas fa-wifi",
+        "filter":[
+           "communication",
+           "wifi"
+        ]
+     },
+     {
+        "name":"Desktop",
+        "id":"fas fa-desktop",
+        "filter":[
+           "computers",
+           "desktop"
+        ]
+     },
+     {
+        "name":"Hdd",
+        "id":"fas fa-hdd",
+        "filter":[
+           "computers",
+           "hdd"
+        ]
+     },
+     {
+        "name":"Hdd",
+        "id":"far fa-hdd",
+        "filter":[
+           "computers",
+           "hdd"
+        ]
+     },
+     {
+        "name":"Laptop",
+        "id":"fas fa-laptop",
+        "filter":[
+           "computers",
+           "laptop"
+        ]
+     },
+     {
+        "name":"Plug",
+        "id":"fas fa-plug",
+        "filter":[
+           "computers",
+           "plug"
+        ]
+     },
+     {
+        "name":"Power-off",
+        "id":"fas fa-power-off",
+        "filter":[
+           "computers",
+           "power",
+           "off"
+        ]
+     },
+     {
+        "name":"Print",
+        "id":"fas fa-print",
+        "filter":[
+           "computers",
+           "print"
+        ]
+     },
+     {
+        "name":"Server",
+        "id":"fas fa-server",
+        "filter":[
+           "computers",
+           "server"
+        ]
+     },
+     {
+        "name":"Tablet",
+        "id":"fas fa-tablet",
+        "filter":[
+           "computers",
+           "tablet"
+        ]
+     },
+     {
+        "name":"Tablet-alt",
+        "id":"fas fa-tablet-alt",
+        "filter":[
+           "computers",
+           "tablet",
+           "alt"
+        ]
+     },
+     {
+        "name":"Tv",
+        "id":"fas fa-tv",
+        "filter":[
+           "computers",
+           "tv"
+        ]
+     },
+     {
+        "name":"Bitcoin",
+        "id":"fab fa-bitcoin",
+        "filter":[
+           "currency",
+           "bitcoin"
+        ]
+     },
+     {
+        "name":"Btc",
+        "id":"fab fa-btc",
+        "filter":[
+           "currency",
+           "btc"
+        ]
+     },
+     {
+        "name":"Dollar-sign",
+        "id":"fas fa-dollar-sign",
+        "filter":[
+           "currency",
+           "dollar",
+           "sign"
+        ]
+     },
+     {
+        "name":"Euro-sign",
+        "id":"fas fa-euro-sign",
+        "filter":[
+           "currency",
+           "euro",
+           "sign"
+        ]
+     },
+     {
+        "name":"Gg",
+        "id":"fab fa-gg",
+        "filter":[
+           "currency",
+           "gg"
+        ]
+     },
+     {
+        "name":"Gg-circle",
+        "id":"fab fa-gg-circle",
+        "filter":[
+           "currency",
+           "gg",
+           "circle"
+        ]
+     },
+     {
+        "name":"Lira-sign",
+        "id":"fas fa-lira-sign",
+        "filter":[
+           "currency",
+           "lira",
+           "sign"
+        ]
+     },
+     {
+        "name":"Money-bill-alt",
+        "id":"fas fa-money-bill-alt",
+        "filter":[
+           "currency",
+           "money",
+           "bill",
+           "alt"
+        ]
+     },
+     {
+        "name":"Money-bill-alt",
+        "id":"far fa-money-bill-alt",
+        "filter":[
+           "currency",
+           "money",
+           "bill",
+           "alt"
+        ]
+     },
+     {
+        "name":"Pound-sign",
+        "id":"fas fa-pound-sign",
+        "filter":[
+           "currency",
+           "pound",
+           "sign"
+        ]
+     },
+     {
+        "name":"Ruble-sign",
+        "id":"fas fa-ruble-sign",
+        "filter":[
+           "currency",
+           "ruble",
+           "sign"
+        ]
+     },
+     {
+        "name":"Rupee-sign",
+        "id":"fas fa-rupee-sign",
+        "filter":[
+           "currency",
+           "rupee",
+           "sign"
+        ]
+     },
+     {
+        "name":"Shekel-sign",
+        "id":"fas fa-shekel-sign",
+        "filter":[
+           "currency",
+           "shekel",
+           "sign"
+        ]
+     },
+     {
+        "name":"Won-sign",
+        "id":"fas fa-won-sign",
+        "filter":[
+           "currency",
+           "won",
+           "sign"
+        ]
+     },
+     {
+        "name":"Yen-sign",
+        "id":"fas fa-yen-sign",
+        "filter":[
+           "currency",
+           "yen",
+           "sign"
+        ]
+     },
+     {
+        "name":"Calendar-check",
+        "id":"fas fa-calendar-check",
+        "filter":[
+           "date & time",
+           "calendar",
+           "check"
+        ]
+     },
+     {
+        "name":"Calendar-check",
+        "id":"far fa-calendar-check",
+        "filter":[
+           "date & time",
+           "calendar",
+           "check"
+        ]
+     },
+     {
+        "name":"Calendar-minus",
+        "id":"fas fa-calendar-minus",
+        "filter":[
+           "date & time",
+           "calendar",
+           "minus"
+        ]
+     },
+     {
+        "name":"Calendar-minus",
+        "id":"far fa-calendar-minus",
+        "filter":[
+           "date & time",
+           "calendar",
+           "minus"
+        ]
+     },
+     {
+        "name":"Calendar-plus",
+        "id":"fas fa-calendar-plus",
+        "filter":[
+           "date & time",
+           "calendar",
+           "plus"
+        ]
+     },
+     {
+        "name":"Calendar-plus",
+        "id":"far fa-calendar-plus",
+        "filter":[
+           "date & time",
+           "calendar",
+           "plus"
+        ]
+     },
+     {
+        "name":"Calendar-times",
+        "id":"fas fa-calendar-times",
+        "filter":[
+           "date & time",
+           "calendar",
+           "times"
+        ]
+     },
+     {
+        "name":"Calendar-times",
+        "id":"far fa-calendar-times",
+        "filter":[
+           "date & time",
+           "calendar",
+           "times"
+        ]
+     },
+     {
+        "name":"Clock",
+        "id":"fas fa-clock",
+        "filter":[
+           "date & time",
+           "clock"
+        ]
+     },
+     {
+        "name":"Clock",
+        "id":"far fa-clock",
+        "filter":[
+           "date & time",
+           "clock"
+        ]
+     },
+     {
+        "name":"Hourglass",
+        "id":"fas fa-hourglass",
+        "filter":[
+           "date & time",
+           "hourglass"
+        ]
+     },
+     {
+        "name":"Hourglass",
+        "id":"far fa-hourglass",
+        "filter":[
+           "date & time",
+           "hourglass"
+        ]
+     },
+     {
+        "name":"Hourglass-end",
+        "id":"fas fa-hourglass-end",
+        "filter":[
+           "date & time",
+           "hourglass",
+           "end"
+        ]
+     },
+     {
+        "name":"Hourglass-half",
+        "id":"fas fa-hourglass-half",
+        "filter":[
+           "date & time",
+           "hourglass",
+           "half"
+        ]
+     },
+     {
+        "name":"Hourglass-start",
+        "id":"fas fa-hourglass-start",
+        "filter":[
+           "date & time",
+           "hourglass",
+           "start"
+        ]
+     },
+     {
+        "name":"Stopwatch",
+        "id":"fas fa-stopwatch",
+        "filter":[
+           "date & time",
+           "stopwatch"
+        ]
+     },
+     {
+        "name":"Adjust",
+        "id":"fas fa-adjust",
+        "filter":[
+           "design",
+           "adjust"
+        ]
+     },
+     {
+        "name":"Clone",
+        "id":"fas fa-clone",
+        "filter":[
+           "design",
+           "clone"
+        ]
+     },
+     {
+        "name":"Clone",
+        "id":"far fa-clone",
+        "filter":[
+           "design",
+           "clone"
+        ]
+     },
+     {
+        "name":"Crop",
+        "id":"fas fa-crop",
+        "filter":[
+           "design",
+           "crop"
+        ]
+     },
+     {
+        "name":"Crosshairs",
+        "id":"fas fa-crosshairs",
+        "filter":[
+           "design",
+           "crosshairs"
+        ]
+     },
+     {
+        "name":"Eye",
+        "id":"fas fa-eye",
+        "filter":[
+           "design",
+           "eye"
+        ]
+     },
+     {
+        "name":"Eye-dropper",
+        "id":"fas fa-eye-dropper",
+        "filter":[
+           "design",
+           "eye",
+           "dropper"
+        ]
+     },
+     {
+        "name":"Eye-slash",
+        "id":"fas fa-eye-slash",
+        "filter":[
+           "design",
+           "eye",
+           "slash"
+        ]
+     },
+     {
+        "name":"Eye-slash",
+        "id":"far fa-eye-slash",
+        "filter":[
+           "design",
+           "eye",
+           "slash"
+        ]
+     },
+     {
+        "name":"Object-group",
+        "id":"fas fa-object-group",
+        "filter":[
+           "design",
+           "object",
+           "group"
+        ]
+     },
+     {
+        "name":"Object-group",
+        "id":"far fa-object-group",
+        "filter":[
+           "design",
+           "object",
+           "group"
+        ]
+     },
+     {
+        "name":"Object-ungroup",
+        "id":"fas fa-object-ungroup",
+        "filter":[
+           "design",
+           "object",
+           "ungroup"
+        ]
+     },
+     {
+        "name":"Object-ungroup",
+        "id":"far fa-object-ungroup",
+        "filter":[
+           "design",
+           "object",
+           "ungroup"
+        ]
+     },
+     {
+        "name":"Paint-brush",
+        "id":"fas fa-paint-brush",
+        "filter":[
+           "design",
+           "paint",
+           "brush"
+        ]
+     },
+     {
+        "name":"Tint",
+        "id":"fas fa-tint",
+        "filter":[
+           "design",
+           "tint"
+        ]
+     },
+     {
+        "name":"Align-center",
+        "id":"fas fa-align-center",
+        "filter":[
+           "editors",
+           "align",
+           "center"
+        ]
+     },
+     {
+        "name":"Align-justify",
+        "id":"fas fa-align-justify",
+        "filter":[
+           "editors",
+           "align",
+           "justify"
+        ]
+     },
+     {
+        "name":"Align-left",
+        "id":"fas fa-align-left",
+        "filter":[
+           "editors",
+           "align",
+           "left"
+        ]
+     },
+     {
+        "name":"Align-right",
+        "id":"fas fa-align-right",
+        "filter":[
+           "editors",
+           "align",
+           "right"
+        ]
+     },
+     {
+        "name":"Bold",
+        "id":"fas fa-bold",
+        "filter":[
+           "editors",
+           "bold"
+        ]
+     },
+     {
+        "name":"Font",
+        "id":"fas fa-font",
+        "filter":[
+           "editors",
+           "font"
+        ]
+     },
+     {
+        "name":"Heading",
+        "id":"fas fa-heading",
+        "filter":[
+           "editors",
+           "heading"
+        ]
+     },
+     {
+        "name":"I-cursor",
+        "id":"fas fa-i-cursor",
+        "filter":[
+           "editors",
+           "i",
+           "cursor"
+        ]
+     },
+     {
+        "name":"Indent",
+        "id":"fas fa-indent",
+        "filter":[
+           "editors",
+           "indent"
+        ]
+     },
+     {
+        "name":"Italic",
+        "id":"fas fa-italic",
+        "filter":[
+           "editors",
+           "italic"
+        ]
+     },
+     {
+        "name":"Link",
+        "id":"fas fa-link",
+        "filter":[
+           "editors",
+           "link"
+        ]
+     },
+     {
+        "name":"List",
+        "id":"fas fa-list",
+        "filter":[
+           "editors",
+           "list"
+        ]
+     },
+     {
+        "name":"List-alt",
+        "id":"fas fa-list-alt",
+        "filter":[
+           "editors",
+           "list",
+           "alt"
+        ]
+     },
+     {
+        "name":"List-alt",
+        "id":"far fa-list-alt",
+        "filter":[
+           "editors",
+           "list",
+           "alt"
+        ]
+     },
+     {
+        "name":"List-ol",
+        "id":"fas fa-list-ol",
+        "filter":[
+           "editors",
+           "list",
+           "ol"
+        ]
+     },
+     {
+        "name":"List-ul",
+        "id":"fas fa-list-ul",
+        "filter":[
+           "editors",
+           "list",
+           "ul"
+        ]
+     },
+     {
+        "name":"Outdent",
+        "id":"fas fa-outdent",
+        "filter":[
+           "editors",
+           "outdent"
+        ]
+     },
+     {
+        "name":"Paragraph",
+        "id":"fas fa-paragraph",
+        "filter":[
+           "editors",
+           "paragraph"
+        ]
+     },
+     {
+        "name":"Quote-left",
+        "id":"fas fa-quote-left",
+        "filter":[
+           "editors",
+           "quote",
+           "left"
+        ]
+     },
+     {
+        "name":"Quote-right",
+        "id":"fas fa-quote-right",
+        "filter":[
+           "editors",
+           "quote",
+           "right"
+        ]
+     },
+     {
+        "name":"Strikethrough",
+        "id":"fas fa-strikethrough",
+        "filter":[
+           "editors",
+           "strikethrough"
+        ]
+     },
+     {
+        "name":"Subscript",
+        "id":"fas fa-subscript",
+        "filter":[
+           "editors",
+           "subscript"
+        ]
+     },
+     {
+        "name":"Superscript",
+        "id":"fas fa-superscript",
+        "filter":[
+           "editors",
+           "superscript"
+        ]
+     },
+     {
+        "name":"Th",
+        "id":"fas fa-th",
+        "filter":[
+           "editors",
+           "th"
+        ]
+     },
+     {
+        "name":"Th-large",
+        "id":"fas fa-th-large",
+        "filter":[
+           "editors",
+           "th",
+           "large"
+        ]
+     },
+     {
+        "name":"Th-list",
+        "id":"fas fa-th-list",
+        "filter":[
+           "editors",
+           "th",
+           "list"
+        ]
+     },
+     {
+        "name":"Trash",
+        "id":"fas fa-trash",
+        "filter":[
+           "editors",
+           "trash"
+        ]
+     },
+     {
+        "name":"Trash-alt",
+        "id":"fas fa-trash-alt",
+        "filter":[
+           "editors",
+           "trash",
+           "alt"
+        ]
+     },
+     {
+        "name":"Trash-alt",
+        "id":"far fa-trash-alt",
+        "filter":[
+           "editors",
+           "trash",
+           "alt"
+        ]
+     },
+     {
+        "name":"Underline",
+        "id":"fas fa-underline",
+        "filter":[
+           "editors",
+           "underline"
+        ]
+     },
+     {
+        "name":"Unlink",
+        "id":"fas fa-unlink",
+        "filter":[
+           "editors",
+           "unlink"
+        ]
+     },
+     {
+        "name":"File-archive",
+        "id":"fas fa-file-archive",
+        "filter":[
+           "files",
+           "file",
+           "archive"
+        ]
+     },
+     {
+        "name":"File-archive",
+        "id":"far fa-file-archive",
+        "filter":[
+           "files",
+           "file",
+           "archive"
+        ]
+     },
+     {
+        "name":"File-excel",
+        "id":"fas fa-file-excel",
+        "filter":[
+           "files",
+           "file",
+           "excel"
+        ]
+     },
+     {
+        "name":"File-excel",
+        "id":"far fa-file-excel",
+        "filter":[
+           "files",
+           "file",
+           "excel"
+        ]
+     },
+     {
+        "name":"File-image",
+        "id":"fas fa-file-image",
+        "filter":[
+           "files",
+           "file",
+           "image"
+        ]
+     },
+     {
+        "name":"File-image",
+        "id":"far fa-file-image",
+        "filter":[
+           "files",
+           "file",
+           "image"
+        ]
+     },
+     {
+        "name":"File-pdf",
+        "id":"fas fa-file-pdf",
+        "filter":[
+           "files",
+           "file",
+           "pdf"
+        ]
+     },
+     {
+        "name":"File-pdf",
+        "id":"far fa-file-pdf",
+        "filter":[
+           "files",
+           "file",
+           "pdf"
+        ]
+     },
+     {
+        "name":"File-powerpoint",
+        "id":"fas fa-file-powerpoint",
+        "filter":[
+           "files",
+           "file",
+           "powerpoint"
+        ]
+     },
+     {
+        "name":"File-powerpoint",
+        "id":"far fa-file-powerpoint",
+        "filter":[
+           "files",
+           "file",
+           "powerpoint"
+        ]
+     },
+     {
+        "name":"File-word",
+        "id":"fas fa-file-word",
+        "filter":[
+           "files",
+           "file",
+           "word"
+        ]
+     },
+     {
+        "name":"File-word",
+        "id":"far fa-file-word",
+        "filter":[
+           "files",
+           "file",
+           "word"
+        ]
+     },
+     {
+        "name":"Genderless",
+        "id":"fas fa-genderless",
+        "filter":[
+           "genders",
+           "genderless"
+        ]
+     },
+     {
+        "name":"Mars",
+        "id":"fas fa-mars",
+        "filter":[
+           "genders",
+           "mars"
+        ]
+     },
+     {
+        "name":"Mars-double",
+        "id":"fas fa-mars-double",
+        "filter":[
+           "genders",
+           "mars",
+           "double"
+        ]
+     },
+     {
+        "name":"Mars-stroke",
+        "id":"fas fa-mars-stroke",
+        "filter":[
+           "genders",
+           "mars",
+           "stroke"
+        ]
+     },
+     {
+        "name":"Mars-stroke-h",
+        "id":"fas fa-mars-stroke-h",
+        "filter":[
+           "genders",
+           "mars",
+           "stroke",
+           "h"
+        ]
+     },
+     {
+        "name":"Mars-stroke-v",
+        "id":"fas fa-mars-stroke-v",
+        "filter":[
+           "genders",
+           "mars",
+           "stroke",
+           "v"
+        ]
+     },
+     {
+        "name":"Mercury",
+        "id":"fas fa-mercury",
+        "filter":[
+           "genders",
+           "mercury"
+        ]
+     },
+     {
+        "name":"Neuter",
+        "id":"fas fa-neuter",
+        "filter":[
+           "genders",
+           "neuter"
+        ]
+     },
+     {
+        "name":"Transgender",
+        "id":"fas fa-transgender",
+        "filter":[
+           "genders",
+           "transgender"
+        ]
+     },
+     {
+        "name":"Transgender-alt",
+        "id":"fas fa-transgender-alt",
+        "filter":[
+           "genders",
+           "transgender",
+           "alt"
+        ]
+     },
+     {
+        "name":"Venus",
+        "id":"fas fa-venus",
+        "filter":[
+           "genders",
+           "venus"
+        ]
+     },
+     {
+        "name":"Venus-double",
+        "id":"fas fa-venus-double",
+        "filter":[
+           "genders",
+           "venus",
+           "double"
+        ]
+     },
+     {
+        "name":"Venus-mars",
+        "id":"fas fa-venus-mars",
+        "filter":[
+           "genders",
+           "venus",
+           "mars"
+        ]
+     },
+     {
+        "name":"Hand-lizard",
+        "id":"fas fa-hand-lizard",
+        "filter":[
+           "hands",
+           "hand",
+           "lizard"
+        ]
+     },
+     {
+        "name":"Hand-lizard",
+        "id":"far fa-hand-lizard",
+        "filter":[
+           "hands",
+           "hand",
+           "lizard"
+        ]
+     },
+     {
+        "name":"Hand-paper",
+        "id":"fas fa-hand-paper",
+        "filter":[
+           "hands",
+           "hand",
+           "paper"
+        ]
+     },
+     {
+        "name":"Hand-paper",
+        "id":"far fa-hand-paper",
+        "filter":[
+           "hands",
+           "hand",
+           "paper"
+        ]
+     },
+     {
+        "name":"Hand-peace",
+        "id":"fas fa-hand-peace",
+        "filter":[
+           "hands",
+           "hand",
+           "peace"
+        ]
+     },
+     {
+        "name":"Hand-peace",
+        "id":"far fa-hand-peace",
+        "filter":[
+           "hands",
+           "hand",
+           "peace"
+        ]
+     },
+     {
+        "name":"Hand-rock",
+        "id":"fas fa-hand-rock",
+        "filter":[
+           "hands",
+           "hand",
+           "rock"
+        ]
+     },
+     {
+        "name":"Hand-rock",
+        "id":"far fa-hand-rock",
+        "filter":[
+           "hands",
+           "hand",
+           "rock"
+        ]
+     },
+     {
+        "name":"Hand-scissors",
+        "id":"fas fa-hand-scissors",
+        "filter":[
+           "hands",
+           "hand",
+           "scissors"
+        ]
+     },
+     {
+        "name":"Hand-scissors",
+        "id":"far fa-hand-scissors",
+        "filter":[
+           "hands",
+           "hand",
+           "scissors"
+        ]
+     },
+     {
+        "name":"Hand-spock",
+        "id":"fas fa-hand-spock",
+        "filter":[
+           "hands",
+           "hand",
+           "spock"
+        ]
+     },
+     {
+        "name":"Hand-spock",
+        "id":"far fa-hand-spock",
+        "filter":[
+           "hands",
+           "hand",
+           "spock"
+        ]
+     },
+     {
+        "name":"Handshake",
+        "id":"fas fa-handshake",
+        "filter":[
+           "hands",
+           "handshake"
+        ]
+     },
+     {
+        "name":"Handshake",
+        "id":"far fa-handshake",
+        "filter":[
+           "hands",
+           "handshake"
+        ]
+     },
+     {
+        "name":"Thumbs-down",
+        "id":"fas fa-thumbs-down",
+        "filter":[
+           "hands",
+           "thumbs",
+           "down"
+        ]
+     },
+     {
+        "name":"Thumbs-down",
+        "id":"far fa-thumbs-down",
+        "filter":[
+           "hands",
+           "thumbs",
+           "down"
+        ]
+     },
+     {
+        "name":"Thumbs-up",
+        "id":"fas fa-thumbs-up",
+        "filter":[
+           "hands",
+           "thumbs",
+           "up"
+        ]
+     },
+     {
+        "name":"Thumbs-up",
+        "id":"far fa-thumbs-up",
+        "filter":[
+           "hands",
+           "thumbs",
+           "up"
+        ]
+     },
+     {
+        "name":"Ambulance",
+        "id":"fas fa-ambulance",
+        "filter":[
+           "health",
+           "ambulance"
+        ]
+     },
+     {
+        "name":"H-square",
+        "id":"fas fa-h-square",
+        "filter":[
+           "health",
+           "h",
+           "square"
+        ]
+     },
+     {
+        "name":"Heart",
+        "id":"fas fa-heart",
+        "filter":[
+           "health",
+           "heart"
+        ]
+     },
+     {
+        "name":"Heart",
+        "id":"far fa-heart",
+        "filter":[
+           "health",
+           "heart"
+        ]
+     },
+     {
+        "name":"Heartbeat",
+        "id":"fas fa-heartbeat",
+        "filter":[
+           "health",
+           "heartbeat"
+        ]
+     },
+     {
+        "name":"Hospital",
+        "id":"fas fa-hospital",
+        "filter":[
+           "health",
+           "hospital"
+        ]
+     },
+     {
+        "name":"Hospital",
+        "id":"far fa-hospital",
+        "filter":[
+           "health",
+           "hospital"
+        ]
+     },
+     {
+        "name":"Medkit",
+        "id":"fas fa-medkit",
+        "filter":[
+           "health",
+           "medkit"
+        ]
+     },
+     {
+        "name":"Plus-square",
+        "id":"fas fa-plus-square",
+        "filter":[
+           "health",
+           "plus",
+           "square"
+        ]
+     },
+     {
+        "name":"Plus-square",
+        "id":"far fa-plus-square",
+        "filter":[
+           "health",
+           "plus",
+           "square"
+        ]
+     },
+     {
+        "name":"Stethoscope",
+        "id":"fas fa-stethoscope",
+        "filter":[
+           "health",
+           "stethoscope"
+        ]
+     },
+     {
+        "name":"User-md",
+        "id":"fas fa-user-md",
+        "filter":[
+           "health",
+           "user",
+           "md"
+        ]
+     },
+     {
+        "name":"Bolt",
+        "id":"fas fa-bolt",
+        "filter":[
+           "images",
+           "bolt"
+        ]
+     },
+     {
+        "name":"Camera",
+        "id":"fas fa-camera",
+        "filter":[
+           "images",
+           "camera"
+        ]
+     },
+     {
+        "name":"Camera-retro",
+        "id":"fas fa-camera-retro",
+        "filter":[
+           "images",
+           "camera",
+           "retro"
+        ]
+     },
+     {
+        "name":"Id-badge",
+        "id":"fas fa-id-badge",
+        "filter":[
+           "images",
+           "id",
+           "badge"
+        ]
+     },
+     {
+        "name":"Id-badge",
+        "id":"far fa-id-badge",
+        "filter":[
+           "images",
+           "id",
+           "badge"
+        ]
+     },
+     {
+        "name":"Id-card",
+        "id":"fas fa-id-card",
+        "filter":[
+           "images",
+           "id",
+           "card"
+        ]
+     },
+     {
+        "name":"Id-card",
+        "id":"far fa-id-card",
+        "filter":[
+           "images",
+           "id",
+           "card"
+        ]
+     },
+     {
+        "name":"Image",
+        "id":"fas fa-image",
+        "filter":[
+           "images",
+           "image"
+        ]
+     },
+     {
+        "name":"Image",
+        "id":"far fa-image",
+        "filter":[
+           "images",
+           "image"
+        ]
+     },
+     {
+        "name":"Images",
+        "id":"fas fa-images",
+        "filter":[
+           "images",
+           "images"
+        ]
+     },
+     {
+        "name":"Images",
+        "id":"far fa-images",
+        "filter":[
+           "images",
+           "images"
+        ]
+     },
+     {
+        "name":"Sliders-h",
+        "id":"fas fa-sliders-h",
+        "filter":[
+           "images",
+           "sliders",
+           "h"
+        ]
+     },
+     {
+        "name":"Ban",
+        "id":"fas fa-ban",
+        "filter":[
+           "interfaces",
+           "ban"
+        ]
+     },
+     {
+        "name":"Bars",
+        "id":"fas fa-bars",
+        "filter":[
+           "interfaces",
+           "bars"
+        ]
+     },
+     {
+        "name":"Beer",
+        "id":"fas fa-beer",
+        "filter":[
+           "interfaces",
+           "beer"
+        ]
+     },
+     {
+        "name":"Check",
+        "id":"fas fa-check",
+        "filter":[
+           "interfaces",
+           "check"
+        ]
+     },
+     {
+        "name":"Check-circle",
+        "id":"fas fa-check-circle",
+        "filter":[
+           "interfaces",
+           "check",
+           "circle"
+        ]
+     },
+     {
+        "name":"Check-circle",
+        "id":"far fa-check-circle",
+        "filter":[
+           "interfaces",
+           "check",
+           "circle"
+        ]
+     },
+     {
+        "name":"Check-square",
+        "id":"fas fa-check-square",
+        "filter":[
+           "interfaces",
+           "check",
+           "square"
+        ]
+     },
+     {
+        "name":"Check-square",
+        "id":"far fa-check-square",
+        "filter":[
+           "interfaces",
+           "check",
+           "square"
+        ]
+     },
+     {
+        "name":"Cloud",
+        "id":"fas fa-cloud",
+        "filter":[
+           "interfaces",
+           "cloud"
+        ]
+     },
+     {
+        "name":"Cog",
+        "id":"fas fa-cog",
+        "filter":[
+           "interfaces",
+           "cog"
+        ]
+     },
+     {
+        "name":"Cogs",
+        "id":"fas fa-cogs",
+        "filter":[
+           "interfaces",
+           "cogs"
+        ]
+     },
+     {
+        "name":"Database",
+        "id":"fas fa-database",
+        "filter":[
+           "interfaces",
+           "database"
+        ]
+     },
+     {
+        "name":"Dot-circle",
+        "id":"fas fa-dot-circle",
+        "filter":[
+           "interfaces",
+           "dot",
+           "circle"
+        ]
+     },
+     {
+        "name":"Dot-circle",
+        "id":"far fa-dot-circle",
+        "filter":[
+           "interfaces",
+           "dot",
+           "circle"
+        ]
+     },
+     {
+        "name":"Ellipsis-h",
+        "id":"fas fa-ellipsis-h",
+        "filter":[
+           "interfaces",
+           "ellipsis",
+           "h"
+        ]
+     },
+     {
+        "name":"Ellipsis-v",
+        "id":"fas fa-ellipsis-v",
+        "filter":[
+           "interfaces",
+           "ellipsis",
+           "v"
+        ]
+     },
+     {
+        "name":"Exclamation",
+        "id":"fas fa-exclamation",
+        "filter":[
+           "interfaces",
+           "exclamation"
+        ]
+     },
+     {
+        "name":"Exclamation-circle",
+        "id":"fas fa-exclamation-circle",
+        "filter":[
+           "interfaces",
+           "exclamation",
+           "circle"
+        ]
+     },
+     {
+        "name":"Exclamation-triangle",
+        "id":"fas fa-exclamation-triangle",
+        "filter":[
+           "interfaces",
+           "exclamation",
+           "triangle"
+        ]
+     },
+     {
+        "name":"Flag",
+        "id":"fas fa-flag",
+        "filter":[
+           "interfaces",
+           "flag"
+        ]
+     },
+     {
+        "name":"Flag",
+        "id":"far fa-flag",
+        "filter":[
+           "interfaces",
+           "flag"
+        ]
+     },
+     {
+        "name":"Flag-checkered",
+        "id":"fas fa-flag-checkered",
+        "filter":[
+           "interfaces",
+           "flag",
+           "checkered"
+        ]
+     },
+     {
+        "name":"Frown",
+        "id":"fas fa-frown",
+        "filter":[
+           "interfaces",
+           "frown"
+        ]
+     },
+     {
+        "name":"Frown",
+        "id":"far fa-frown",
+        "filter":[
+           "interfaces",
+           "frown"
+        ]
+     },
+     {
+        "name":"Hashtag",
+        "id":"fas fa-hashtag",
+        "filter":[
+           "interfaces",
+           "hashtag"
+        ]
+     },
+     {
+        "name":"Home",
+        "id":"fas fa-home",
+        "filter":[
+           "interfaces",
+           "home"
+        ]
+     },
+     {
+        "name":"Info",
+        "id":"fas fa-info",
+        "filter":[
+           "interfaces",
+           "info"
+        ]
+     },
+     {
+        "name":"Info-circle",
+        "id":"fas fa-info-circle",
+        "filter":[
+           "interfaces",
+           "info",
+           "circle"
+        ]
+     },
+     {
+        "name":"Magic",
+        "id":"fas fa-magic",
+        "filter":[
+           "interfaces",
+           "magic"
+        ]
+     },
+     {
+        "name":"Meh",
+        "id":"fas fa-meh",
+        "filter":[
+           "interfaces",
+           "meh"
+        ]
+     },
+     {
+        "name":"Meh",
+        "id":"far fa-meh",
+        "filter":[
+           "interfaces",
+           "meh"
+        ]
+     },
+     {
+        "name":"Minus",
+        "id":"fas fa-minus",
+        "filter":[
+           "interfaces",
+           "minus"
+        ]
+     },
+     {
+        "name":"Minus-circle",
+        "id":"fas fa-minus-circle",
+        "filter":[
+           "interfaces",
+           "minus",
+           "circle"
+        ]
+     },
+     {
+        "name":"Minus-square",
+        "id":"fas fa-minus-square",
+        "filter":[
+           "interfaces",
+           "minus",
+           "square"
+        ]
+     },
+     {
+        "name":"Minus-square",
+        "id":"far fa-minus-square",
+        "filter":[
+           "interfaces",
+           "minus",
+           "square"
+        ]
+     },
+     {
+        "name":"Plus",
+        "id":"fas fa-plus",
+        "filter":[
+           "interfaces",
+           "plus"
+        ]
+     },
+     {
+        "name":"Plus-circle",
+        "id":"fas fa-plus-circle",
+        "filter":[
+           "interfaces",
+           "plus",
+           "circle"
+        ]
+     },
+     {
+        "name":"Question",
+        "id":"fas fa-question",
+        "filter":[
+           "interfaces",
+           "question"
+        ]
+     },
+     {
+        "name":"Anchor",
+        "id":"fas fa-anchor",
+        "filter":[
+           "maps",
+           "anchor"
+        ]
+     },
+     {
+        "name":"Bed",
+        "id":"fas fa-bed",
+        "filter":[
+           "maps",
+           "bed"
+        ]
+     },
+     {
+        "name":"Bicycle",
+        "id":"fas fa-bicycle",
+        "filter":[
+           "maps",
+           "bicycle"
+        ]
+     },
+     {
+        "name":"Binoculars",
+        "id":"fas fa-binoculars",
+        "filter":[
+           "maps",
+           "binoculars"
+        ]
+     },
+     {
+        "name":"Bomb",
+        "id":"fas fa-bomb",
+        "filter":[
+           "maps",
+           "bomb"
+        ]
+     },
+     {
+        "name":"Bookmark",
+        "id":"fas fa-bookmark",
+        "filter":[
+           "maps",
+           "bookmark"
+        ]
+     },
+     {
+        "name":"Bookmark",
+        "id":"far fa-bookmark",
+        "filter":[
+           "maps",
+           "bookmark"
+        ]
+     },
+     {
+        "name":"Car",
+        "id":"fas fa-car",
+        "filter":[
+           "maps",
+           "car"
+        ]
+     },
+     {
+        "name":"Fighter-jet",
+        "id":"fas fa-fighter-jet",
+        "filter":[
+           "maps",
+           "fighter",
+           "jet"
+        ]
+     },
+     {
+        "name":"Fire",
+        "id":"fas fa-fire",
+        "filter":[
+           "maps",
+           "fire"
+        ]
+     },
+     {
+        "name":"Flask",
+        "id":"fas fa-flask",
+        "filter":[
+           "maps",
+           "flask"
+        ]
+     },
+     {
+        "name":"Gamepad",
+        "id":"fas fa-gamepad",
+        "filter":[
+           "maps",
+           "gamepad"
+        ]
+     },
+     {
+        "name":"Gavel",
+        "id":"fas fa-gavel",
+        "filter":[
+           "maps",
+           "gavel"
+        ]
+     },
+     {
+        "name":"Gift",
+        "id":"fas fa-gift",
+        "filter":[
+           "maps",
+           "gift"
+        ]
+     },
+     {
+        "name":"Glass-martini",
+        "id":"fas fa-glass-martini",
+        "filter":[
+           "maps",
+           "glass",
+           "martini"
+        ]
+     },
+     {
+        "name":"Graduation-cap",
+        "id":"fas fa-graduation-cap",
+        "filter":[
+           "maps",
+           "graduation",
+           "cap"
+        ]
+     },
+     {
+        "name":"Key",
+        "id":"fas fa-key",
+        "filter":[
+           "maps",
+           "key"
+        ]
+     },
+     {
+        "name":"Leaf",
+        "id":"fas fa-leaf",
+        "filter":[
+           "maps",
+           "leaf"
+        ]
+     },
+     {
+        "name":"Lemon",
+        "id":"fas fa-lemon",
+        "filter":[
+           "maps",
+           "lemon"
+        ]
+     },
+     {
+        "name":"Lemon",
+        "id":"far fa-lemon",
+        "filter":[
+           "maps",
+           "lemon"
+        ]
+     },
+     {
+        "name":"Life-ring",
+        "id":"fas fa-life-ring",
+        "filter":[
+           "maps",
+           "life",
+           "ring"
+        ]
+     },
+     {
+        "name":"Life-ring",
+        "id":"far fa-life-ring",
+        "filter":[
+           "maps",
+           "life",
+           "ring"
+        ]
+     },
+     {
+        "name":"Lightbulb",
+        "id":"fas fa-lightbulb",
+        "filter":[
+           "maps",
+           "lightbulb"
+        ]
+     },
+     {
+        "name":"Lightbulb",
+        "id":"far fa-lightbulb",
+        "filter":[
+           "maps",
+           "lightbulb"
+        ]
+     },
+     {
+        "name":"Magnet",
+        "id":"fas fa-magnet",
+        "filter":[
+           "maps",
+           "magnet"
+        ]
+     },
+     {
+        "name":"Male",
+        "id":"fas fa-male",
+        "filter":[
+           "maps",
+           "male"
+        ]
+     },
+     {
+        "name":"Map",
+        "id":"fas fa-map",
+        "filter":[
+           "maps",
+           "map"
+        ]
+     },
+     {
+        "name":"Map",
+        "id":"far fa-map",
+        "filter":[
+           "maps",
+           "map"
+        ]
+     },
+     {
+        "name":"Map-marker",
+        "id":"fas fa-map-marker",
+        "filter":[
+           "maps",
+           "map",
+           "marker"
+        ]
+     },
+     {
+        "name":"Map-marker-alt",
+        "id":"fas fa-map-marker-alt",
+        "filter":[
+           "maps",
+           "map",
+           "marker",
+           "alt"
+        ]
+     },
+     {
+        "name":"Map-pin",
+        "id":"fas fa-map-pin",
+        "filter":[
+           "maps",
+           "map",
+           "pin"
+        ]
+     },
+     {
+        "name":"Map-signs",
+        "id":"fas fa-map-signs",
+        "filter":[
+           "maps",
+           "map",
+           "signs"
+        ]
+     },
+     {
+        "name":"Motorcycle",
+        "id":"fas fa-motorcycle",
+        "filter":[
+           "maps",
+           "motorcycle"
+        ]
+     },
+     {
+        "name":"Newspaper",
+        "id":"fas fa-newspaper",
+        "filter":[
+           "maps",
+           "newspaper"
+        ]
+     },
+     {
+        "name":"Newspaper",
+        "id":"far fa-newspaper",
+        "filter":[
+           "maps",
+           "newspaper"
+        ]
+     },
+     {
+        "name":"Paw",
+        "id":"fas fa-paw",
+        "filter":[
+           "maps",
+           "paw"
+        ]
+     },
+     {
+        "name":"Plane",
+        "id":"fas fa-plane",
+        "filter":[
+           "maps",
+           "plane"
+        ]
+     },
+     {
+        "name":"Road",
+        "id":"fas fa-road",
+        "filter":[
+           "maps",
+           "road"
+        ]
+     },
+     {
+        "name":"Rocket",
+        "id":"fas fa-rocket",
+        "filter":[
+           "maps",
+           "rocket"
+        ]
+     },
+     {
+        "name":"Search",
+        "id":"fas fa-search",
+        "filter":[
+           "maps",
+           "search"
+        ]
+     },
+     {
+        "name":"Search-minus",
+        "id":"fas fa-search-minus",
+        "filter":[
+           "maps",
+           "search",
+           "minus"
+        ]
+     },
+     {
+        "name":"Search-plus",
+        "id":"fas fa-search-plus",
+        "filter":[
+           "maps",
+           "search",
+           "plus"
+        ]
+     },
+     {
+        "name":"Ship",
+        "id":"fas fa-ship",
+        "filter":[
+           "maps",
+           "ship"
+        ]
+     },
+     {
+        "name":"Shopping-bag",
+        "id":"fas fa-shopping-bag",
+        "filter":[
+           "maps",
+           "shopping",
+           "bag"
+        ]
+     },
+     {
+        "name":"Shopping-basket",
+        "id":"fas fa-shopping-basket",
+        "filter":[
+           "maps",
+           "shopping",
+           "basket"
+        ]
+     },
+     {
+        "name":"Shopping-cart",
+        "id":"fas fa-shopping-cart",
+        "filter":[
+           "maps",
+           "shopping",
+           "cart"
+        ]
+     },
+     {
+        "name":"Shower",
+        "id":"fas fa-shower",
+        "filter":[
+           "maps",
+           "shower"
+        ]
+     },
+     {
+        "name":"Street-view",
+        "id":"fas fa-street-view",
+        "filter":[
+           "maps",
+           "street",
+           "view"
+        ]
+     },
+     {
+        "name":"Subway",
+        "id":"fas fa-subway",
+        "filter":[
+           "maps",
+           "subway"
+        ]
+     },
+     {
+        "name":"Taxi",
+        "id":"fas fa-taxi",
+        "filter":[
+           "maps",
+           "taxi"
+        ]
+     },
+     {
+        "name":"Bus",
+        "id":"fas fa-bus",
+        "filter":[
+           "objects",
+           "bus"
+        ]
+     },
+     {
+        "name":"Cube",
+        "id":"fas fa-cube",
+        "filter":[
+           "objects",
+           "cube"
+        ]
+     },
+     {
+        "name":"Cubes",
+        "id":"fas fa-cubes",
+        "filter":[
+           "objects",
+           "cubes"
+        ]
+     },
+     {
+        "name":"Futbol",
+        "id":"fas fa-futbol",
+        "filter":[
+           "objects",
+           "futbol"
+        ]
+     },
+     {
+        "name":"Futbol",
+        "id":"far fa-futbol",
+        "filter":[
+           "objects",
+           "futbol"
+        ]
+     },
+     {
+        "name":"Gem",
+        "id":"fas fa-gem",
+        "filter":[
+           "objects",
+           "gem"
+        ]
+     },
+     {
+        "name":"Gem",
+        "id":"far fa-gem",
+        "filter":[
+           "objects",
+           "gem"
+        ]
+     },
+     {
+        "name":"Lock",
+        "id":"fas fa-lock",
+        "filter":[
+           "objects",
+           "lock"
+        ]
+     },
+     {
+        "name":"Lock-open",
+        "id":"fas fa-lock-open",
+        "filter":[
+           "objects",
+           "lock",
+           "open"
+        ]
+     },
+     {
+        "name":"Amazon-pay",
+        "id":"fab fa-amazon-pay",
+        "filter":[
+           "payments & shopping",
+           "amazon",
+           "pay"
+        ]
+     },
+     {
+        "name":"Apple-pay",
+        "id":"fab fa-apple-pay",
+        "filter":[
+           "payments & shopping",
+           "apple",
+           "pay"
+        ]
+     },
+     {
+        "name":"Cart-plus",
+        "id":"fas fa-cart-plus",
+        "filter":[
+           "payments & shopping",
+           "cart",
+           "plus"
+        ]
+     },
+     {
+        "name":"Cc-amazon-pay",
+        "id":"fab fa-cc-amazon-pay",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "amazon",
+           "pay"
+        ]
+     },
+     {
+        "name":"Cc-amex",
+        "id":"fab fa-cc-amex",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "amex"
+        ]
+     },
+     {
+        "name":"Cc-apple-pay",
+        "id":"fab fa-cc-apple-pay",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "apple",
+           "pay"
+        ]
+     },
+     {
+        "name":"Cc-diners-club",
+        "id":"fab fa-cc-diners-club",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "diners",
+           "club"
+        ]
+     },
+     {
+        "name":"Cc-discover",
+        "id":"fab fa-cc-discover",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "discover"
+        ]
+     },
+     {
+        "name":"Cc-jcb",
+        "id":"fab fa-cc-jcb",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "jcb"
+        ]
+     },
+     {
+        "name":"Cc-mastercard",
+        "id":"fab fa-cc-mastercard",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "mastercard"
+        ]
+     },
+     {
+        "name":"Cc-paypal",
+        "id":"fab fa-cc-paypal",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "paypal"
+        ]
+     },
+     {
+        "name":"Cc-stripe",
+        "id":"fab fa-cc-stripe",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "stripe"
+        ]
+     },
+     {
+        "name":"Cc-visa",
+        "id":"fab fa-cc-visa",
+        "filter":[
+           "payments & shopping",
+           "cc",
+           "visa"
+        ]
+     },
+     {
+        "name":"Credit-card",
+        "id":"fas fa-credit-card",
+        "filter":[
+           "payments & shopping",
+           "credit",
+           "card"
+        ]
+     },
+     {
+        "name":"Credit-card",
+        "id":"far fa-credit-card",
+        "filter":[
+           "payments & shopping",
+           "credit",
+           "card"
+        ]
+     },
+     {
+        "name":"Ethereum",
+        "id":"fab fa-ethereum",
+        "filter":[
+           "payments & shopping",
+           "ethereum"
+        ]
+     },
+     {
+        "name":"Google-wallet",
+        "id":"fab fa-google-wallet",
+        "filter":[
+           "payments & shopping",
+           "google",
+           "wallet"
+        ]
+     },
+     {
+        "name":"Paypal",
+        "id":"fab fa-paypal",
+        "filter":[
+           "payments & shopping",
+           "paypal"
+        ]
+     },
+     {
+        "name":"Star",
+        "id":"fas fa-star",
+        "filter":[
+           "payments & shopping",
+           "star"
+        ]
+     },
+     {
+        "name":"Star",
+        "id":"far fa-star",
+        "filter":[
+           "payments & shopping",
+           "star"
+        ]
+     },
+     {
+        "name":"Stripe",
+        "id":"fab fa-stripe",
+        "filter":[
+           "payments & shopping",
+           "stripe"
+        ]
+     },
+     {
+        "name":"Stripe-s",
+        "id":"fab fa-stripe-s",
+        "filter":[
+           "payments & shopping",
+           "stripe",
+           "s"
+        ]
+     },
+     {
+        "name":"Trophy",
+        "id":"fas fa-trophy",
+        "filter":[
+           "payments & shopping",
+           "trophy"
+        ]
+     },
+     {
+        "name":"Square",
+        "id":"fas fa-square",
+        "filter":[
+           "shapes",
+           "square"
+        ]
+     },
+     {
+        "name":"Square",
+        "id":"far fa-square",
+        "filter":[
+           "shapes",
+           "square"
+        ]
+     },
+     {
+        "name":"Asterisk",
+        "id":"fas fa-asterisk",
+        "filter":[
+           "spinners",
+           "asterisk"
+        ]
+     },
+     {
+        "name":"Circle-notch",
+        "id":"fas fa-circle-notch",
+        "filter":[
+           "spinners",
+           "circle",
+           "notch"
+        ]
+     },
+     {
+        "name":"Snowflake",
+        "id":"fas fa-snowflake",
+        "filter":[
+           "spinners",
+           "snowflake"
+        ]
+     },
+     {
+        "name":"Snowflake",
+        "id":"far fa-snowflake",
+        "filter":[
+           "spinners",
+           "snowflake"
+        ]
+     },
+     {
+        "name":"Spinner",
+        "id":"fas fa-spinner",
+        "filter":[
+           "spinners",
+           "spinner"
+        ]
+     },
+     {
+        "name":"Sun",
+        "id":"fas fa-sun",
+        "filter":[
+           "spinners",
+           "sun"
+        ]
+     },
+     {
+        "name":"Sun",
+        "id":"far fa-sun",
+        "filter":[
+           "spinners",
+           "sun"
+        ]
+     },
+     {
+        "name":"Baseball-ball",
+        "id":"fas fa-baseball-ball",
+        "filter":[
+           "sports",
+           "baseball",
+           "ball"
+        ]
+     },
+     {
+        "name":"Basketball-ball",
+        "id":"fas fa-basketball-ball",
+        "filter":[
+           "sports",
+           "basketball",
+           "ball"
+        ]
+     },
+     {
+        "name":"Bowling-ball",
+        "id":"fas fa-bowling-ball",
+        "filter":[
+           "sports",
+           "bowling",
+           "ball"
+        ]
+     },
+     {
+        "name":"Football-ball",
+        "id":"fas fa-football-ball",
+        "filter":[
+           "sports",
+           "football",
+           "ball"
+        ]
+     },
+     {
+        "name":"Golf-ball",
+        "id":"fas fa-golf-ball",
+        "filter":[
+           "sports",
+           "golf",
+           "ball"
+        ]
+     },
+     {
+        "name":"Hockey-puck",
+        "id":"fas fa-hockey-puck",
+        "filter":[
+           "sports",
+           "hockey",
+           "puck"
+        ]
+     },
+     {
+        "name":"Quidditch",
+        "id":"fas fa-quidditch",
+        "filter":[
+           "sports",
+           "quidditch"
+        ]
+     },
+     {
+        "name":"Table-tennis",
+        "id":"fas fa-table-tennis",
+        "filter":[
+           "sports",
+           "table",
+           "tennis"
+        ]
+     },
+     {
+        "name":"Volleyball-ball",
+        "id":"fas fa-volleyball-ball",
+        "filter":[
+           "sports",
+           "volleyball",
+           "ball"
+        ]
+     },
+     {
+        "name":"Battery-empty",
+        "id":"fas fa-battery-empty",
+        "filter":[
+           "status",
+           "battery",
+           "empty"
+        ]
+     },
+     {
+        "name":"Battery-full",
+        "id":"fas fa-battery-full",
+        "filter":[
+           "status",
+           "battery",
+           "full"
+        ]
+     },
+     {
+        "name":"Battery-half",
+        "id":"fas fa-battery-half",
+        "filter":[
+           "status",
+           "battery",
+           "half"
+        ]
+     },
+     {
+        "name":"Battery-quarter",
+        "id":"fas fa-battery-quarter",
+        "filter":[
+           "status",
+           "battery",
+           "quarter"
+        ]
+     },
+     {
+        "name":"Battery-three-quarters",
+        "id":"fas fa-battery-three-quarters",
+        "filter":[
+           "status",
+           "battery",
+           "three",
+           "quarters"
+        ]
+     },
+     {
+        "name":"Thermometer-empty",
+        "id":"fas fa-thermometer-empty",
+        "filter":[
+           "status",
+           "thermometer",
+           "empty"
+        ]
+     },
+     {
+        "name":"Thermometer-full",
+        "id":"fas fa-thermometer-full",
+        "filter":[
+           "status",
+           "thermometer",
+           "full"
+        ]
+     },
+     {
+        "name":"Thermometer-half",
+        "id":"fas fa-thermometer-half",
+        "filter":[
+           "status",
+           "thermometer",
+           "half"
+        ]
+     },
+     {
+        "name":"Thermometer-quarter",
+        "id":"fas fa-thermometer-quarter",
+        "filter":[
+           "status",
+           "thermometer",
+           "quarter"
+        ]
+     },
+     {
+        "name":"Thermometer-three-quarters",
+        "id":"fas fa-thermometer-three-quarters",
+        "filter":[
+           "status",
+           "thermometer",
+           "three",
+           "quarters"
+        ]
+     },
+     {
+        "name":"Toggle-off",
+        "id":"fas fa-toggle-off",
+        "filter":[
+           "status",
+           "toggle",
+           "off"
+        ]
+     },
+     {
+        "name":"Toggle-on",
+        "id":"fas fa-toggle-on",
+        "filter":[
+           "status",
+           "toggle",
+           "on"
+        ]
+     },
+     {
+        "name":"Unlock",
+        "id":"fas fa-unlock",
+        "filter":[
+           "status",
+           "unlock"
+        ]
+     },
+     {
+        "name":"Unlock-alt",
+        "id":"fas fa-unlock-alt",
+        "filter":[
+           "status",
+           "unlock",
+           "alt"
+        ]
+     },
+     {
+        "name":"Child",
+        "id":"fas fa-child",
+        "filter":[
+           "users & people",
+           "child"
+        ]
+     },
+     {
+        "name":"Female",
+        "id":"fas fa-female",
+        "filter":[
+           "users & people",
+           "female"
+        ]
+     },
+     {
+        "name":"Smile",
+        "id":"fas fa-smile",
+        "filter":[
+           "users & people",
+           "smile"
+        ]
+     },
+     {
+        "name":"Smile",
+        "id":"far fa-smile",
+        "filter":[
+           "users & people",
+           "smile"
+        ]
+     },
+     {
+        "name":"User",
+        "id":"fas fa-user",
+        "filter":[
+           "users & people",
+           "user"
+        ]
+     },
+     {
+        "name":"User",
+        "id":"far fa-user",
+        "filter":[
+           "users & people",
+           "user"
+        ]
+     },
+     {
+        "name":"User-circle",
+        "id":"fas fa-user-circle",
+        "filter":[
+           "users & people",
+           "user",
+           "circle"
+        ]
+     },
+     {
+        "name":"User-circle",
+        "id":"far fa-user-circle",
+        "filter":[
+           "users & people",
+           "user",
+           "circle"
+        ]
+     },
+     {
+        "name":"User-plus",
+        "id":"fas fa-user-plus",
+        "filter":[
+           "users & people",
+           "user",
+           "plus"
+        ]
+     },
+     {
+        "name":"User-times",
+        "id":"fas fa-user-times",
+        "filter":[
+           "users & people",
+           "user",
+           "times"
+        ]
+     },
+     {
+        "name":"Users",
+        "id":"fas fa-users",
+        "filter":[
+           "users & people",
+           "users"
+        ]
+     },
+     {
+        "name":"Space-shuttle",
+        "id":"fas fa-space-shuttle",
+        "filter":[
+           "vehicles",
+           "space",
+           "shuttle"
+        ]
+     },
+     {
+        "name":"Train",
+        "id":"fas fa-train",
+        "filter":[
+           "vehicles",
+           "train"
+        ]
+     },
+     {
+        "name":"Truck",
+        "id":"fas fa-truck",
+        "filter":[
+           "vehicles",
+           "truck"
+        ]
+     },
+    {
+        "id":"fab fa-500px",
+        "name":"500px",
+        "filter":[
+          "500px"
+        ]
+     },
+     {
+        "id":"fab fa-accusoft",
+        "name":"Accusoft",
+        "filter":[
+           "accusoft"
+        ]
+     },
+     {
+        "id":"fab fa-adn",
+        "name":"Adn",
+        "filter":[
+           "adn"
+        ]
+     },
+     {
+        "id":"fab fa-adversal",
+        "name":"Adversal",
+        "filter":[
+           "adversal"
+        ]
+     },
+     {
+        "id":"fab fa-affiliatetheme",
+        "name":"Affiliatetheme",
+        "filter":[
+           "affiliatetheme"
+        ]
+     },
+     {
+        "id":"fab fa-algolia",
+        "name":"Algolia",
+        "filter":[
+           "algolia"
+        ]
+     },
+     {
+        "id":"fab fa-amazon",
+        "name":"Amazon",
+        "filter":[
+           "amazon"
+        ]
+     },
+     {
+        "id":"fab fa-amilia",
+        "name":"Amilia",
+        "filter":[
+           "amilia"
+        ]
+     },
+     {
+        "id":"fab fa-android",
+        "name":"Android",
+        "filter":[
+           "android"
+        ]
+     },
+     {
+        "id":"fab fa-angellist",
+        "name":"Angellist",
+        "filter":[
+           "angellist"
+        ]
+     },
+     {
+        "id":"fab fa-angrycreative",
+        "name":"Angrycreative",
+        "filter":[
+           "angrycreative"
+        ]
+     },
+     {
+        "id":"fab fa-angular",
+        "name":"Angular",
+        "filter":[
+           "angular"
+        ]
+     },
+     {
+        "id":"fab fa-app-store",
+        "name":"App-store",
+        "filter":[
+           "app",
+           "store"
+        ]
+     },
+     {
+        "id":"fab fa-app-store-ios",
+        "name":"App-store-ios",
+        "filter":[
+           "app",
+           "store",
+           "ios"
+        ]
+     },
+     {
+        "id":"fab fa-apper",
+        "name":"Apper",
+        "filter":[
+           "apper"
+        ]
+     },
+     {
+        "id":"fab fa-apple",
+        "name":"Apple",
+        "filter":[
+           "apple"
+        ]
+     },
+     {
+        "id":"fab fa-asymmetrik",
+        "name":"Asymmetrik",
+        "filter":[
+           "asymmetrik"
+        ]
+     },
+     {
+        "id":"fab fa-audible",
+        "name":"Audible",
+        "filter":[
+           "audible"
+        ]
+     },
+     {
+        "id":"fab fa-autoprefixer",
+        "name":"Autoprefixer",
+        "filter":[
+           "autoprefixer"
+        ]
+     },
+     {
+        "id":"fab fa-avianex",
+        "name":"Avianex",
+        "filter":[
+           "avianex"
+        ]
+     },
+     {
+        "id":"fab fa-aviato",
+        "name":"Aviato",
+        "filter":[
+           "aviato"
+        ]
+     },
+     {
+        "id":"fab fa-aws",
+        "name":"Aws",
+        "filter":[
+           "aws"
+        ]
+     },
+     {
+        "id":"fab fa-bandcamp",
+        "name":"Bandcamp",
+        "filter":[
+           "bandcamp"
+        ]
+     },
+     {
+        "id":"fab fa-behance",
+        "name":"Behance",
+        "filter":[
+           "behance"
+        ]
+     },
+     {
+        "id":"fab fa-behance-square",
+        "name":"Behance-square",
+        "filter":[
+           "behance",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-bimobject",
+        "name":"Bimobject",
+        "filter":[
+           "bimobject"
+        ]
+     },
+     {
+        "id":"fab fa-bitbucket",
+        "name":"Bitbucket",
+        "filter":[
+           "bitbucket"
+        ]
+     },
+     {
+        "id":"fab fa-bity",
+        "name":"Bity",
+        "filter":[
+           "bity"
+        ]
+     },
+     {
+        "id":"fab fa-black-tie",
+        "name":"Black-tie",
+        "filter":[
+           "black",
+           "tie"
+        ]
+     },
+     {
+        "id":"fab fa-blackberry",
+        "name":"Blackberry",
+        "filter":[
+           "blackberry"
+        ]
+     },
+     {
+        "id":"fab fa-blogger",
+        "name":"Blogger",
+        "filter":[
+           "blogger"
+        ]
+     },
+     {
+        "id":"fab fa-blogger-b",
+        "name":"Blogger-b",
+        "filter":[
+           "blogger",
+           "b"
+        ]
+     },
+     {
+        "id":"fab fa-buromobelexperte",
+        "name":"Buromobelexperte",
+        "filter":[
+           "buromobelexperte"
+        ]
+     },
+     {
+        "id":"fab fa-buysellads",
+        "name":"Buysellads",
+        "filter":[
+           "buysellads"
+        ]
+     },
+     {
+        "id":"fab fa-centercode",
+        "name":"Centercode",
+        "filter":[
+           "centercode"
+        ]
+     },
+     {
+        "id":"fab fa-chrome",
+        "name":"Chrome",
+        "filter":[
+           "chrome"
+        ]
+     },
+     {
+        "id":"fab fa-cloudscale",
+        "name":"Cloudscale",
+        "filter":[
+           "cloudscale"
+        ]
+     },
+     {
+        "id":"fab fa-cloudsmith",
+        "name":"Cloudsmith",
+        "filter":[
+           "cloudsmith"
+        ]
+     },
+     {
+        "id":"fab fa-cloudversify",
+        "name":"Cloudversify",
+        "filter":[
+           "cloudversify"
+        ]
+     },
+     {
+        "id":"fab fa-codepen",
+        "name":"Codepen",
+        "filter":[
+           "codepen"
+        ]
+     },
+     {
+        "id":"fab fa-codiepie",
+        "name":"Codiepie",
+        "filter":[
+           "codiepie"
+        ]
+     },
+     {
+        "id":"fab fa-connectdevelop",
+        "name":"Connectdevelop",
+        "filter":[
+           "connectdevelop"
+        ]
+     },
+     {
+        "id":"fab fa-contao",
+        "name":"Contao",
+        "filter":[
+           "contao"
+        ]
+     },
+     {
+        "id":"fab fa-cpanel",
+        "name":"Cpanel",
+        "filter":[
+           "cpanel"
+        ]
+     },
+     {
+        "id":"fab fa-creative-commons",
+        "name":"Creative-commons",
+        "filter":[
+           "creative",
+           "commons"
+        ]
+     },
+     {
+        "id":"fab fa-css3",
+        "name":"Css3",
+        "filter":[
+           "css3"
+        ]
+     },
+     {
+        "id":"fab fa-css3-alt",
+        "name":"Css3-alt",
+        "filter":[
+           "css3",
+           "alt"
+        ]
+     },
+     {
+        "id":"fab fa-cuttlefish",
+        "name":"Cuttlefish",
+        "filter":[
+           "cuttlefish"
+        ]
+     },
+     {
+        "id":"fab fa-d-and-d",
+        "name":"D-and-d",
+        "filter":[
+           "d",
+           "and",
+           "d"
+        ]
+     },
+     {
+        "id":"fab fa-dashcube",
+        "name":"Dashcube",
+        "filter":[
+           "dashcube"
+        ]
+     },
+     {
+        "id":"fab fa-delicious",
+        "name":"Delicious",
+        "filter":[
+           "delicious"
+        ]
+     },
+     {
+        "id":"fab fa-deploydog",
+        "name":"Deploydog",
+        "filter":[
+           "deploydog"
+        ]
+     },
+     {
+        "id":"fab fa-deskpro",
+        "name":"Deskpro",
+        "filter":[
+           "deskpro"
+        ]
+     },
+     {
+        "id":"fab fa-deviantart",
+        "name":"Deviantart",
+        "filter":[
+           "deviantart"
+        ]
+     },
+     {
+        "id":"fab fa-digg",
+        "name":"Digg",
+        "filter":[
+           "digg"
+        ]
+     },
+     {
+        "id":"fab fa-digital-ocean",
+        "name":"Digital-ocean",
+        "filter":[
+           "digital",
+           "ocean"
+        ]
+     },
+     {
+        "id":"fab fa-discord",
+        "name":"Discord",
+        "filter":[
+           "discord"
+        ]
+     },
+     {
+        "id":"fab fa-discourse",
+        "name":"Discourse",
+        "filter":[
+           "discourse"
+        ]
+     },
+     {
+        "id":"fab fa-dochub",
+        "name":"Dochub",
+        "filter":[
+           "dochub"
+        ]
+     },
+     {
+        "id":"fab fa-docker",
+        "name":"Docker",
+        "filter":[
+           "docker"
+        ]
+     },
+     {
+        "id":"fab fa-draft2digital",
+        "name":"Draft2digital",
+        "filter":[
+           "draft2digital"
+        ]
+     },
+     {
+        "id":"fab fa-dribbble",
+        "name":"Dribbble",
+        "filter":[
+           "dribbble"
+        ]
+     },
+     {
+        "id":"fab fa-dribbble-square",
+        "name":"Dribbble-square",
+        "filter":[
+           "dribbble",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-dropbox",
+        "name":"Dropbox",
+        "filter":[
+           "dropbox"
+        ]
+     },
+     {
+        "id":"fab fa-drupal",
+        "name":"Drupal",
+        "filter":[
+           "drupal"
+        ]
+     },
+     {
+        "id":"fab fa-dyalog",
+        "name":"Dyalog",
+        "filter":[
+           "dyalog"
+        ]
+     },
+     {
+        "id":"fab fa-earlybirds",
+        "name":"Earlybirds",
+        "filter":[
+           "earlybirds"
+        ]
+     },
+     {
+        "id":"fab fa-edge",
+        "name":"Edge",
+        "filter":[
+           "edge"
+        ]
+     },
+     {
+        "id":"fab fa-ember",
+        "name":"Ember",
+        "filter":[
+           "ember"
+        ]
+     },
+     {
+        "id":"fab fa-empire",
+        "name":"Empire",
+        "filter":[
+           "empire"
+        ]
+     },
+     {
+        "id":"fab fa-envira",
+        "name":"Envira",
+        "filter":[
+           "envira"
+        ]
+     },
+     {
+        "id":"fab fa-erlang",
+        "name":"Erlang",
+        "filter":[
+           "erlang"
+        ]
+     },
+     {
+        "id":"fab fa-etsy",
+        "name":"Etsy",
+        "filter":[
+           "etsy"
+        ]
+     },
+     {
+        "id":"fab fa-expeditedssl",
+        "name":"Expeditedssl",
+        "filter":[
+           "expeditedssl"
+        ]
+     },
+     {
+        "id":"fab fa-facebook",
+        "name":"Facebook",
+        "filter":[
+           "facebook"
+        ]
+     },
+     {
+        "id":"fab fa-facebook-f",
+        "name":"Facebook-f",
+        "filter":[
+           "facebook",
+           "f"
+        ]
+     },
+     {
+        "id":"fab fa-facebook-messenger",
+        "name":"Facebook-messenger",
+        "filter":[
+           "facebook",
+           "messenger"
+        ]
+     },
+     {
+        "id":"fab fa-facebook-square",
+        "name":"Facebook-square",
+        "filter":[
+           "facebook",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-firefox",
+        "name":"Firefox",
+        "filter":[
+           "firefox"
+        ]
+     },
+     {
+        "id":"fab fa-first-order",
+        "name":"First-order",
+        "filter":[
+           "first",
+           "order"
+        ]
+     },
+     {
+        "id":"fab fa-firstdraft",
+        "name":"Firstdraft",
+        "filter":[
+           "firstdraft"
+        ]
+     },
+     {
+        "id":"fab fa-flickr",
+        "name":"Flickr",
+        "filter":[
+           "flickr"
+        ]
+     },
+     {
+        "id":"fab fa-fly",
+        "name":"Fly",
+        "filter":[
+           "fly"
+        ]
+     },
+     {
+        "id":"fab fa-font-awesome",
+        "name":"Font-awesome",
+        "filter":[
+           "font",
+           "awesome"
+        ]
+     },
+     {
+        "id":"fab fa-font-awesome-alt",
+        "name":"Font-awesome-alt",
+        "filter":[
+           "font",
+           "awesome",
+           "alt"
+        ]
+     },
+     {
+        "id":"fab fa-font-awesome-flag",
+        "name":"Font-awesome-flag",
+        "filter":[
+           "font",
+           "awesome",
+           "flag"
+        ]
+     },
+     {
+        "id":"fab fa-fonticons",
+        "name":"Fonticons",
+        "filter":[
+           "fonticons"
+        ]
+     },
+     {
+        "id":"fab fa-fonticons-fi",
+        "name":"Fonticons-fi",
+        "filter":[
+           "fonticons",
+           "fi"
+        ]
+     },
+     {
+        "id":"fab fa-fort-awesome",
+        "name":"Fort-awesome",
+        "filter":[
+           "fort",
+           "awesome"
+        ]
+     },
+     {
+        "id":"fab fa-fort-awesome-alt",
+        "name":"Fort-awesome-alt",
+        "filter":[
+           "fort",
+           "awesome",
+           "alt"
+        ]
+     },
+     {
+        "id":"fab fa-forumbee",
+        "name":"Forumbee",
+        "filter":[
+           "forumbee"
+        ]
+     },
+     {
+        "id":"fab fa-foursquare",
+        "name":"Foursquare",
+        "filter":[
+           "foursquare"
+        ]
+     },
+     {
+        "id":"fab fa-free-code-camp",
+        "name":"Free-code-camp",
+        "filter":[
+           "free",
+           "code",
+           "camp"
+        ]
+     },
+     {
+        "id":"fab fa-freebsd",
+        "name":"Freebsd",
+        "filter":[
+           "freebsd"
+        ]
+     },
+     {
+        "id":"fab fa-get-pocket",
+        "name":"Get-pocket",
+        "filter":[
+           "get",
+           "pocket"
+        ]
+     },
+     {
+        "id":"fab fa-git",
+        "name":"Git",
+        "filter":[
+           "git"
+        ]
+     },
+     {
+        "id":"fab fa-git-square",
+        "name":"Git-square",
+        "filter":[
+           "git",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-github",
+        "name":"Github",
+        "filter":[
+           "github"
+        ]
+     },
+     {
+        "id":"fab fa-github-alt",
+        "name":"Github-alt",
+        "filter":[
+           "github",
+           "alt"
+        ]
+     },
+     {
+        "id":"fab fa-github-square",
+        "name":"Github-square",
+        "filter":[
+           "github",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-gitkraken",
+        "name":"Gitkraken",
+        "filter":[
+           "gitkraken"
+        ]
+     },
+     {
+        "id":"fab fa-gitlab",
+        "name":"Gitlab",
+        "filter":[
+           "gitlab"
+        ]
+     },
+     {
+        "id":"fab fa-gitter",
+        "name":"Gitter",
+        "filter":[
+           "gitter"
+        ]
+     },
+     {
+        "id":"fab fa-glide",
+        "name":"Glide",
+        "filter":[
+           "glide"
+        ]
+     },
+     {
+        "id":"fab fa-glide-g",
+        "name":"Glide-g",
+        "filter":[
+           "glide",
+           "g"
+        ]
+     },
+     {
+        "id":"fab fa-gofore",
+        "name":"Gofore",
+        "filter":[
+           "gofore"
+        ]
+     },
+     {
+        "id":"fab fa-goodreads",
+        "name":"Goodreads",
+        "filter":[
+           "goodreads"
+        ]
+     },
+     {
+        "id":"fab fa-goodreads-g",
+        "name":"Goodreads-g",
+        "filter":[
+           "goodreads",
+           "g"
+        ]
+     },
+     {
+        "id":"fab fa-google",
+        "name":"Google",
+        "filter":[
+           "google"
+        ]
+     },
+     {
+        "id":"fab fa-google-drive",
+        "name":"Google-drive",
+        "filter":[
+           "google",
+           "drive"
+        ]
+     },
+     {
+        "id":"fab fa-google-play",
+        "name":"Google-play",
+        "filter":[
+           "google",
+           "play"
+        ]
+     },
+     {
+        "id":"fab fa-google-plus",
+        "name":"Google-plus",
+        "filter":[
+           "google",
+           "plus"
+        ]
+     },
+     {
+        "id":"fab fa-google-plus-g",
+        "name":"Google-plus-g",
+        "filter":[
+           "google",
+           "plus",
+           "g"
+        ]
+     },
+     {
+        "id":"fab fa-google-plus-square",
+        "name":"Google-plus-square",
+        "filter":[
+           "google",
+           "plus",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-gratipay",
+        "name":"Gratipay",
+        "filter":[
+           "gratipay"
+        ]
+     },
+     {
+        "id":"fab fa-grav",
+        "name":"Grav",
+        "filter":[
+           "grav"
+        ]
+     },
+     {
+        "id":"fab fa-gripfire",
+        "name":"Gripfire",
+        "filter":[
+           "gripfire"
+        ]
+     },
+     {
+        "id":"fab fa-grunt",
+        "name":"Grunt",
+        "filter":[
+           "grunt"
+        ]
+     },
+     {
+        "id":"fab fa-gulp",
+        "name":"Gulp",
+        "filter":[
+           "gulp"
+        ]
+     },
+     {
+        "id":"fab fa-hacker-news",
+        "name":"Hacker-news",
+        "filter":[
+           "hacker",
+           "news"
+        ]
+     },
+     {
+        "id":"fab fa-hacker-news-square",
+        "name":"Hacker-news-square",
+        "filter":[
+           "hacker",
+           "news",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-hire-a-helper",
+        "name":"Hire-a-helper",
+        "filter":[
+           "hire",
+           "a",
+           "helper"
+        ]
+     },
+     {
+        "id":"fab fa-hooli",
+        "name":"Hooli",
+        "filter":[
+           "hooli"
+        ]
+     },
+     {
+        "id":"fab fa-hotjar",
+        "name":"Hotjar",
+        "filter":[
+           "hotjar"
+        ]
+     },
+     {
+        "id":"fab fa-houzz",
+        "name":"Houzz",
+        "filter":[
+           "houzz"
+        ]
+     },
+     {
+        "id":"fab fa-html5",
+        "name":"Html5",
+        "filter":[
+           "html5"
+        ]
+     },
+     {
+        "id":"fab fa-hubspot",
+        "name":"Hubspot",
+        "filter":[
+           "hubspot"
+        ]
+     },
+     {
+        "id":"fab fa-imdb",
+        "name":"Imdb",
+        "filter":[
+           "imdb"
+        ]
+     },
+     {
+        "id":"fab fa-instagram",
+        "name":"Instagram",
+        "filter":[
+           "instagram"
+        ]
+     },
+     {
+        "id":"fab fa-internet-explorer",
+        "name":"Internet-explorer",
+        "filter":[
+           "internet",
+           "explorer"
+        ]
+     },
+     {
+        "id":"fab fa-ioxhost",
+        "name":"Ioxhost",
+        "filter":[
+           "ioxhost"
+        ]
+     },
+     {
+        "id":"fab fa-itunes",
+        "name":"Itunes",
+        "filter":[
+           "itunes"
+        ]
+     },
+     {
+        "id":"fab fa-itunes-note",
+        "name":"Itunes-note",
+        "filter":[
+           "itunes",
+           "note"
+        ]
+     },
+     {
+        "id":"fab fa-jenkins",
+        "name":"Jenkins",
+        "filter":[
+           "jenkins"
+        ]
+     },
+     {
+        "id":"fab fa-joget",
+        "name":"Joget",
+        "filter":[
+           "joget"
+        ]
+     },
+     {
+        "id":"fab fa-joomla",
+        "name":"Joomla",
+        "filter":[
+           "joomla"
+        ]
+     },
+     {
+        "id":"fab fa-js",
+        "name":"Js",
+        "filter":[
+           "js"
+        ]
+     },
+     {
+        "id":"fab fa-js-square",
+        "name":"Js-square",
+        "filter":[
+           "js",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-jsfiddle",
+        "name":"Jsfiddle",
+        "filter":[
+           "jsfiddle"
+        ]
+     },
+     {
+        "id":"fab fa-keycdn",
+        "name":"Keycdn",
+        "filter":[
+           "keycdn"
+        ]
+     },
+     {
+        "id":"fab fa-kickstarter",
+        "name":"Kickstarter",
+        "filter":[
+           "kickstarter"
+        ]
+     },
+     {
+        "id":"fab fa-kickstarter-k",
+        "name":"Kickstarter-k",
+        "filter":[
+           "kickstarter",
+           "k"
+        ]
+     },
+     {
+        "id":"fab fa-laravel",
+        "name":"Laravel",
+        "filter":[
+           "laravel"
+        ]
+     },
+     {
+        "id":"fab fa-lastfm",
+        "name":"Lastfm",
+        "filter":[
+           "lastfm"
+        ]
+     },
+     {
+        "id":"fab fa-lastfm-square",
+        "name":"Lastfm-square",
+        "filter":[
+           "lastfm",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-leanpub",
+        "name":"Leanpub",
+        "filter":[
+           "leanpub"
+        ]
+     },
+     {
+        "id":"fab fa-less",
+        "name":"Less",
+        "filter":[
+           "less"
+        ]
+     },
+     {
+        "id":"fab fa-line",
+        "name":"Line",
+        "filter":[
+           "line"
+        ]
+     },
+     {
+        "id":"fab fa-linkedin",
+        "name":"Linkedin",
+        "filter":[
+           "linkedin"
+        ]
+     },
+     {
+        "id":"fab fa-linkedin-in",
+        "name":"Linkedin-in",
+        "filter":[
+           "linkedin",
+           "in"
+        ]
+     },
+     {
+        "id":"fab fa-linode",
+        "name":"Linode",
+        "filter":[
+           "linode"
+        ]
+     },
+     {
+        "id":"fab fa-linux",
+        "name":"Linux",
+        "filter":[
+           "linux"
+        ]
+     },
+     {
+        "id":"fab fa-lyft",
+        "name":"Lyft",
+        "filter":[
+           "lyft"
+        ]
+     },
+     {
+        "id":"fab fa-magento",
+        "name":"Magento",
+        "filter":[
+           "magento"
+        ]
+     },
+     {
+        "id":"fab fa-maxcdn",
+        "name":"Maxcdn",
+        "filter":[
+           "maxcdn"
+        ]
+     },
+     {
+        "id":"fab fa-medapps",
+        "name":"Medapps",
+        "filter":[
+           "medapps"
+        ]
+     },
+     {
+        "id":"fab fa-medium",
+        "name":"Medium",
+        "filter":[
+           "medium"
+        ]
+     },
+     {
+        "id":"fab fa-medium-m",
+        "name":"Medium-m",
+        "filter":[
+           "medium",
+           "m"
+        ]
+     },
+     {
+        "id":"fab fa-medrt",
+        "name":"Medrt",
+        "filter":[
+           "medrt"
+        ]
+     },
+     {
+        "id":"fab fa-meetup",
+        "name":"Meetup",
+        "filter":[
+           "meetup"
+        ]
+     },
+     {
+        "id":"fab fa-microsoft",
+        "name":"Microsoft",
+        "filter":[
+           "microsoft"
+        ]
+     },
+     {
+        "id":"fab fa-mix",
+        "name":"Mix",
+        "filter":[
+           "mix"
+        ]
+     },
+     {
+        "id":"fab fa-mixcloud",
+        "name":"Mixcloud",
+        "filter":[
+           "mixcloud"
+        ]
+     },
+     {
+        "id":"fab fa-mizuni",
+        "name":"Mizuni",
+        "filter":[
+           "mizuni"
+        ]
+     },
+     {
+        "id":"fab fa-modx",
+        "name":"Modx",
+        "filter":[
+           "modx"
+        ]
+     },
+     {
+        "id":"fab fa-monero",
+        "name":"Monero",
+        "filter":[
+           "monero"
+        ]
+     },
+     {
+        "id":"fas fa-moon",
+        "name":"Moon",
+        "filter":[
+           "moon"
+        ]
+     },
+     {
+        "id":"far fa-moon",
+        "name":"Moon",
+        "filter":[
+           "moon"
+        ]
+     },
+     {
+        "id":"fab fa-napster",
+        "name":"Napster",
+        "filter":[
+           "napster"
+        ]
+     },
+     {
+        "id":"fab fa-nintendo-switch",
+        "name":"Nintendo-switch",
+        "filter":[
+           "nintendo",
+           "switch"
+        ]
+     },
+     {
+        "id":"fab fa-node",
+        "name":"Node",
+        "filter":[
+           "node"
+        ]
+     },
+     {
+        "id":"fab fa-node-js",
+        "name":"Node-js",
+        "filter":[
+           "node",
+           "js"
+        ]
+     },
+     {
+        "id":"fab fa-npm",
+        "name":"Npm",
+        "filter":[
+           "npm"
+        ]
+     },
+     {
+        "id":"fab fa-ns8",
+        "name":"Ns8",
+        "filter":[
+           "ns8"
+        ]
+     },
+     {
+        "id":"fab fa-nutritionix",
+        "name":"Nutritionix",
+        "filter":[
+           "nutritionix"
+        ]
+     },
+     {
+        "id":"fab fa-odnoklassniki",
+        "name":"Odnoklassniki",
+        "filter":[
+           "odnoklassniki"
+        ]
+     },
+     {
+        "id":"fab fa-odnoklassniki-square",
+        "name":"Odnoklassniki-square",
+        "filter":[
+           "odnoklassniki",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-opencart",
+        "name":"Opencart",
+        "filter":[
+           "opencart"
+        ]
+     },
+     {
+        "id":"fab fa-openid",
+        "name":"Openid",
+        "filter":[
+           "openid"
+        ]
+     },
+     {
+        "id":"fab fa-opera",
+        "name":"Opera",
+        "filter":[
+           "opera"
+        ]
+     },
+     {
+        "id":"fab fa-optin-monster",
+        "name":"Optin-monster",
+        "filter":[
+           "optin",
+           "monster"
+        ]
+     },
+     {
+        "id":"fab fa-osi",
+        "name":"Osi",
+        "filter":[
+           "osi"
+        ]
+     },
+     {
+        "id":"fab fa-page4",
+        "name":"Page4",
+        "filter":[
+           "page4"
+        ]
+     },
+     {
+        "id":"fab fa-pagelines",
+        "name":"Pagelines",
+        "filter":[
+           "pagelines"
+        ]
+     },
+     {
+        "id":"fab fa-palfed",
+        "name":"Palfed",
+        "filter":[
+           "palfed"
+        ]
+     },
+     {
+        "id":"fab fa-patreon",
+        "name":"Patreon",
+        "filter":[
+           "patreon"
+        ]
+     },
+     {
+        "id":"fab fa-periscope",
+        "name":"Periscope",
+        "filter":[
+           "periscope"
+        ]
+     },
+     {
+        "id":"fab fa-phabricator",
+        "name":"Phabricator",
+        "filter":[
+           "phabricator"
+        ]
+     },
+     {
+        "id":"fab fa-phoenix-framework",
+        "name":"Phoenix-framework",
+        "filter":[
+           "phoenix",
+           "framework"
+        ]
+     },
+     {
+        "id":"fab fa-pied-piper",
+        "name":"Pied-piper",
+        "filter":[
+           "pied",
+           "piper"
+        ]
+     },
+     {
+        "id":"fab fa-pied-piper-alt",
+        "name":"Pied-piper-alt",
+        "filter":[
+           "pied",
+           "piper",
+           "alt"
+        ]
+     },
+     {
+        "id":"fab fa-pied-piper-pp",
+        "name":"Pied-piper-pp",
+        "filter":[
+           "pied",
+           "piper",
+           "pp"
+        ]
+     },
+     {
+        "id":"fab fa-pinterest",
+        "name":"Pinterest",
+        "filter":[
+           "pinterest"
+        ]
+     },
+     {
+        "id":"fab fa-pinterest-p",
+        "name":"Pinterest-p",
+        "filter":[
+           "pinterest",
+           "p"
+        ]
+     },
+     {
+        "id":"fab fa-pinterest-square",
+        "name":"Pinterest-square",
+        "filter":[
+           "pinterest",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-playstation",
+        "name":"Playstation",
+        "filter":[
+           "playstation"
+        ]
+     },
+     {
+        "id":"fab fa-product-hunt",
+        "name":"Product-hunt",
+        "filter":[
+           "product",
+           "hunt"
+        ]
+     },
+     {
+        "id":"fab fa-pushed",
+        "name":"Pushed",
+        "filter":[
+           "pushed"
+        ]
+     },
+     {
+        "id":"fas fa-puzzle-piece",
+        "name":"Puzzle-piece",
+        "filter":[
+           "puzzle",
+           "piece"
+        ]
+     },
+     {
+        "id":"fab fa-python",
+        "name":"Python",
+        "filter":[
+           "python"
+        ]
+     },
+     {
+        "id":"fab fa-qq",
+        "name":"Qq",
+        "filter":[
+           "qq"
+        ]
+     },
+     {
+        "id":"fab fa-quora",
+        "name":"Quora",
+        "filter":[
+           "quora"
+        ]
+     },
+     {
+        "id":"fab fa-ravelry",
+        "name":"Ravelry",
+        "filter":[
+           "ravelry"
+        ]
+     },
+     {
+        "id":"fab fa-react",
+        "name":"React",
+        "filter":[
+           "react"
+        ]
+     },
+     {
+        "id":"fab fa-rebel",
+        "name":"Rebel",
+        "filter":[
+           "rebel"
+        ]
+     },
+     {
+        "id":"fab fa-red-river",
+        "name":"Red-river",
+        "filter":[
+           "red",
+           "river"
+        ]
+     },
+     {
+        "id":"fab fa-reddit",
+        "name":"Reddit",
+        "filter":[
+           "reddit"
+        ]
+     },
+     {
+        "id":"fab fa-reddit-alien",
+        "name":"Reddit-alien",
+        "filter":[
+           "reddit",
+           "alien"
+        ]
+     },
+     {
+        "id":"fab fa-reddit-square",
+        "name":"Reddit-square",
+        "filter":[
+           "reddit",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-rendact",
+        "name":"Rendact",
+        "filter":[
+           "rendact"
+        ]
+     },
+     {
+        "id":"fab fa-renren",
+        "name":"Renren",
+        "filter":[
+           "renren"
+        ]
+     },
+     {
+        "id":"fab fa-replyd",
+        "name":"Replyd",
+        "filter":[
+           "replyd"
+        ]
+     },
+     {
+        "id":"fab fa-resolving",
+        "name":"Resolving",
+        "filter":[
+           "resolving"
+        ]
+     },
+     {
+        "id":"fab fa-rocketchat",
+        "name":"Rocketchat",
+        "filter":[
+           "rocketchat"
+        ]
+     },
+     {
+        "id":"fab fa-rockrms",
+        "name":"Rockrms",
+        "filter":[
+           "rockrms"
+        ]
+     },
+     {
+        "id":"fab fa-safari",
+        "name":"Safari",
+        "filter":[
+           "safari"
+        ]
+     },
+     {
+        "id":"fab fa-sass",
+        "name":"Sass",
+        "filter":[
+           "sass"
+        ]
+     },
+     {
+        "id":"fab fa-schlix",
+        "name":"Schlix",
+        "filter":[
+           "schlix"
+        ]
+     },
+     {
+        "id":"fab fa-scribd",
+        "name":"Scribd",
+        "filter":[
+           "scribd"
+        ]
+     },
+     {
+        "id":"fab fa-searchengin",
+        "name":"Searchengin",
+        "filter":[
+           "searchengin"
+        ]
+     },
+     {
+        "id":"fab fa-sellcast",
+        "name":"Sellcast",
+        "filter":[
+           "sellcast"
+        ]
+     },
+     {
+        "id":"fab fa-sellsy",
+        "name":"Sellsy",
+        "filter":[
+           "sellsy"
+        ]
+     },
+     {
+        "id":"fab fa-servicestack",
+        "name":"Servicestack",
+        "filter":[
+           "servicestack"
+        ]
+     },
+     {
+        "id":"fas fa-share-alt",
+        "name":"Share-alt",
+        "filter":[
+           "share",
+           "alt"
+        ]
+     },
+     {
+        "id":"fas fa-share-alt-square",
+        "name":"Share-alt-square",
+        "filter":[
+           "share",
+           "alt",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-shirtsinbulk",
+        "name":"Shirtsinbulk",
+        "filter":[
+           "shirtsinbulk"
+        ]
+     },
+     {
+        "id":"fas fa-signal",
+        "name":"Signal",
+        "filter":[
+           "signal"
+        ]
+     },
+     {
+        "id":"fab fa-simplybuilt",
+        "name":"Simplybuilt",
+        "filter":[
+           "simplybuilt"
+        ]
+     },
+     {
+        "id":"fab fa-sistrix",
+        "name":"Sistrix",
+        "filter":[
+           "sistrix"
+        ]
+     },
+     {
+        "id":"fab fa-skyatlas",
+        "name":"Skyatlas",
+        "filter":[
+           "skyatlas"
+        ]
+     },
+     {
+        "id":"fab fa-skype",
+        "name":"Skype",
+        "filter":[
+           "skype"
+        ]
+     },
+     {
+        "id":"fab fa-slack",
+        "name":"Slack",
+        "filter":[
+           "slack"
+        ]
+     },
+     {
+        "id":"fab fa-slack-hash",
+        "name":"Slack-hash",
+        "filter":[
+           "slack",
+           "hash"
+        ]
+     },
+     {
+        "id":"fab fa-slideshare",
+        "name":"Slideshare",
+        "filter":[
+           "slideshare"
+        ]
+     },
+     {
+        "id":"fab fa-snapchat",
+        "name":"Snapchat",
+        "filter":[
+           "snapchat"
+        ]
+     },
+     {
+        "id":"fab fa-snapchat-ghost",
+        "name":"Snapchat-ghost",
+        "filter":[
+           "snapchat",
+           "ghost"
+        ]
+     },
+     {
+        "id":"fab fa-snapchat-square",
+        "name":"Snapchat-square",
+        "filter":[
+           "snapchat",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-soundcloud",
+        "name":"Soundcloud",
+        "filter":[
+           "soundcloud"
+        ]
+     },
+     {
+        "id":"fab fa-speakap",
+        "name":"Speakap",
+        "filter":[
+           "speakap"
+        ]
+     },
+     {
+        "id":"fab fa-spotify",
+        "name":"Spotify",
+        "filter":[
+           "spotify"
+        ]
+     },
+     {
+        "id":"fab fa-stack-exchange",
+        "name":"Stack-exchange",
+        "filter":[
+           "stack",
+           "exchange"
+        ]
+     },
+     {
+        "id":"fab fa-stack-overflow",
+        "name":"Stack-overflow",
+        "filter":[
+           "stack",
+           "overflow"
+        ]
+     },
+     {
+        "id":"fas fa-star-half",
+        "name":"Star-half",
+        "filter":[
+           "star",
+           "half"
+        ]
+     },
+     {
+        "id":"far fa-star-half",
+        "name":"Star-half",
+        "filter":[
+           "star",
+           "half"
+        ]
+     },
+     {
+        "id":"fab fa-staylinked",
+        "name":"Staylinked",
+        "filter":[
+           "staylinked"
+        ]
+     },
+     {
+        "id":"fab fa-steam",
+        "name":"Steam",
+        "filter":[
+           "steam"
+        ]
+     },
+     {
+        "id":"fab fa-steam-square",
+        "name":"Steam-square",
+        "filter":[
+           "steam",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-steam-symbol",
+        "name":"Steam-symbol",
+        "filter":[
+           "steam",
+           "symbol"
+        ]
+     },
+     {
+        "id":"fab fa-sticker-mule",
+        "name":"Sticker-mule",
+        "filter":[
+           "sticker",
+           "mule"
+        ]
+     },
+     {
+        "id":"fab fa-strava",
+        "name":"Strava",
+        "filter":[
+           "strava"
+        ]
+     },
+     {
+        "id":"fab fa-studiovinari",
+        "name":"Studiovinari",
+        "filter":[
+           "studiovinari"
+        ]
+     },
+     {
+        "id":"fab fa-stumbleupon",
+        "name":"Stumbleupon",
+        "filter":[
+           "stumbleupon"
+        ]
+     },
+     {
+        "id":"fab fa-stumbleupon-circle",
+        "name":"Stumbleupon-circle",
+        "filter":[
+           "stumbleupon",
+           "circle"
+        ]
+     },
+     {
+        "id":"fab fa-superpowers",
+        "name":"Superpowers",
+        "filter":[
+           "superpowers"
+        ]
+     },
+     {
+        "id":"fab fa-supple",
+        "name":"Supple",
+        "filter":[
+           "supple"
+        ]
+     },
+     {
+        "id":"fas fa-tachometer-alt",
+        "name":"Tachometer-alt",
+        "filter":[
+           "tachometer",
+           "alt"
+        ]
+     },
+     {
+        "id":"fab fa-telegram",
+        "name":"Telegram",
+        "filter":[
+           "telegram"
+        ]
+     },
+     {
+        "id":"fab fa-telegram-plane",
+        "name":"Telegram-plane",
+        "filter":[
+           "telegram",
+           "plane"
+        ]
+     },
+     {
+        "id":"fab fa-tencent-weibo",
+        "name":"Tencent-weibo",
+        "filter":[
+           "tencent",
+           "weibo"
+        ]
+     },
+     {
+        "id":"fab fa-themeisle",
+        "name":"Themeisle",
+        "filter":[
+           "themeisle"
+        ]
+     },
+     {
+        "id":"fas fa-ticket-alt",
+        "name":"Ticket-alt",
+        "filter":[
+           "ticket",
+           "alt"
+        ]
+     },
+     {
+        "id":"fas fa-times",
+        "name":"Times",
+        "filter":[
+           "times"
+        ]
+     },
+     {
+        "id":"fas fa-times-circle",
+        "name":"Times-circle",
+        "filter":[
+           "times",
+           "circle"
+        ]
+     },
+     {
+        "id":"far fa-times-circle",
+        "name":"Times-circle",
+        "filter":[
+           "times",
+           "circle"
+        ]
+     },
+     {
+        "id":"fas fa-tree",
+        "name":"Tree",
+        "filter":[
+           "tree"
+        ]
+     },
+     {
+        "id":"fab fa-trello",
+        "name":"Trello",
+        "filter":[
+           "trello"
+        ]
+     },
+     {
+        "id":"fab fa-tripadvisor",
+        "name":"Tripadvisor",
+        "filter":[
+           "tripadvisor"
+        ]
+     },
+     {
+        "id":"fab fa-tumblr",
+        "name":"Tumblr",
+        "filter":[
+           "tumblr"
+        ]
+     },
+     {
+        "id":"fab fa-tumblr-square",
+        "name":"Tumblr-square",
+        "filter":[
+           "tumblr",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-twitch",
+        "name":"Twitch",
+        "filter":[
+           "twitch"
+        ]
+     },
+     {
+        "id":"fab fa-twitter",
+        "name":"Twitter",
+        "filter":[
+           "twitter"
+        ]
+     },
+     {
+        "id":"fab fa-twitter-square",
+        "name":"Twitter-square",
+        "filter":[
+           "twitter",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-typo3",
+        "name":"Typo3",
+        "filter":[
+           "typo3"
+        ]
+     },
+     {
+        "id":"fab fa-uber",
+        "name":"Uber",
+        "filter":[
+           "uber"
+        ]
+     },
+     {
+        "id":"fab fa-uikit",
+        "name":"Uikit",
+        "filter":[
+           "uikit"
+        ]
+     },
+     {
+        "id":"fas fa-umbrella",
+        "name":"Umbrella",
+        "filter":[
+           "umbrella"
+        ]
+     },
+     {
+        "id":"fab fa-uniregistry",
+        "name":"Uniregistry",
+        "filter":[
+           "uniregistry"
+        ]
+     },
+     {
+        "id":"fas fa-university",
+        "name":"University",
+        "filter":[
+           "university"
+        ]
+     },
+     {
+        "id":"fab fa-untappd",
+        "name":"Untappd",
+        "filter":[
+           "untappd"
+        ]
+     },
+     {
+        "id":"fab fa-usb",
+        "name":"Usb",
+        "filter":[
+           "usb"
+        ]
+     },
+     {
+        "id":"fab fa-ussunnah",
+        "name":"Ussunnah",
+        "filter":[
+           "ussunnah"
+        ]
+     },
+     {
+        "id":"fas fa-utensil-spoon",
+        "name":"Utensil-spoon",
+        "filter":[
+           "utensil",
+           "spoon"
+        ]
+     },
+     {
+        "id":"fas fa-utensils",
+        "name":"Utensils",
+        "filter":[
+           "utensils"
+        ]
+     },
+     {
+        "id":"fab fa-vaadin",
+        "name":"Vaadin",
+        "filter":[
+           "vaadin"
+        ]
+     },
+     {
+        "id":"fab fa-viacoin",
+        "name":"Viacoin",
+        "filter":[
+           "viacoin"
+        ]
+     },
+     {
+        "id":"fab fa-viadeo",
+        "name":"Viadeo",
+        "filter":[
+           "viadeo"
+        ]
+     },
+     {
+        "id":"fab fa-viadeo-square",
+        "name":"Viadeo-square",
+        "filter":[
+           "viadeo",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-viber",
+        "name":"Viber",
+        "filter":[
+           "viber"
+        ]
+     },
+     {
+        "id":"fab fa-vimeo",
+        "name":"Vimeo",
+        "filter":[
+           "vimeo"
+        ]
+     },
+     {
+        "id":"fab fa-vimeo-square",
+        "name":"Vimeo-square",
+        "filter":[
+           "vimeo",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-vimeo-v",
+        "name":"Vimeo-v",
+        "filter":[
+           "vimeo",
+           "v"
+        ]
+     },
+     {
+        "id":"fab fa-vine",
+        "name":"Vine",
+        "filter":[
+           "vine"
+        ]
+     },
+     {
+        "id":"fab fa-vk",
+        "name":"Vk",
+        "filter":[
+           "vk"
+        ]
+     },
+     {
+        "id":"fab fa-vnv",
+        "name":"Vnv",
+        "filter":[
+           "vnv"
+        ]
+     },
+     {
+        "id":"fab fa-vuejs",
+        "name":"Vuejs",
+        "filter":[
+           "vuejs"
+        ]
+     },
+     {
+        "id":"fab fa-weibo",
+        "name":"Weibo",
+        "filter":[
+           "weibo"
+        ]
+     },
+     {
+        "id":"fab fa-weixin",
+        "name":"Weixin",
+        "filter":[
+           "weixin"
+        ]
+     },
+     {
+        "id":"fab fa-whatsapp",
+        "name":"Whatsapp",
+        "filter":[
+           "whatsapp"
+        ]
+     },
+     {
+        "id":"fab fa-whatsapp-square",
+        "name":"Whatsapp-square",
+        "filter":[
+           "whatsapp",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-whmcs",
+        "name":"Whmcs",
+        "filter":[
+           "whmcs"
+        ]
+     },
+     {
+        "id":"fab fa-wikipedia-w",
+        "name":"Wikipedia-w",
+        "filter":[
+           "wikipedia",
+           "w"
+        ]
+     },
+     {
+        "id":"fab fa-windows",
+        "name":"Windows",
+        "filter":[
+           "windows"
+        ]
+     },
+     {
+        "id":"fab fa-wordpress",
+        "name":"Wordpress",
+        "filter":[
+           "wordpress"
+        ]
+     },
+     {
+        "id":"fab fa-wordpress-simple",
+        "name":"Wordpress-simple",
+        "filter":[
+           "wordpress",
+           "simple"
+        ]
+     },
+     {
+        "id":"fab fa-wpbeginner",
+        "name":"Wpbeginner",
+        "filter":[
+           "wpbeginner"
+        ]
+     },
+     {
+        "id":"fab fa-wpexplorer",
+        "name":"Wpexplorer",
+        "filter":[
+           "wpexplorer"
+        ]
+     },
+     {
+        "id":"fab fa-wpforms",
+        "name":"Wpforms",
+        "filter":[
+           "wpforms"
+        ]
+     },
+     {
+        "id":"fas fa-wrench",
+        "name":"Wrench",
+        "filter":[
+           "wrench"
+        ]
+     },
+     {
+        "id":"fab fa-xbox",
+        "name":"Xbox",
+        "filter":[
+           "xbox"
+        ]
+     },
+     {
+        "id":"fab fa-xing",
+        "name":"Xing",
+        "filter":[
+           "xing"
+        ]
+     },
+     {
+        "id":"fab fa-xing-square",
+        "name":"Xing-square",
+        "filter":[
+           "xing",
+           "square"
+        ]
+     },
+     {
+        "id":"fab fa-y-combinator",
+        "name":"Y-combinator",
+        "filter":[
+           "y",
+           "combinator"
+        ]
+     },
+     {
+        "id":"fab fa-yahoo",
+        "name":"Yahoo",
+        "filter":[
+           "yahoo"
+        ]
+     },
+     {
+        "id":"fab fa-yandex",
+        "name":"Yandex",
+        "filter":[
+           "yandex"
+        ]
+     },
+     {
+        "id":"fab fa-yandex-international",
+        "name":"Yandex-international",
+        "filter":[
+           "yandex",
+           "international"
+        ]
+     },
+     {
+        "id":"fab fa-yelp",
+        "name":"Yelp",
+        "filter":[
+           "yelp"
+        ]
+     },
+     {
+        "id":"fab fa-yoast",
+        "name":"Yoast",
+        "filter":[
+           "yoast"
+        ]
+     }
+   ];
   }
 
 }

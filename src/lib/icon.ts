@@ -8,5 +8,6 @@ export class Icon {
 
 export enum IconType {
   FONT_AWESEOME,
-  BOOTSTRAP
+  BOOTSTRAP,
+  FONT_AWESEOME5
 }
