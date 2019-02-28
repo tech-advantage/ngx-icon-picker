@@ -95,8 +95,7 @@ export class IconPickerComponent implements OnInit {
       this.directiveInstance.iconSelected(`fa fa-${icon.id}`);
     } else if (icon.type === IconType.BOOTSTRAP) {
       this.directiveInstance.iconSelected(`glyphicon glyphicon-${icon.id}`);
-    }
-    else if(icon.type === IconType.FONT_AWESEOME5){
+    } else if (icon.type === IconType.FONT_AWESEOME5) {
       this.directiveInstance.iconSelected(`${icon.id}`);
     }
     this.closeIconPicker();

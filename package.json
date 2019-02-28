@@ -1,9 +1,9 @@
 {
   "name": "ngx-icon-picker",
-  "description": "Icon picker widget for Angular (version 2 and newer)",
-  "bugs": "https://github.com/NoelToy/ngx-icon-picker-fontawesome5/issues",
+  "description": "Icon picker widget for Angular (version 4 and newer)",
+  "bugs": "https://github.com/tech-advantage/ngx-icon-picker/issues",
   "license": "MIT",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "bundles/ngx-icon-picker.umd.js",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NoelToy/ngx-icon-picker-fontawesome5.git"
+    "url": "https://github.com/tech-advantage/ngx-icon-picker.git"
   },
   "devDependencies": {
     "@angular/cli": "^1.6.5",
