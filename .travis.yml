@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+  - master
+
+before_script:
+  - npm prune
+  - npm install -g @angular/cli
+  - npm install
+
+script:
+  - npm run build
+  - npm run inline

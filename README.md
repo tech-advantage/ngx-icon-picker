@@ -1,5 +1,6 @@
 # Angular Icon Picker
 
+[![Build Status](https://travis-ci.org/tech-advantage/ngx-icon-picker.svg?branch=master)](https://travis-ci.org/tech-advantage/ngx-icon-picker)
 [![NPM Version](https://badge.fury.io/js/ngx-icon-picker.svg)](https://npmjs.org/package/ngx-icon-picker)
 
 * ==> **Library still in work in progress**
