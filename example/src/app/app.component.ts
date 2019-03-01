@@ -9,14 +9,23 @@ import { ModalDialogComponent} from './modal/modal.dialog';
 })
 export class AppComponent implements OnInit {
   myFormGroup: FormGroup;
+  iconCssDefault = new FormControl();
   iconCssAll = new FormControl();
   iconCssFa5 = new FormControl();
+  fallbackIconDefault = 'fas fa-user';
   fallbackIconAll = 'fa fa-book';
   fallbackIconFa5 = 'fas fa-igloo';
   icon: string;
 
   ngOnInit(): void {
-    this.myFormGroup = new FormGroup({iconCssAll: this.iconCssAll, iconCssFa5: this.iconCssFa5});
+    this.myFormGroup = new FormGroup({
+      iconCssDefault: this.iconCssDefault,
+      iconCssAll: this.iconCssAll,
+      iconCssFa5: this.iconCssFa5});
+  }
+
+  onIconPickerDefaultSelect(icon: string): void {
+    this.iconCssDefault.setValue(icon);
   }
 
   onIconPickerAllSelect(icon: string): void {
