@@ -11,7 +11,7 @@ export class ModalDialogComponent implements OnInit {
   modalRef: BsModalRef;
   myFormGroup: FormGroup;
   iconCss = new FormControl();
-  fallbackIcon = 'fa fa-book';
+  fallbackIcon = 'glyphicon glyphicon-book';
   icon: string;
 
   constructor(private modalService: BsModalService) {}

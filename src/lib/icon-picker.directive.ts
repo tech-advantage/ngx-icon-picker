@@ -14,11 +14,11 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Input('iconPicker') iconPicker: string;
   @Input('ipPlaceHolder') ipPlaceHolder = 'Search icon...';
   @Input('ipPosition') ipPosition = 'right';
-  @Input('ipFallbackIcon') ipFallbackIcon = 'fa fa-user-plus';
+  @Input('ipFallbackIcon') ipFallbackIcon = 'fas fa-user';
   @Input('ipHeight') ipHeight = 'auto';
   @Input('ipMaxHeight') ipMaxHeight = '200px';
   @Input('ipWidth') ipWidth = '230px';
-  @Input('ipIconPack') ipIconPack = 'all';
+  @Input('ipIconPack') ipIconPack = ['bs', 'fa5'];
 
   @Output('iconPickerSelect') iconPickerSelect = new EventEmitter<string>(true);
 

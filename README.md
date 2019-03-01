@@ -47,8 +47,8 @@ Available inputs and output :
 [ipHeight]                   // Use this option to force icon picker dialog height (default: 'auto').
 [ipMaxHeight]                // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: 'all').
-[ipFallbackIcon]             // Is used when the icon is undefined (default: 'fa fa-user-plus').
+[ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
+[ipFallbackIcon]             // Is used when the icon is undefined (default: 'fas fa-user').
 [ipPosition]                 // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
 [ipPlaceHolder]              // Search input placeholder (default: 'Search icon...').
 
@@ -146,7 +146,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class AppComponent implements OnInit {
   myFormGroup: FormGroup;
   iconCss = new FormControl();
-  fallbackIcon = 'fa fa-user';
+  fallbackIcon = 'fas fa-user';
   icon: string;
 
   ngOnInit(): void {

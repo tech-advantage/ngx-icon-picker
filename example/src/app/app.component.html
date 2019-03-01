@@ -3,17 +3,18 @@
   <h4>Angular IconPicker Directive/Component with no dependencies required</h4>
   <a class="btn btn-primary" href="https://github.com/tech-advantage/ngx-icon-picker" target="blank">View on Github</a>
   <hr>
-  <h1>All icons</h1>
+  <h1>Icons with default Icon Pack</h1>
+  <div>Bootstrap Glyphicons and Font Awesome 5</div>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
           <span class="input-group-addon">
-            <i [ngClass]="iconCssAll.value"></i>
+            <i [ngClass]="iconCssDefault.value"></i>
           </span>
-          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="icon" [ipPosition]="'bottom'"
-            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"
+          <input type="text" name="iconCssDefault" class="form-control" formControlName="iconCssDefault" [iconPicker]="icon" [ipPosition]="'bottom'"
+            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconDefault" (iconPickerSelect)="onIconPickerDefaultSelect($event)"
           />
         </div>
       </div>
@@ -34,7 +35,7 @@
           <span class="input-group-addon">
             <i [ngClass]="iconCssFa5.value"></i>
           </span>
-          <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="icon" [ipPosition]="'bottom'" [ipIconPack]="'fa5'"
+          <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="icon" [ipPosition]="'bottom'" [ipIconPack]="['fa5']"
             [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa5" (iconPickerSelect)="onIconPickerFa5Select($event)"
           />
         </div>
@@ -43,7 +44,29 @@
     <div class="col-md-7">
       <p>Usage:</p>
       <pre>
-         Example to integrate the Icon Picker with Font Awesome 5 only<br/> in an application.
+         Example to integrate the Icon Picker with Font Awesome 5 only.
+      </pre>
+    </div>
+  </div>
+  <h1>All icons</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon</label>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i [ngClass]="iconCssAll.value"></i>
+          </span>
+          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="icon" [ipPosition]="'bottom'" [ipIconPack]="['all']"
+            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker with ipIconPack=['all'].
       </pre>
     </div>
   </div>
