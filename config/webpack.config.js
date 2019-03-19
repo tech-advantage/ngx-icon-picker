@@ -1,7 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
+  mode: 'production',
   devtool: 'cheap-module-source-map',
   performance: {
     hints: false
@@ -47,12 +49,18 @@ module.exports = {
     extensions: ['.js', '.ts'],
     modules: ['../src', path.join(__dirname, '../node_modules')]
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      include: /\.min\.js$/,
-      minimize: true
-    })
-  ],
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: false, // Must be set to true if using source-maps in production
+        terserOptions: {
+          // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
+        }
+      }),
+    ],
+  },
   externals: [
     '@angular/common',
     '@angular/compiler',

@@ -171,6 +171,18 @@ export class AppComponent implements OnInit {
 
 ![demo_04](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_04.jpg)
 
+## Example
+
+To run the example:
+
+```bash
+cd example
+npm install
+npm start
+```
+
+go to _localhost:4200_
+
 ## Development
 
 ### Build the library
@@ -183,19 +195,18 @@ npm run inline
 
 ### Library development
 
+To validate your development in the example, you have to use the npm link function:
+
 ```bash
 npm link
 cd example
+npm install
 npm link ngx-icon-picker
 ```
 
-## Example
-
-To run the example:
+*Warning*: Don't forget to run `npm install` first else the link will be override.
 
 ```bash
-cd example
-npm install
 npm start
 ```
 
