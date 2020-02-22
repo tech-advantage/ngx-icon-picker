@@ -3,14 +3,13 @@
 [![Build Status](https://travis-ci.org/tech-advantage/ngx-icon-picker.svg?branch=master)](https://travis-ci.org/tech-advantage/ngx-icon-picker)
 [![NPM Version](https://badge.fury.io/js/ngx-icon-picker.svg)](https://npmjs.org/package/ngx-icon-picker)
 
-* ==> **Library still in work in progress**
 * Largely inspired by [ngx-color-picker](https://github.com/zefoy/ngx-color-picker)
 
 ![demo_02](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_02.jpg)
 
 Angular IconPicker Directive/Component with no dependencies required.
 
-This is an Icon Picker Directive/Component for Angular 4+.
+This is an Icon Picker Directive/Component for Angular 9+.
 
 The icon Picker manages Font Awesome, Bootstrap Glyphicon and Font Awesome5.
 
@@ -173,38 +172,13 @@ export class AppComponent implements OnInit {
 
 ## Example
 
-To run the example:
-
-```bash
-cd example
-npm install
-npm start
-```
-
-go to _localhost:4200_
-
-## Development
-
-### Build the library
+To run the example or to validate your development with the example, you have to build the library:
 
 ```bash
 npm install
 npm run build
-npm run inline
 ```
-
-### Library development
-
-To validate your development in the example, you have to use the npm link function:
-
-```bash
-npm link
-cd example
-npm install
-npm link ngx-icon-picker
-```
-
-*Warning*: Don't forget to run `npm install` first else the link will be override.
+Then start the server:
 
 ```bash
 npm start
@@ -212,6 +186,20 @@ npm start
 
 go to _localhost:4200_
 
+Source are availble in **projects/app**
+
+## Build the library for production
+
+```bash
+npm install
+npm run prepare
+npm run publish
+```
+
+Source are available in **projects/lib**
+
 ## Contributors
 
-NoelToy : <https://github.com/NoelToy/>
+NoelToy: <https://github.com/NoelToy/>
+
+Shahmir Noorani: <https://github.com/shahmirn/>
