@@ -47,6 +47,7 @@ Available inputs and output :
 [ipMaxHeight]                // Use this option to force icon picker dialog max-height (default: '200px').
 
 [ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
+[ipIconSize]                 // Icon size in the selector
 [ipFallbackIcon]             // Is used when the icon is undefined (default: 'fas fa-user').
 [ipPosition]                 // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
 [ipPlaceHolder]              // Search input placeholder (default: 'Search icon...').
@@ -123,6 +124,7 @@ export class AppModule { }
                [iconPicker]="icon"
                [ipPosition]="'bottom'"
                [ipWidth]="'250px'"
+               [ipIconSize]="'16px'"
                [ipPlaceHolder]="'Choose an icon'"
                [ipFallbackIcon]="fallbackIcon"
                (iconPickerSelect)="onIconPickerSelect($event)"/>
