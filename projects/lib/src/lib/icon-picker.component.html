@@ -10,16 +10,20 @@
   <div class="arrow arrow-{{ipPosition}}" [style.top.px]="arrowTop"></div>
 
   <div class="icon-search">
-    <input type="text" class="form-control input-sm" [text] [value]="search" (newValue)="setSearch($event)" [placeholder]="ipPlaceHolder">
+    <input type="text" class="form-control input-sm" [text] [value]="search" (newValue)="setSearch($event)"
+           [placeholder]="ipPlaceHolder">
   </div>
   <div class="icon-grid" [ngStyle]="{'max-height.px': ipMaxHeight}">
     <div *ngFor="let icon of icons | searchIcon:search">
       <button *ngIf="icon" class="btn btn-default" type="button" title="{{ icon.name }}"
               [ngClass]="{active : icon === selectedIcon}"
-              (click)="selectIcon(icon)" >
-        <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"></span>
-        <span *ngIf="icon.type === iconType.BOOTSTRAP" class="glyphicon glyphicon-{{icon.id}}"></span>
-        <span *ngIf="icon.type === iconType.FONT_AWESEOME5" class="{{icon.id}}"></span>
+              (click)="selectIcon(icon)">
+        <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"
+              [style.font-size.px]="ipIconSize"></span>
+        <span *ngIf="icon.type === iconType.BOOTSTRAP" class="glyphicon glyphicon-{{icon.id}}"
+              [style.font-size.px]="ipIconSize"></span>
+        <span *ngIf="icon.type === iconType.FONT_AWESEOME5" class="{{icon.id}}"
+              [style.font-size.px]="ipIconSize"></span>
       </button>
     </div>
   </div>

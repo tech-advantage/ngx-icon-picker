@@ -15,6 +15,7 @@ export class IconPickerComponent implements OnInit {
   public ipHeight: number;
   public ipMaxHeight: number;
   public ipWidth: number;
+  public ipIconSize: number;
   public ipPlaceHolder: string;
   public ipFallbackIcon: string;
   public ipIconPack: string[];
@@ -49,7 +50,7 @@ export class IconPickerComponent implements OnInit {
   }
 
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
-            ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[]) {
+            ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;
@@ -60,6 +61,7 @@ export class IconPickerComponent implements OnInit {
     if (!this.ipWidth) {
       this.ipWidth = elementRef.nativeElement.offsetWidth;
     }
+    this.ipIconSize = parseInt(ipIconSize, 10);
     this.ipPlaceHolder = ipPlaceHolder;
     this.ipFallbackIcon = ipFallbackIcon;
     this.ipIconPack = ipIconPack;

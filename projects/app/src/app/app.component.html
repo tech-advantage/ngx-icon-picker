@@ -13,8 +13,10 @@
           <span class="input-group-addon">
             <i [ngClass]="iconCssDefault.value"></i>
           </span>
-          <input type="text" name="iconCssDefault" class="form-control" formControlName="iconCssDefault" [iconPicker]="icon" [ipPosition]="'bottom'"
-            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconDefault" (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+          <input type="text" name="iconCssDefault" class="form-control" formControlName="iconCssDefault"
+                 [iconPicker]="icon" [ipPosition]="'bottom'"
+                 [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconDefault"
+                 (iconPickerSelect)="onIconPickerDefaultSelect($event)"
           />
         </div>
       </div>
@@ -26,7 +28,7 @@
       </pre>
     </div>
   </div>
-    <h1>Font Awesome 5 icons</h1>
+  <h1>Font Awesome 5 icons</h1>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -35,8 +37,10 @@
           <span class="input-group-addon">
             <i [ngClass]="iconCssFa5.value"></i>
           </span>
-          <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="icon" [ipPosition]="'bottom'" [ipIconPack]="['fa5']"
-            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa5" (iconPickerSelect)="onIconPickerFa5Select($event)"
+          <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="icon"
+                 [ipPosition]="'bottom'" [ipIconPack]="['fa5']"
+                 [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa5"
+                 (iconPickerSelect)="onIconPickerFa5Select($event)"
           />
         </div>
       </div>
@@ -48,7 +52,7 @@
       </pre>
     </div>
   </div>
-  <h1>All icons</h1>
+  <h1>Change size</h1>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -57,8 +61,10 @@
           <span class="input-group-addon">
             <i [ngClass]="iconCssAll.value"></i>
           </span>
-          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="icon" [ipPosition]="'bottom'" [ipIconPack]="['all']"
-            [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"
+          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="icon"
+                 [ipPosition]="'bottom'" [ipIconPack]="['all']"
+                 [ipWidth]="'500px'" [ipPlaceHolder]="'Choose an icon'" [ipIconSize]="'64px'"
+                 [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"
           />
         </div>
       </div>
@@ -66,13 +72,14 @@
     <div class="col-md-7">
       <p>Usage:</p>
       <pre>
-         Example to integrate the Icon Picker with ipIconPack=['all'].
+         Example to integrate the Icon Picker and modify the icon size.
       </pre>
     </div>
   </div>
+  <h1>Modal dialog</h1>
   <div class="row">
     <div class="col-md-5">
-      <app-modal-dialog> </app-modal-dialog>
+      <app-modal-dialog></app-modal-dialog>
     </div>
     <div class="col-md-7">
       <p>Usage:</p>
