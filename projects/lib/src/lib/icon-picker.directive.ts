@@ -22,6 +22,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Input() ipWidth = '230px';
   @Input() ipIconSize = '16px';
   @Input() ipIconPack = ['bs', 'fa5'];
+  @Input() ipKeepSearchFilter = 'false';
 
   @Output() iconPickerSelect = new EventEmitter<string>(true);
 
@@ -60,7 +61,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
       const injector = ReflectiveInjector.fromResolvedProviders([], vcRef.parentInjector);
       const cmpRef = vcRef.createComponent(compFactory, 0, injector, []);
       cmpRef.instance.setDialog(this, this.el, this.iconPicker, this.ipPosition, this.ipHeight, this.ipMaxHeight,
-        this.ipWidth, this.ipPlaceHolder, this.ipFallbackIcon, this.ipIconPack, this.ipIconSize);
+        this.ipWidth, this.ipPlaceHolder, this.ipFallbackIcon, this.ipIconPack, this.ipIconSize, this.ipKeepSearchFilter);
       this.dialog = cmpRef.instance;
 
       if (this.vcRef !== vcRef) {

@@ -16,6 +16,7 @@ export class IconPickerComponent implements OnInit {
   public ipMaxHeight: number;
   public ipWidth: number;
   public ipIconSize: number;
+  public ipKeepSearchFilter: boolean;
   public ipPlaceHolder: string;
   public ipFallbackIcon: string;
   public ipIconPack: string[];
@@ -50,7 +51,7 @@ export class IconPickerComponent implements OnInit {
   }
 
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
-            ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string) {
+            ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string, ipKeepSearchFilter) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;
@@ -62,6 +63,7 @@ export class IconPickerComponent implements OnInit {
       this.ipWidth = elementRef.nativeElement.offsetWidth;
     }
     this.ipIconSize = parseInt(ipIconSize, 10);
+    this.ipKeepSearchFilter = JSON.parse(ipKeepSearchFilter);
     this.ipPlaceHolder = ipPlaceHolder;
     this.ipFallbackIcon = ipFallbackIcon;
     this.ipIconPack = ipIconPack;
@@ -80,7 +82,7 @@ export class IconPickerComponent implements OnInit {
         `fa fa-${el.id}` === icon || `glyphicon glyphicon-${el.id}` === icon || `${el.id}` === icon :
         false
     );
-    if (this.selectedIcon && icon !== this.ipFallbackIcon) {
+    if (this.ipKeepSearchFilter && this.selectedIcon && icon !== this.ipFallbackIcon) {
       this.search = this.selectedIcon.id;
     } else {
       this.search = '';

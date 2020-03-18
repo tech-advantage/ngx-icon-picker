@@ -42,17 +42,18 @@ Available inputs and output :
 ```typescript
 [iconPicker]                // The icon to select in the grid.
 
-[ipWidth]                    // Use this option to set icon picker dialog width (default: '230px').
-[ipHeight]                   // Use this option to force icon picker dialog height (default: 'auto').
-[ipMaxHeight]                // Use this option to force icon picker dialog max-height (default: '200px').
+[ipWidth]                   // Use this option to set icon picker dialog width (default: '230px').
+[ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
+[ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
-[ipIconSize]                 // Icon size in the selector
-[ipFallbackIcon]             // Is used when the icon is undefined (default: 'fas fa-user').
-[ipPosition]                 // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
-[ipPlaceHolder]              // Search input placeholder (default: 'Search icon...').
+[ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
+[ipIconSize]                // Icon size in the selector (default: '16px')
+[ipKeepSearchFilter]        // The search filter keep the value to filter  (default: 'false')    
+[ipFallbackIcon]            // Is used when the icon is undefined (default: 'fas fa-user').
+[ipPosition]                // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
+[ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
 
-(iconPickerSelect)           // On selected icon value.
+(iconPickerSelect)          // On selected icon value.
 
 ```
 
@@ -121,7 +122,7 @@ export class AppModule { }
         <span class="input-group-addon"><i [ngClass]="iconCss.value"></i></span>
         <input type="text" name="iconCss" class="form-control"
                formControlName="iconCss"
-               [iconPicker]="icon"
+               [iconPicker]="iconCss.value"
                [ipPosition]="'bottom'"
                [ipWidth]="'250px'"
                [ipIconSize]="'16px'"
@@ -148,7 +149,6 @@ export class AppComponent implements OnInit {
   myFormGroup: FormGroup;
   iconCss = new FormControl();
   fallbackIcon = 'fas fa-user';
-  icon: string;
 
   ngOnInit(): void {
     this.myFormGroup = new FormGroup({iconCss: this.iconCss});

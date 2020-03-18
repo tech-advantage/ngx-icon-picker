@@ -14,7 +14,7 @@
             <i [ngClass]="iconCssDefault.value"></i>
           </span>
           <input type="text" name="iconCssDefault" class="form-control" formControlName="iconCssDefault"
-                 [iconPicker]="icon" [ipPosition]="'bottom'"
+                 [iconPicker]="iconCssDefault.value" [ipPosition]="'bottom'"
                  [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconDefault"
                  (iconPickerSelect)="onIconPickerDefaultSelect($event)"
           />
@@ -37,7 +37,7 @@
           <span class="input-group-addon">
             <i [ngClass]="iconCssFa5.value"></i>
           </span>
-          <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="icon"
+          <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="iconCssFa5.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['fa5']"
                  [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa5"
                  (iconPickerSelect)="onIconPickerFa5Select($event)"
@@ -61,7 +61,7 @@
           <span class="input-group-addon">
             <i [ngClass]="iconCssAll.value"></i>
           </span>
-          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="icon"
+          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="iconCssAll.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['all']"
                  [ipWidth]="'500px'" [ipPlaceHolder]="'Choose an icon'" [ipIconSize]="'64px'"
                  [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"
@@ -76,6 +76,115 @@
       </pre>
     </div>
   </div>
+  <h1>Font Awesome 5 icons with the tag A</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon</label>
+        <div class="input-group">
+          <a class="btn form-control"
+             [ngStyle]="{backgroundColor: '#f96f6f', width: '50px'}"
+             [ipPlaceHolder]="'my placeholder here'"
+             [iconPicker]="iconCssA.value"
+             [ipIconPack]="['fa5']"
+             [ipPosition]="'bottom'"
+             [ipFallbackIcon]="fallbackIconA"
+             (iconPickerSelect)="onIconPickerASelect($event)">
+            <i [ngClass]="iconCssA.value"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker with the tag A.
+      </pre>
+    </div>
+  </div>
+  <h1>Font Awesome 5 icons with Button</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon</label>
+        <div class="input-group">
+          <button class="btn form-control"
+                  [ngStyle]="{backgroundColor: '#33c7f9', width: '50px'}"
+                  [ipPlaceHolder]="'my placeholder here'"
+                  [iconPicker]="iconCssButton.value"
+                  [ipIconPack]="['fa5']"
+                  [ipPosition]="'bottom'"
+                  [ipFallbackIcon]="fallbackIconButton"
+                  (iconPickerSelect)="onIconPickerButtonSelect($event)">
+            <i [ngClass]="iconCssButton.value"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker with the tag button.
+      </pre>
+    </div>
+  </div>
+  <h1>Font Awesome 5 icons with the tag Span and fill search field with selected icon</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon (click on the icon to change it)</label>
+        <div class="input-group">
+          <span title="Click to change"
+                [ngStyle]="{'font-size': '1.5em'}"
+                [iconPicker]="iconCssSpan.value"
+                [ipPosition]="'bottom'"
+                [ipIconPack]="['fa5']"
+                [ipWidth]="'250px'"
+                [ipFallbackIcon]="fallbackIconSpan"
+                [ipKeepSearchFilter]="'true'"
+                (iconPickerSelect)="onIconPickerSpanSelect($event)">
+              <i [ngClass]="iconCssSpan.value" class="fa-fw fa-sm"></i>  {{iconCssSpan.value}}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker with the tag span.
+      </pre>
+    </div>
+  </div>
+  <h1>Font Awesome 5 icons with list of icon</h1>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon (click on the icon to change it)</label>
+
+        <div *ngFor="let fallbackIcon of fallbackIcons; let i = index;">
+          <div class="input-group">
+              <span title="Click to change"
+                    [ngStyle]="{'font-size': '1.5em'}"
+                    [iconPicker]="iconCssMulti[i].value"
+                    [ipPosition]="'bottom'"
+                    [ipIconPack]="['fa5']"
+                    [ipWidth]="'250px'"
+                    [ipFallbackIcon]="fallbackIcon"
+                    (iconPickerSelect)="onIconPickerMultiSelect($event,i)">
+                  <i [ngClass]="iconCssMulti[i].value" class="fa-fw fa-sm"></i> {{iconCssMulti[i].value}}
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker with the list of icons.
+      </pre>
+    </div>
+  </div>
+
   <h1>Modal dialog</h1>
   <div class="row">
     <div class="col-md-5">
