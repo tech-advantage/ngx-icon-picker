@@ -3,14 +3,13 @@
 [![Build Status](https://travis-ci.org/tech-advantage/ngx-icon-picker.svg?branch=master)](https://travis-ci.org/tech-advantage/ngx-icon-picker)
 [![NPM Version](https://badge.fury.io/js/ngx-icon-picker.svg)](https://npmjs.org/package/ngx-icon-picker)
 
-* ==> **Library still in work in progress**
 * Largely inspired by [ngx-color-picker](https://github.com/zefoy/ngx-color-picker)
 
 ![demo_02](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_02.jpg)
 
 Angular IconPicker Directive/Component with no dependencies required.
 
-This is an Icon Picker Directive/Component for Angular 4+.
+This is an Icon Picker Directive/Component for Angular 9+.
 
 The icon Picker manages Font Awesome, Bootstrap Glyphicon and Font Awesome5.
 
@@ -21,7 +20,8 @@ The icon Picker manages Font Awesome, Bootstrap Glyphicon and Font Awesome5.
 ### Load the module for your app
 
 ```typescript
-import { IconPickerModule } from 'ngx-icon-picker';
+import { IconPickerModule } from 'ngx-icon-picker'; 
+import {NgModule} from '@angular/core';
 
 @NgModule({
   ...
@@ -43,22 +43,27 @@ Available inputs and output :
 ```typescript
 [iconPicker]                // The icon to select in the grid.
 
-[ipWidth]                    // Use this option to set icon picker dialog width (default: '230px').
-[ipHeight]                   // Use this option to force icon picker dialog height (default: 'auto').
-[ipMaxHeight]                // Use this option to force icon picker dialog max-height (default: '200px').
+[ipWidth]                   // Use this option to set icon picker dialog width (default: '230px').
+[ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
+[ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                 // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
-[ipFallbackIcon]             // Is used when the icon is undefined (default: 'fas fa-user').
-[ipPosition]                 // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
-[ipPlaceHolder]              // Search input placeholder (default: 'Search icon...').
+[ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
+[ipIconSize]                // Icon size in the selector (default: '16px')
+[ipIconPadding]             // Button padding for the icon (default: '6px') 
 
-(iconPickerSelect)           // On selected icon value.
+[ipKeepSearchFilter]        // The search filter keep the value to filter  (default: 'false')    
+
+[ipFallbackIcon]            // Is used when the icon is undefined (default: 'fas fa-user').
+[ipPosition]                // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
+[ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
+
+(iconPickerSelect)          // On selected icon value.
 
 ```
 
 ### Installing from a brand new @angular/cli project
 
-Version of @angular/cli used is V1.7.4.
+Version of @angular/cli used is V7.3.3.
 
 * Generate a new project (here we use LESS preprocessor): `ng new myproject --style less`
 * `cd myproject`
@@ -121,9 +126,11 @@ export class AppModule { }
         <span class="input-group-addon"><i [ngClass]="iconCss.value"></i></span>
         <input type="text" name="iconCss" class="form-control"
                formControlName="iconCss"
-               [iconPicker]="icon"
+               [iconPicker]="iconCss.value"
                [ipPosition]="'bottom'"
                [ipWidth]="'250px'"
+               [ipIconSize]="'16px'"
+               [ipIconPadding]="'6px'"
                [ipPlaceHolder]="'Choose an icon'"
                [ipFallbackIcon]="fallbackIcon"
                (iconPickerSelect)="onIconPickerSelect($event)"/>
@@ -131,6 +138,8 @@ export class AppModule { }
   </div>
 </div>
 ```
+
+**Note**: A class for the icon button can be define to override the CSS: `ip-button-icon`
 
 * Update the component `app.component.ts`:
 
@@ -147,7 +156,6 @@ export class AppComponent implements OnInit {
   myFormGroup: FormGroup;
   iconCss = new FormControl();
   fallbackIcon = 'fas fa-user';
-  icon: string;
 
   ngOnInit(): void {
     this.myFormGroup = new FormGroup({iconCss: this.iconCss});
@@ -173,38 +181,13 @@ export class AppComponent implements OnInit {
 
 ## Example
 
-To run the example:
-
-```bash
-cd example
-npm install
-npm start
-```
-
-go to _localhost:4200_
-
-## Development
-
-### Build the library
+To run the example or to validate your development with the example, you have to build the library:
 
 ```bash
 npm install
 npm run build
-npm run inline
 ```
-
-### Library development
-
-To validate your development in the example, you have to use the npm link function:
-
-```bash
-npm link
-cd example
-npm install
-npm link ngx-icon-picker
-```
-
-*Warning*: Don't forget to run `npm install` first else the link will be override.
+Then start the server:
 
 ```bash
 npm start
@@ -212,6 +195,20 @@ npm start
 
 go to _localhost:4200_
 
+Source are availble in **projects/app**
+
+## Build the library for production
+
+```bash
+npm install
+npm run prepare
+npm run publish
+```
+
+Source are available in **projects/lib**
+
 ## Contributors
 
-NoelToy : <https://github.com/NoelToy/>
+NoelToy: <https://github.com/NoelToy/>
+
+Shahmir Noorani: <https://github.com/shahmirn/>

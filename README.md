@@ -48,7 +48,9 @@ Available inputs and output :
 
 [ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
 [ipIconSize]                // Icon size in the selector (default: '16px')
+[ipIconPadding]             // Button padding for the icon (default: '6px') 
 [ipKeepSearchFilter]        // The search filter keep the value to filter  (default: 'false')    
+
 [ipFallbackIcon]            // Is used when the icon is undefined (default: 'fas fa-user').
 [ipPosition]                // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
 [ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
@@ -59,7 +61,7 @@ Available inputs and output :
 
 ### Installing from a brand new @angular/cli project
 
-Version of @angular/cli used is V1.7.4.
+Version of @angular/cli used is V7.3.3.
 
 * Generate a new project (here we use LESS preprocessor): `ng new myproject --style less`
 * `cd myproject`
@@ -126,6 +128,7 @@ export class AppModule { }
                [ipPosition]="'bottom'"
                [ipWidth]="'250px'"
                [ipIconSize]="'16px'"
+               [ipIconPadding]="'6px'"
                [ipPlaceHolder]="'Choose an icon'"
                [ipFallbackIcon]="fallbackIcon"
                (iconPickerSelect)="onIconPickerSelect($event)"/>
@@ -133,6 +136,8 @@ export class AppModule { }
   </div>
 </div>
 ```
+
+**Note**: A class for the icon button can be define to override the CSS: `ip-button-icon`
 
 * Update the component `app.component.ts`:
 

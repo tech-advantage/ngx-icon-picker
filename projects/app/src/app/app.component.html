@@ -3,7 +3,7 @@
   <h4>Angular IconPicker Directive/Component with no dependencies required</h4>
   <a class="btn btn-primary" href="https://github.com/tech-advantage/ngx-icon-picker" target="blank">View on Github</a>
   <hr>
-  <h1>Icons with default Icon Pack</h1>
+  <h2>Icons with default Icon Pack</h2>
   <div>Bootstrap Glyphicons and Font Awesome 5</div>
   <div class="row">
     <div class="col-md-5">
@@ -28,7 +28,7 @@
       </pre>
     </div>
   </div>
-  <h1>Font Awesome 5 icons</h1>
+  <h2>Font Awesome 5 icons and panel size defined to 500px</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -39,7 +39,7 @@
           </span>
           <input type="text" name="iconCssFa5" class="form-control" formControlName="iconCssFa5" [iconPicker]="iconCssFa5.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['fa5']"
-                 [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa5"
+                 [ipWidth]="'500px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa5"
                  (iconPickerSelect)="onIconPickerFa5Select($event)"
           />
         </div>
@@ -52,7 +52,7 @@
       </pre>
     </div>
   </div>
-  <h1>Change size</h1>
+  <h2>Change size</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -76,7 +76,7 @@
       </pre>
     </div>
   </div>
-  <h1>Font Awesome 5 icons with the tag A</h1>
+  <h2>Font Awesome 5 icons with the tag A</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -102,7 +102,7 @@
       </pre>
     </div>
   </div>
-  <h1>Font Awesome 5 icons with Button</h1>
+  <h2>Font Awesome 5 icons with Button and pdding define to 10px</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -114,6 +114,7 @@
                   [iconPicker]="iconCssButton.value"
                   [ipIconPack]="['fa5']"
                   [ipPosition]="'bottom'"
+                  [ipIconPadding]="'10px'"
                   [ipFallbackIcon]="fallbackIconButton"
                   (iconPickerSelect)="onIconPickerButtonSelect($event)">
             <i [ngClass]="iconCssButton.value"></i>
@@ -128,7 +129,7 @@
       </pre>
     </div>
   </div>
-  <h1>Font Awesome 5 icons with the tag Span and fill search field with selected icon</h1>
+  <h2>Font Awesome 5 icons with the tag Span and fill search field with selected icon</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -155,7 +156,7 @@
       </pre>
     </div>
   </div>
-  <h1>Font Awesome 5 icons with list of icon</h1>
+  <h2>Font Awesome 5 icons with list of icon</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -185,7 +186,7 @@
     </div>
   </div>
 
-  <h1>Modal dialog</h1>
+  <h2>Modal dialog</h2>
   <div class="row">
     <div class="col-md-5">
       <app-modal-dialog></app-modal-dialog>
