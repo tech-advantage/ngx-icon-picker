@@ -15,8 +15,10 @@
   </div>
   <div class="icon-grid" [ngStyle]="{'max-height.px': ipMaxHeight}">
     <div *ngFor="let icon of icons | searchIcon:search">
-      <button *ngIf="icon" class="btn btn-default" type="button" title="{{ icon.name }}"
+      <button *ngIf="icon" class="btn btn-default ip-button-icon" type="button" title="{{ icon.name }}"
               [ngClass]="{active : icon === selectedIcon}"
+              [style.width.px]="buttonWidth"
+              [style.padding.px]="ipIconPadding"
               (click)="selectIcon(icon)">
         <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"
               [style.font-size.px]="ipIconSize"></span>

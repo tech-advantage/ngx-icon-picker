@@ -1,13 +1,13 @@
-import { Component, ElementRef, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
+import {ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
-import { IconPickerService } from './icon-picker.service';
-import { Icon, IconType } from './icon';
+import {IconPickerService} from './icon-picker.service';
+import {Icon, IconType} from './icon';
 
 @Component({
   // tslint:disable-next-line: component-selector
-  selector   : 'icon-picker',
+  selector: 'icon-picker',
   templateUrl: './icon-picker.component.html',
-  styleUrls  : ['./icon-picker.component.scss']
+  styleUrls: ['./icon-picker.component.scss']
 })
 
 export class IconPickerComponent implements OnInit {
@@ -16,6 +16,7 @@ export class IconPickerComponent implements OnInit {
   public ipMaxHeight: number;
   public ipWidth: number;
   public ipIconSize: number;
+  public ipIconPadding: number;
   public ipKeepSearchFilter: boolean;
   public ipPlaceHolder: string;
   public ipFallbackIcon: string;
@@ -29,6 +30,7 @@ export class IconPickerComponent implements OnInit {
   public arrowTop: number;
   public selectedIcon: Icon;
   public iconType = IconType;
+  public buttonWidth: number;
 
   private directiveInstance: any;
   private initialIcon: string;
@@ -51,7 +53,8 @@ export class IconPickerComponent implements OnInit {
   }
 
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
-            ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string, ipKeepSearchFilter) {
+            ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string,
+            ipIconPadding: string, ipKeepSearchFilter) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;
@@ -63,10 +66,13 @@ export class IconPickerComponent implements OnInit {
       this.ipWidth = elementRef.nativeElement.offsetWidth;
     }
     this.ipIconSize = parseInt(ipIconSize, 10);
+    this.ipIconPadding = parseInt(ipIconPadding, 10);
     this.ipKeepSearchFilter = JSON.parse(ipKeepSearchFilter);
     this.ipPlaceHolder = ipPlaceHolder;
     this.ipFallbackIcon = ipFallbackIcon;
     this.ipIconPack = ipIconPack;
+
+    this.buttonWidth = this.ipIconSize + 2 * this.ipIconPadding;
   }
 
   ngOnInit() {
@@ -79,8 +85,8 @@ export class IconPickerComponent implements OnInit {
   setInitialIcon(icon: string) {
     this.initialIcon = icon;
     this.selectedIcon = this.icons.find(el => el ?
-        `fa fa-${el.id}` === icon || `glyphicon glyphicon-${el.id}` === icon || `${el.id}` === icon :
-        false
+      `fa fa-${el.id}` === icon || `glyphicon glyphicon-${el.id}` === icon || `${el.id}` === icon :
+      false
     );
     if (this.ipKeepSearchFilter && this.selectedIcon && icon !== this.ipFallbackIcon) {
       this.search = this.selectedIcon.id;
@@ -208,9 +214,9 @@ export class IconPickerComponent implements OnInit {
 
   createBox(element: any, offset: boolean): any {
     return {
-      top   : element.getBoundingClientRect().top + (offset ? window.pageYOffset : 0),
-      left  : element.getBoundingClientRect().left + (offset ? window.pageXOffset : 0),
-      width : element.offsetWidth,
+      top: element.getBoundingClientRect().top + (offset ? window.pageYOffset : 0),
+      left: element.getBoundingClientRect().left + (offset ? window.pageXOffset : 0),
+      width: element.offsetWidth,
       height: element.offsetHeight
     };
   }
