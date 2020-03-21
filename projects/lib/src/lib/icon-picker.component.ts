@@ -16,7 +16,8 @@ export class IconPickerComponent implements OnInit {
   public ipMaxHeight: number;
   public ipWidth: number;
   public ipIconSize: number;
-  public ipIconPadding: number;
+  public ipIconVerticalPadding: number;
+  public ipIconHorizontalPadding: number;
   public ipKeepSearchFilter: boolean;
   public ipPlaceHolder: string;
   public ipFallbackIcon: string;
@@ -31,6 +32,7 @@ export class IconPickerComponent implements OnInit {
   public selectedIcon: Icon;
   public iconType = IconType;
   public buttonWidth: number;
+  public buttonHeight: number;
 
   private directiveInstance: any;
   private initialIcon: string;
@@ -54,7 +56,7 @@ export class IconPickerComponent implements OnInit {
 
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
             ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string,
-            ipIconPadding: string, ipKeepSearchFilter) {
+            ipIconVerticalPadding: string, ipIconHorizontalPadding: string, ipKeepSearchFilter: string) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;
@@ -66,13 +68,15 @@ export class IconPickerComponent implements OnInit {
       this.ipWidth = elementRef.nativeElement.offsetWidth;
     }
     this.ipIconSize = parseInt(ipIconSize, 10);
-    this.ipIconPadding = parseInt(ipIconPadding, 10);
+    this.ipIconVerticalPadding = parseInt(ipIconVerticalPadding, 10);
+    this.ipIconHorizontalPadding = parseInt(ipIconHorizontalPadding, 10);
     this.ipKeepSearchFilter = JSON.parse(ipKeepSearchFilter);
     this.ipPlaceHolder = ipPlaceHolder;
     this.ipFallbackIcon = ipFallbackIcon;
     this.ipIconPack = ipIconPack;
 
-    this.buttonWidth = this.ipIconSize + 2 * this.ipIconPadding;
+    this.buttonHeight = this.ipIconSize + 2 * this.ipIconVerticalPadding;
+    this.buttonWidth = this.ipIconSize + 2 * this.ipIconHorizontalPadding;
   }
 
   ngOnInit() {

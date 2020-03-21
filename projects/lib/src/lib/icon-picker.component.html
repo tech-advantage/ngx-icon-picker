@@ -18,7 +18,11 @@
       <button *ngIf="icon" class="btn btn-default ip-button-icon" type="button" title="{{ icon.name }}"
               [ngClass]="{active : icon === selectedIcon}"
               [style.width.px]="buttonWidth"
-              [style.padding.px]="ipIconPadding"
+              [style.height.px]="buttonHeight"
+              [style.padding-top.px]="ipIconVerticalPadding"
+              [style.padding-bottom.px]="ipIconVerticalPadding"
+              [style.padding-left.px]="ipIconHorizontalPadding"
+              [style.padding-right.px]="ipIconHorizontalPadding"
               (click)="selectIcon(icon)">
         <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"
               [style.font-size.px]="ipIconSize"></span>
