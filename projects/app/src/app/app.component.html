@@ -102,7 +102,7 @@
       </pre>
     </div>
   </div>
-  <h2>Font Awesome 5 icons with Button and pdding define to 10px</h2>
+  <h2>Font Awesome 5 icons with Button and padding define to 10px and 20 px</h2>
   <div class="row">
     <div class="col-md-5">
       <div [formGroup]="myFormGroup">
@@ -114,7 +114,8 @@
                   [iconPicker]="iconCssButton.value"
                   [ipIconPack]="['fa5']"
                   [ipPosition]="'bottom'"
-                  [ipIconPadding]="'10px'"
+                  [ipIconVerticalPadding]="'10px'"
+                  [ipIconHorizontalPadding]="'20px'"
                   [ipFallbackIcon]="fallbackIconButton"
                   (iconPickerSelect)="onIconPickerButtonSelect($event)">
             <i [ngClass]="iconCssButton.value"></i>
