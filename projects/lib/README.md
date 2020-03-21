@@ -20,8 +20,7 @@ The icon Picker manages Font Awesome, Bootstrap Glyphicon and Font Awesome5.
 ### Load the module for your app
 
 ```typescript
-import { IconPickerModule } from 'ngx-icon-picker'; 
-import {NgModule} from '@angular/core';
+import { IconPickerModule } from 'ngx-icon-picker';
 
 @NgModule({
   ...
@@ -48,9 +47,9 @@ Available inputs and output :
 [ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
 [ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
-[ipIconSize]                // Icon size in the selector (default: '16px')
-[ipIconPadding]             // Button padding for the icon (default: '6px') 
-
+[ipIconSize]                // Set the icon size in the selector (default: '16px')
+[ipIconVerticalPadding]     // Set the top and bottom padding (default: '6px') 
+[ipIconHorizontalPadding]   // Set the left and right button padding (default: '10px') 
 [ipKeepSearchFilter]        // The search filter keep the value to filter  (default: 'false')    
 
 [ipFallbackIcon]            // Is used when the icon is undefined (default: 'fas fa-user').
@@ -130,7 +129,9 @@ export class AppModule { }
                [ipPosition]="'bottom'"
                [ipWidth]="'250px'"
                [ipIconSize]="'16px'"
-               [ipIconPadding]="'6px'"
+               [ipIconVerticalPadding]="'6px'"
+               [ipIconHorizontalPadding]="'10px'"
+               [ipKeepSearchFilter]="'false'"
                [ipPlaceHolder]="'Choose an icon'"
                [ipFallbackIcon]="fallbackIcon"
                (iconPickerSelect)="onIconPickerSelect($event)"/>
