@@ -1,0 +1,44 @@
+<div class="main-div">
+  <h1 class="title">Angular Icon Picker Directive/Component</h1>
+  <h2 class="subtitle">Angular IconPicker Directive/Component with no dependencies required</h2>
+  <div>
+    <p></p>
+    <a class="button is-rounded is-link" href="https://github.com/tech-advantage/ngx-icon-picker" target="blank">View on
+      Github</a>
+    <hr>
+    <h2 class="subtitle">Example with Bulma framework and Font Awesome 5</h2>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div [formGroup]="myFormGroup">
+          <div class="field">
+            <div class="control has-icons-left">
+              <input type="text" name="iconCssDefault" formControlName="iconCssDefault" class="input is-primary"
+                     [iconPicker]="iconCssDefault.value"
+                     [ipIconPack]="['fa5']"
+                     [ipPosition]="'bottom'"
+                     [ipWidth]="'250px'"
+                     [ipPlaceHolder]="'Choose an icon'"
+                     [ipFallbackIcon]="fallbackIconDefault"
+                     [ipButtonStyleClass]="'button is-link is-light'"
+                     [ipDivSearchStyleClass]="'control'"
+                     [ipInputSearchStyleClass]="'input is-primary'"
+                     (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+              />
+              <span class="icon is-small is-left">
+                <i [ngClass]="iconCssDefault.value"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui secondary segment">
+          <p>Usage:</p>
+          <pre>
+         Example to integrate the Icon Picker in an application.
+      </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

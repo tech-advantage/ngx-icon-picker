@@ -9,13 +9,13 @@
 
   <div class="arrow arrow-{{ipPosition}}" [style.top.px]="arrowTop"></div>
 
-  <div class="icon-search">
-    <input type="text" class="form-control input-sm" [text] [value]="search" (newValue)="setSearch($event)"
+  <div class="icon-search {{ipDivSearchStyleClass}}">
+    <input type="text" class="{{ipInputSearchStyleClass}}" [text] [value]="search" (newValue)="setSearch($event)"
            [placeholder]="ipPlaceHolder">
   </div>
   <div class="icon-grid" [ngStyle]="{'max-height.px': ipMaxHeight}">
     <div *ngFor="let icon of icons | searchIcon:search">
-      <button *ngIf="icon" class="btn btn-default ip-button-icon" type="button" title="{{ icon.name }}"
+      <button *ngIf="icon" class="ip-button-icon {{ipButtonStyleClass}}" type="button" title="{{ icon.name }}"
               [ngClass]="{active : icon === selectedIcon}"
               [style.width.px]="buttonWidth"
               [style.height.px]="buttonHeight"

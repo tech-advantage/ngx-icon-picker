@@ -34,6 +34,10 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Input() ipIconHorizontalPadding = '10px'; // Left / Right
   @Input() ipIconPack = ['bs', 'fa5'];
   @Input() ipKeepSearchFilter = 'false';
+  // Default design with bootstrap
+  @Input() ipButtonStyleClass = 'btn btn-default';
+  @Input() ipDivSearchStyleClass = '';
+  @Input() ipInputSearchStyleClass = 'form-control input-sm';
 
   @Output() iconPickerSelect = new EventEmitter<string>(true);
 
@@ -73,7 +77,8 @@ export class IconPickerDirective implements OnInit, OnChanges {
       const cmpRef = vcRef.createComponent(compFactory, 0, injector, []);
       cmpRef.instance.setDialog(this, this.el, this.iconPicker, this.ipPosition, this.ipHeight, this.ipMaxHeight,
         this.ipWidth, this.ipPlaceHolder, this.ipFallbackIcon, this.ipIconPack, this.ipIconSize,
-        this.ipIconVerticalPadding, this.ipIconHorizontalPadding, this.ipKeepSearchFilter);
+        this.ipIconVerticalPadding, this.ipIconHorizontalPadding, this.ipButtonStyleClass, this.ipDivSearchStyleClass,
+        this.ipInputSearchStyleClass,this.ipKeepSearchFilter);
       this.dialog = cmpRef.instance;
 
       if (this.vcRef !== vcRef) {
