@@ -296,10 +296,29 @@ go to _localhost:4200_
 
 Source are availble in **projects/app-semantic**
 
+## How do I test in my own project?
+
+After cloning this repository and modify the source, to test this libary with a local build, you have to type :
+
+```bash
+npm install 
+npm run build
+```
+
+The library will be build
+
+Go in your project and type `npm install NGX_ICON_PICKER_PATCH` where **NGX_ICON_PICKER_PATCH** is the ngx-icon-picker path repository (example: /git/ngx-icon-picker). 
+
+The local build will be installed in your project. 
+
 ## Build the library for production
+
+Edit version in package.json (root and lib).
+Duplicate the README.md files
 
 ```bash
 npm install
+ng lint
 npm run prepare
 npm run publish
 ```
