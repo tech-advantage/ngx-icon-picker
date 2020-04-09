@@ -62,7 +62,7 @@
             <i [ngClass]="iconCssAll.value"></i>
           </span>
           <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="iconCssAll.value"
-                 [ipPosition]="'bottom'" [ipIconPack]="['all']"
+                 [ipPosition]="'bottom'" [ipIconPack]="['all']" [ipInputSearchStyleClass]="'my-icon-input-search'"
                  [ipWidth]="'500px'" [ipPlaceHolder]="'Choose an icon'" [ipIconSize]="'64px'"
                  [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"
           />
