@@ -1,0 +1,40 @@
+<div class="main-div">
+  <h1 class="ui header">Angular Icon Picker Directive/Component</h1>
+  <div class="sub header">Angular IconPicker Directive/Component with no dependencies required</div>
+  <div>
+    <p></p>
+    <a class="ui primary button" href="https://github.com/tech-advantage/ngx-icon-picker" target="blank">View on
+      Github</a>
+    <hr>
+    <h2>Example with Semantic framework and Font Awesome 5</h2>
+    <div class="ui grid">
+      <div class="six wide column">
+        <div [formGroup]="myFormGroup">
+          <div class="ui left icon input">
+            <input type="text" name="iconCssDefault" formControlName="iconCssDefault"
+                   [iconPicker]="iconCssDefault.value"
+                   [ipIconPack]="['fa5']"
+                   [ipPosition]="'bottom'"
+                   [ipWidth]="'250px'"
+                   [ipPlaceHolder]="'Choose an icon'"
+                   [ipFallbackIcon]="fallbackIconDefault"
+                   [ipButtonStyleClass]="'ui primary basic button'"
+                   [ipDivSearchStyleClass]="'ui fluid focus input'"
+                   [ipInputSearchStyleClass]="'my-icon-picker-input'"
+                   (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+            />
+            <i class="icon" [ngClass]="iconCssDefault.value"></i>
+          </div>
+        </div>
+      </div>
+      <div class="ten wide column">
+        <div class="ui secondary segment">
+          <p>Usage:</p>
+          <pre>
+         Example to integrate the Icon Picker in an application.
+      </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

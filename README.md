@@ -57,10 +57,17 @@ Available inputs and output :
 [ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
 
 (iconPickerSelect)          // On selected icon value.
-
 ```
 
-### Installing from a brand new @angular/cli project
+To integrate the icon picker with an another framework, you have to use the extra inputs:
+
+```typescript
+[ipButtonStyleClass]              // To override the bootstrap class for the button. Use only to change the framework
+[ipDivSearchStyleClass]     // To override the bootstrap class for the div search. Use only to change the framework
+[ipInputSearchStyleClass]   // To override the bootstrap class for the input search. Use only to change the framework
+```
+
+### Installing from a brand new @angular/cli project based on Bootstrap
 
 Version of @angular/cli used is V7.3.3.
 
@@ -180,7 +187,7 @@ export class AppComponent implements OnInit {
 
 ![demo_04](https://github.com/tech-advantage/ngx-icon-picker/blob/master/doc/demo_04.jpg)
 
-## Example
+## Examples
 
 To run the example or to validate your development with the example, you have to build the library:
 
@@ -188,7 +195,17 @@ To run the example or to validate your development with the example, you have to
 npm install
 npm run build
 ```
-Then start the server:
+3 examples are available:
+
+* app : based on bootstrap usage. It's the framework used to design the icon picker.
+* app-bulma : based on bulma framework
+* app-semantic : based on semantic framework.
+
+### app
+
+**app** is the default application based on boostrap. You will find a multiple of example tu use the icon picker.
+
+To start the server:
 
 ```bash
 npm start
@@ -197,6 +214,87 @@ npm start
 go to _localhost:4200_
 
 Source are availble in **projects/app**
+
+### app-bulma
+
+**app-bulma** is an application based on [Bulma](https://bulma.io/) framework. You will find an example to define each class to override the default framework.
+
+To override the bootstrap design, we use ipButtonStyleClass, ipDivSearchStyleClass and ipInputSearchStyleClass.
+
+```html
+<div class="columns">
+    <div class="column is-one-third">
+        <div [formGroup]="myFormGroup">
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input type="text" name="iconCssDefault" formControlName="iconCssDefault" class="input is-primary"
+                    [iconPicker]="iconCssDefault.value"
+                    [ipIconPack]="['fa5']"
+                    [ipPosition]="'bottom'"
+                    [ipWidth]="'250px'"
+                    [ipPlaceHolder]="'Choose an icon'"
+                    [ipFallbackIcon]="fallbackIconDefault"
+                    [ipButtonStyleClass]="'button is-link is-light'"
+                    [ipDivSearchStyleClass]="'control'"
+                    [ipInputSearchStyleClass]="'input is-primary'"
+                    (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+                    />
+                    <span class="icon is-small is-left">
+                        <i [ngClass]="iconCssDefault.value"></i>
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+To start the server:
+
+```bash
+npm run start-semantic
+```
+
+go to _localhost:4200_
+
+Source are availble in **projects/app-semantic**
+
+### app-semantic
+
+**app-semantic** is an application based on [Semantic UI](https://semantic-ui.com/) framework. You will find an example to define each class to override the default framework.
+
+To override the bootstrap design, we use ipButtonStyleClass, ipDivSearchStyleClass and ipInputSearchStyleClass.
+
+```html
+<div [formGroup]="myFormGroup">
+    <div class="ui horizontal label">Icon</div>
+        <div class="ui left icon input">
+            <input type="text" name="iconCssDefault" formControlName="iconCssDefault"
+                [iconPicker]="iconCssDefault.value"
+                [ipIconPack]="['fa5']"
+                [ipPosition]="'bottom'"
+                [ipWidth]="'250px'"
+                [ipPlaceHolder]="'Choose an icon'"
+                [ipFallbackIcon]="fallbackIconDefault"
+                [ipButtonStyleClass]="'ui primary basic button'"
+                [ipDivSearchStyleClass]="'ui fluid focus input'"
+                [ipInputSearchStyleClass]="''"
+                (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+            />
+            <i class="icon" [ngClass]="iconCssDefault.value"></i>
+        </div>
+    </div>
+</div>
+```
+
+To start the server:
+
+```bash
+npm run start-semantic
+```
+
+go to _localhost:4200_
+
+Source are availble in **projects/app-semantic**
 
 ## Build the library for production
 

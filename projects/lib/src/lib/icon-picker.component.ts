@@ -11,13 +11,20 @@ import {Icon, IconType} from './icon';
 })
 
 export class IconPickerComponent implements OnInit {
+  // Popover
   public ipPosition: string;
   public ipHeight: number;
   public ipMaxHeight: number;
   public ipWidth: number;
+  // Icon css
   public ipIconSize: number;
   public ipIconVerticalPadding: number;
   public ipIconHorizontalPadding: number;
+  // Item Style ie input and button
+  public ipButtonStyleClass: string;
+  public ipInputSearchStyleClass: string;
+  public ipDivSearchStyleClass: string;
+  // Icon and behaviors
   public ipKeepSearchFilter: boolean;
   public ipPlaceHolder: string;
   public ipFallbackIcon: string;
@@ -56,7 +63,8 @@ export class IconPickerComponent implements OnInit {
 
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
             ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string,
-            ipIconVerticalPadding: string, ipIconHorizontalPadding: string, ipKeepSearchFilter: string) {
+            ipIconVerticalPadding: string, ipIconHorizontalPadding: string, ipButtonStyleClass: string, ipDivSearchStyleClass: string,
+            ipInputSearchStyleClass: string,ipKeepSearchFilter: string) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;
@@ -74,6 +82,9 @@ export class IconPickerComponent implements OnInit {
     this.ipPlaceHolder = ipPlaceHolder;
     this.ipFallbackIcon = ipFallbackIcon;
     this.ipIconPack = ipIconPack;
+    this.ipButtonStyleClass = ipButtonStyleClass;
+    this.ipInputSearchStyleClass = ipInputSearchStyleClass;
+    this.ipDivSearchStyleClass = ipDivSearchStyleClass;
 
     this.buttonHeight = this.ipIconSize + 2 * this.ipIconVerticalPadding;
     this.buttonWidth = this.ipIconSize + 2 * this.ipIconHorizontalPadding;

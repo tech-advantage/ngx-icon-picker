@@ -3,11 +3,13 @@
   "description": "Icon picker widget for Angular (version 9 and newer)",
   "bugs": "https://github.com/tech-advantage/ngx-icon-picker/issues",
   "license": "MIT",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "scripts": {
     "ng": "ng",
     "lint": "ng lint",
     "start": "ng serve app",
+    "start-bulma": "ng serve app-bulma",
+    "start-semantic": "ng serve app-semantic",
     "build": "ng build lib",
     "prepare": "ng build lib --prod",
     "publish": "npm publish ./dist/lib"
