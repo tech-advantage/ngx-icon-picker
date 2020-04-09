@@ -78,7 +78,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
       cmpRef.instance.setDialog(this, this.el, this.iconPicker, this.ipPosition, this.ipHeight, this.ipMaxHeight,
         this.ipWidth, this.ipPlaceHolder, this.ipFallbackIcon, this.ipIconPack, this.ipIconSize,
         this.ipIconVerticalPadding, this.ipIconHorizontalPadding, this.ipButtonStyleClass, this.ipDivSearchStyleClass,
-        this.ipInputSearchStyleClass,this.ipKeepSearchFilter);
+        this.ipInputSearchStyleClass, this.ipKeepSearchFilter);
       this.dialog = cmpRef.instance;
 
       if (this.vcRef !== vcRef) {

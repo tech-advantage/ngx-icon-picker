@@ -64,7 +64,7 @@ export class IconPickerComponent implements OnInit {
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
             ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string,
             ipIconVerticalPadding: string, ipIconHorizontalPadding: string, ipButtonStyleClass: string, ipDivSearchStyleClass: string,
-            ipInputSearchStyleClass: string,ipKeepSearchFilter: string) {
+            ipInputSearchStyleClass: string, ipKeepSearchFilter: string) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;

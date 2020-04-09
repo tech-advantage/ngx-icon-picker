@@ -298,8 +298,12 @@ Source are availble in **projects/app-semantic**
 
 ## Build the library for production
 
+Edit version in package.json (root and lib).
+Duplicate the README.md files
+
 ```bash
 npm install
+ng lint
 npm run prepare
 npm run publish
 ```
