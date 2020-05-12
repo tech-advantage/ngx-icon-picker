@@ -11,7 +11,7 @@ Angular IconPicker Directive/Component with no dependencies required.
 
 This is an Icon Picker Directive/Component for Angular 9+.
 
-The icon Picker manages Font Awesome, Bootstrap Glyphicon and Font Awesome5.
+The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome5 and Material Icons.
 
 ## Installing and usage
 
@@ -46,7 +46,7 @@ Available inputs and output :
 [ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
 [ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font AWesome5): 'fa', 'bs', 'fa5', 'all' (default: ['bs', 'fa5']).
+[ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font Awesome5 / Material): 'fa', 'bs', 'fa5', 'mat', 'all' (default: ['bs', 'fa5']).
 [ipIconSize]                // Set the icon size in the selector (default: '16px')
 [ipIconVerticalPadding]     // Set the top and bottom padding (default: '6px') 
 [ipIconHorizontalPadding]   // Set the left and right button padding (default: '10px') 
@@ -330,3 +330,5 @@ Source are available in **projects/lib**
 NoelToy: <https://github.com/NoelToy/>
 
 Shahmir Noorani: <https://github.com/shahmirn/>
+
+Phoosha <https://github.com/Phoosha/>

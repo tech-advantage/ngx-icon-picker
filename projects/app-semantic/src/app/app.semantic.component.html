@@ -11,19 +11,49 @@
       <div class="six wide column">
         <div [formGroup]="myFormGroup">
           <div class="ui left icon input">
-            <input type="text" name="iconCssDefault" formControlName="iconCssDefault"
-                   [iconPicker]="iconCssDefault.value"
+            <input type="text" name="iconCssFas" formControlName="iconCssFas"
+                   [iconPicker]="iconCssFas.value"
                    [ipIconPack]="['fa5']"
                    [ipPosition]="'bottom'"
                    [ipWidth]="'250px'"
                    [ipPlaceHolder]="'Choose an icon'"
-                   [ipFallbackIcon]="fallbackIconDefault"
+                   [ipFallbackIcon]="fallbackIconFas"
                    [ipButtonStyleClass]="'ui primary basic button'"
                    [ipDivSearchStyleClass]="'ui fluid focus input'"
                    [ipInputSearchStyleClass]="'my-icon-picker-input'"
-                   (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+                   (iconPickerSelect)="onIconPickerFasSelect($event)"
             />
-            <i class="icon" [ngClass]="iconCssDefault.value"></i>
+            <i class="icon" [ngClass]="iconCssFas.value"></i>
+          </div>
+        </div>
+      </div>
+      <div class="ten wide column">
+        <div class="ui secondary segment">
+          <p>Usage:</p>
+          <pre>
+         Example to integrate the Icon Picker in an application.
+      </pre>
+        </div>
+      </div>
+    </div>
+    <h2>Example with Semantic framework and Material</h2>
+    <div class="ui grid">
+      <div class="six wide column">
+        <div [formGroup]="myFormGroup">
+          <div class="ui left icon input">
+            <input type="text" name="iconCssMat" formControlName="iconCssMat"
+                   [iconPicker]="iconCssMat.value"
+                   [ipIconPack]="['mat']"
+                   [ipPosition]="'bottom'"
+                   [ipWidth]="'250px'"
+                   [ipPlaceHolder]="'Choose an icon'"
+                   [ipFallbackIcon]="fallbackIconMat"
+                   [ipButtonStyleClass]="'ui primary basic button'"
+                   [ipDivSearchStyleClass]="'ui fluid focus input'"
+                   [ipInputSearchStyleClass]="'my-icon-picker-input'"
+                   (iconPickerSelect)="onIconPickerMatSelect($event)"
+            />
+            <i class="icon"><span class="material-icons">{{iconCssMat.value}}</span></i>
           </div>
         </div>
       </div>
