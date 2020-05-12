@@ -12,20 +12,54 @@
         <div [formGroup]="myFormGroup">
           <div class="field">
             <div class="control has-icons-left">
-              <input type="text" name="iconCssDefault" formControlName="iconCssDefault" class="input is-primary"
-                     [iconPicker]="iconCssDefault.value"
+              <input type="text" name="iconCssFas" formControlName="iconCssFas" class="input is-primary"
+                     [iconPicker]="iconCssFas.value"
                      [ipIconPack]="['fa5']"
                      [ipPosition]="'bottom'"
                      [ipWidth]="'250px'"
                      [ipPlaceHolder]="'Choose an icon'"
-                     [ipFallbackIcon]="fallbackIconDefault"
+                     [ipFallbackIcon]="fallbackIconFas"
                      [ipButtonStyleClass]="'button is-link is-light'"
                      [ipDivSearchStyleClass]="'control'"
                      [ipInputSearchStyleClass]="'input is-primary'"
-                     (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+                     (iconPickerSelect)="onIconPickerFasSelect($event)"
               />
               <span class="icon is-small is-left">
-                <i [ngClass]="iconCssDefault.value"></i>
+                <i [ngClass]="iconCssFas.value"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui secondary segment">
+          <p>Usage:</p>
+          <pre>
+         Example to integrate the Icon Picker in an application.
+      </pre>
+        </div>
+      </div>
+    </div>
+    <h2 class="subtitle">Example with Bulma framework and Material</h2>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div [formGroup]="myFormGroup">
+          <div class="field">
+            <div class="control has-icons-left">
+              <input type="text" name="iconCssMat" formControlName="iconCssMat" class="input is-primary"
+                     [iconPicker]="iconCssMat.value"
+                     [ipIconPack]="['mat']"
+                     [ipPosition]="'bottom'"
+                     [ipWidth]="'250px'"
+                     [ipPlaceHolder]="'Choose an icon'"
+                     [ipFallbackIcon]="fallbackIconMat"
+                     [ipButtonStyleClass]="'button is-link is-light'"
+                     [ipDivSearchStyleClass]="'control'"
+                     [ipInputSearchStyleClass]="'input is-primary'"
+                     (iconPickerSelect)="onIconPickerMatSelect($event)"
+              />
+              <span class="icon is-small is-left">
+               <i class="material-icons">{{iconCssMat.value}}</i>
               </span>
             </div>
           </div>

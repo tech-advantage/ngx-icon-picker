@@ -8,16 +8,23 @@ import {FormControl, FormGroup} from '@angular/forms';
 })
 export class AppBulmaComponent implements OnInit {
   myFormGroup: FormGroup;
-  iconCssDefault = new FormControl();
-  fallbackIconDefault = 'fas fa-user';
+  iconCssFas = new FormControl();
+  fallbackIconFas = 'fas fa-user';
+  iconCssMat = new FormControl();
+  fallbackIconMat = 'aspect_ratio';
 
   ngOnInit(): void {
     this.myFormGroup = new FormGroup({
-      iconCssDefault: this.iconCssDefault
+      iconCssFas: this.iconCssFas,
+      iconCssMat: this.iconCssMat
     });
   }
 
-  onIconPickerDefaultSelect(icon: string): void {
-    this.iconCssDefault.setValue(icon);
+  onIconPickerFasSelect(icon: string): void {
+    this.iconCssFas.setValue(icon);
+  }
+
+  onIconPickerMatSelect(icon: string): void {
+    this.iconCssMat.setValue(icon);
   }
 }
