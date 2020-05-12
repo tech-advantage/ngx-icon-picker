@@ -52,6 +52,30 @@
       </pre>
     </div>
   </div>
+  <h2>Icons with Material icon pack</h2>
+  <div class="row">
+    <div class="col-md-5">
+      <div [formGroup]="myFormGroup">
+        <label>Icon</label>
+        <div class="input-group">
+          <span class="input-group-addon">
+            <i class="material-icons">{{iconCssMat.value}}</i>
+          </span>
+          <input type="text" name="iconCssMat" class="form-control" formControlName="iconCssMat"
+                 [iconPicker]="iconCssMat.value" [ipPosition]="'bottom'" [ipIconPack]="['mat']"
+                 [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconMat"
+                 (iconPickerSelect)="onIconPickerMatSelect($event)"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <p>Usage:</p>
+      <pre>
+         Example to integrate the Icon Picker in an application.
+      </pre>
+    </div>
+  </div>
   <h2>Change size</h2>
   <div class="row">
     <div class="col-md-5">

@@ -126,6 +126,8 @@ export class IconPickerComponent implements OnInit {
       this.directiveInstance.iconSelected(`glyphicon glyphicon-${icon.id}`);
     } else if (icon.type === IconType.FONT_AWESEOME5) {
       this.directiveInstance.iconSelected(`${icon.id}`);
+    } else if (icon.type === IconType.MATERIAL) {
+      this.directiveInstance.iconSelected(`${icon.id}`);
     }
     this.closeIconPicker();
   }
