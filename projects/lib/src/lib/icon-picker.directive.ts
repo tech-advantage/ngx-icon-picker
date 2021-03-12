@@ -14,9 +14,9 @@ import {
 import {IconPickerComponent} from './icon-picker.component';
 
 @Directive({
-  // tslint:disable-next-line: directive-selector
+  // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[iconPicker]',
-  // tslint:disable-next-line: no-host-metadata-property
+  // eslint-disable-next-line @angular-eslint/no-host-metadata-property
   host: {
     '(click)': 'onClick()'
   }
@@ -72,7 +72,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
       this.created = true;
       const vcRef = this.vcRef;
       const compFactory = this.cfr.resolveComponentFactory(IconPickerComponent);
-      // tslint:disable-next-line: deprecation
+      // eslint-disable-next-line import/no-deprecated
       const injector = ReflectiveInjector.fromResolvedProviders([], vcRef.parentInjector);
       const cmpRef = vcRef.createComponent(compFactory, 0, injector, []);
       cmpRef.instance.setDialog(this, this.el, this.iconPicker, this.ipPosition, this.ipHeight, this.ipMaxHeight,

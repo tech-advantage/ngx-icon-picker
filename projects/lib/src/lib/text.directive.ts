@@ -1,9 +1,9 @@
 import { Directive, EventEmitter, Input, Output } from '@angular/core';
 
 @Directive({
-  // tslint:disable-next-line: directive-selector
+  // eslint-disable-next-line @angular-eslint/directive-selector
   selector: '[text]',
-  // tslint:disable-next-line: no-host-metadata-property
+  // eslint-disable-next-line @angular-eslint/no-host-metadata-property
   host    : {
     '(input)': 'changeInput($event.target.value)'
   }

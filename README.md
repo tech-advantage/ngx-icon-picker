@@ -9,7 +9,7 @@
 
 Angular IconPicker Directive/Component with no dependencies required.
 
-This is an Icon Picker Directive/Component for Angular 10+.
+This is an Icon Picker Directive/Component for Angular 11+.
 
 The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome 5 (5.13.0) and Material Icons.
 
@@ -69,7 +69,7 @@ To integrate the icon picker with an another framework, you have to use the extr
 
 ### Installing from a brand new @angular/cli project based on Bootstrap
 
-Version of @angular/cli used is V7.3.3.
+Version of @angular/cli used is V11.2.4.
 
 * Generate a new project (here we use LESS preprocessor): `ng new myproject --style less`
 * `cd myproject`
