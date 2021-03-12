@@ -25,28 +25,28 @@ export class IconPickerService {
     ipIconPacks.forEach((ipIconPack) => {
       if (ipIconPack === 'fa' || ipIconPack === 'all') {
         const faIcons = this.fa4IconsPack.getIcons().map(icon => {
-          icon.type = IconType.FONT_AWESEOME;
+          icon.type = IconType.FontAwesome;
           return icon;
         });
         icons = icons.concat(faIcons);
       }
       if (ipIconPack === 'bs' || ipIconPack === 'all') {
         const bsIcons = this.bsIconPack.getIcons().map(icon => {
-          icon.type = IconType.BOOTSTRAP;
+          icon.type = IconType.Bootstrap;
           return icon;
         });
         icons = icons.concat(bsIcons);
       }
       if (ipIconPack === 'fa5' || ipIconPack === 'all') {
         const fa5Icons = this.fa5IconsPack.getIcons().map(icon => {
-          icon.type = IconType.FONT_AWESEOME5;
+          icon.type = IconType.FontAwesome5;
           return icon;
         });
         icons = icons.concat(fa5Icons);
       }
       if (ipIconPack === 'mat' || ipIconPack === 'all') {
         const matIcons = this.matIconsPack.getIcons().map(icon => {
-          icon.type = IconType.MATERIAL;
+          icon.type = IconType.Material;
           return icon;
         });
         icons = icons.concat(matIcons);

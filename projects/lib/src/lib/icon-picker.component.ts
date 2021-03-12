@@ -4,13 +4,15 @@ import {IconPickerService} from './icon-picker.service';
 import {Icon, IconType} from './icon';
 
 @Component({
-  // tslint:disable-next-line: component-selector
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'icon-picker',
   templateUrl: './icon-picker.component.html',
   styleUrls: ['./icon-picker.component.scss']
 })
 
 export class IconPickerComponent implements OnInit {
+  @ViewChild('dialogPopup') dialogElement: any;
+
   // Popover
   public ipPosition: string;
   public ipHeight: number;
@@ -41,6 +43,9 @@ export class IconPickerComponent implements OnInit {
   public buttonWidth: number;
   public buttonHeight: number;
 
+  icons: Icon[] = [];
+  search = '';
+
   private directiveInstance: any;
   private initialIcon: string;
   private directiveElementRef: ElementRef;
@@ -49,11 +54,6 @@ export class IconPickerComponent implements OnInit {
   private listenerResize: any;
 
   private dialogArrowSize = 10;
-
-  @ViewChild('dialogPopup') dialogElement: any;
-
-  icons: Icon[] = [];
-  search = '';
 
   constructor(
     private el: ElementRef,
@@ -120,13 +120,13 @@ export class IconPickerComponent implements OnInit {
   }
 
   selectIcon(icon: Icon): void {
-    if (icon.type === IconType.FONT_AWESEOME) {
+    if (icon.type === IconType.FontAwesome) {
       this.directiveInstance.iconSelected(`fa fa-${icon.id}`);
-    } else if (icon.type === IconType.BOOTSTRAP) {
+    } else if (icon.type === IconType.Bootstrap) {
       this.directiveInstance.iconSelected(`glyphicon glyphicon-${icon.id}`);
-    } else if (icon.type === IconType.FONT_AWESEOME5) {
+    } else if (icon.type === IconType.FontAwesome5) {
       this.directiveInstance.iconSelected(`${icon.id}`);
-    } else if (icon.type === IconType.MATERIAL) {
+    } else if (icon.type === IconType.Material) {
       this.directiveInstance.iconSelected(`${icon.id}`);
     }
     this.closeIconPicker();

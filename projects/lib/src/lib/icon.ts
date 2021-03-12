@@ -7,8 +7,8 @@ export class Icon {
 }
 
 export enum IconType {
-  FONT_AWESEOME,
-  BOOTSTRAP,
-  FONT_AWESEOME5,
-  MATERIAL,
+  FontAwesome,
+  Bootstrap,
+  FontAwesome5,
+  Material,
 }
