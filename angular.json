@@ -65,7 +65,6 @@
             "main": "projects/app/src/main.ts",
             "polyfills": "projects/app/src/polyfills.ts",
             "tsConfig": "projects/app/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/app/src/favicon.ico",
               "projects/app/src/assets"
@@ -73,7 +72,13 @@
             "styles": [
               "projects/app/src/styles.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -181,7 +186,6 @@
             "main": "projects/app-bulma/src/main.ts",
             "polyfills": "projects/app-bulma/src/polyfills.ts",
             "tsConfig": "projects/app-bulma/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/app-bulma/src/favicon.ico",
               "projects/app-bulma/src/assets"
@@ -189,7 +193,13 @@
             "styles": [
               "projects/app-bulma/src/styles.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -302,7 +312,6 @@
             "main": "projects/app-semantic/src/main.ts",
             "polyfills": "projects/app-semantic/src/polyfills.ts",
             "tsConfig": "projects/app-semantic/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "projects/app-semantic/src/favicon.ico",
               "projects/app-semantic/src/assets"
@@ -310,7 +319,13 @@
             "styles": [
               "projects/app-semantic/src/styles.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
