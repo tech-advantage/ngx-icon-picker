@@ -6754,6 +6754,30 @@ export class FontAwesome5IconsPack implements IconsPack {
         ]
       },
       {
+        id: 'fas fa-bacteria',
+        name: 'Bacteria',
+        filter: [
+          'bacteria',
+          'bacterium',
+          'covid',
+          'medical',
+          'solid',
+          'free'
+        ]
+      },
+      {
+        id: 'fas fa-bacterium',
+        name: 'Bacterium',
+        filter: [
+          'bacterium',
+          'bacteria',
+          'covid',
+          'medical',
+          'solid',
+          'free'
+        ]
+      },
+      {
         id: 'fas fa-bahai',
         name: 'Bahai',
         filter: [
@@ -15262,6 +15286,17 @@ export class FontAwesome5IconsPack implements IconsPack {
         ]
       },
       {
+        id: 'fas fa-sink',
+        name: 'Sink',
+        filter: [
+          'sink',
+          'faucet',
+          'household',
+          'solid',
+          'free'
+        ]
+      },
+      {
         id: 'fas fa-sim-card',
         name: 'Sim-card',
         filter: [
@@ -17612,6 +17647,19 @@ export class FontAwesome5IconsPack implements IconsPack {
         ]
       },
       {
+        id: 'fas fa-users-slash',
+        name: 'Users-slash',
+        filter: [
+          'solid',
+          'person',
+          'slash',
+          'free',
+          'user',
+          'users',
+          'status'
+        ]
+      },
+      {
         id: 'fas fa-utensil-spoon',
         name: 'Utensil-spoon',
         filter: [
@@ -17675,6 +17723,28 @@ export class FontAwesome5IconsPack implements IconsPack {
           'solid',
           'gender',
           'mars',
+          'free'
+        ]
+      },
+      {
+        id: 'fas fa-vest',
+        name: 'Vest',
+        filter: [
+          'vest',
+          'sponsored',
+          'clothing',
+          'solid',
+          'free'
+        ]
+      },
+      {
+        id: 'fas fa-vest-patches',
+        name: 'Vest patches',
+        filter: [
+          'vest',
+          'sponsored',
+          'clothing',
+          'solid',
           'free'
         ]
       },
