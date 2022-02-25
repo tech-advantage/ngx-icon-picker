@@ -11,7 +11,7 @@ Angular IconPicker Directive/Component with no dependencies required.
 
 This is an Icon Picker Directive/Component for Angular 13+.
 
-The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome 5 (5.13.0) and Material Icons.
+The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome 5 (5.15.4) and Material Icons.
 
 ## Installing and usage
 
