@@ -1,11 +1,11 @@
 {
   "name": "ngx-icon-picker",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "~13.0.0",
-    "@angular/core": "~13.0.0"
+    "@angular/common": "~13.3.3",
+    "@angular/core": "~13.3.3"
   }
 }
