@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { IconPickerService } from './icon-picker.service';
 import { IconPickerComponent } from './icon-picker.component';
@@ -9,7 +10,8 @@ import { SearchIconPipe } from './search-icon.pipe';
 
 @NgModule({
   imports        : [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule,
   ],
   providers      : [
     IconPickerService

@@ -30,6 +30,9 @@
               [style.font-size.px]="ipIconSize"></span>
         <span *ngIf="icon.type === iconType.FontAwesome5" class="{{icon.id}}"
               [style.font-size.px]="ipIconSize"></span>
+        <span *ngIf="icon.type === iconType.FontAwesome6" [style.font-size.px]="ipIconSize">
+          <fa-icon [icon]="['fas', icon.iconName]"></fa-icon>
+        </span>
         <span *ngIf="icon.type === iconType.Material" class="material-icons"
               [style.font-size.px]="ipIconSize">{{icon.id}}</span>
       </button>
