@@ -38,30 +38,10 @@ export class FontAwesome5IconsPack implements IconsPack {
         ]
       },
       {
-        id: 'fab fa-acquisitions-incorporated',
-        name: 'Acquisitions-incorporated',
-        filter: [
-          'gaming tabletop',
-          'incorporated',
-          'free',
-          'acquisitions',
-          'brand'
-        ]
-      },
-      {
         id: 'fab fa-adn',
         name: 'Adn',
         filter: [
           'adn',
-          'free',
-          'brand'
-        ]
-      },
-      {
-        id: 'fab fa-adobe',
-        name: 'Adobe',
-        filter: [
-          'adobe',
           'free',
           'brand'
         ]
