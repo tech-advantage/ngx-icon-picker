@@ -8,6 +8,7 @@ import {FontAwesome6IconsPack} from './pack/font-awesome6-icons-pack';
 import {MaterialIconsPack} from './pack/material-icons-pack';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import {PrimeIconsPack} from "./pack/prime-icons-pack";
 
 @Injectable()
 export class IconPickerService {
@@ -16,6 +17,7 @@ export class IconPickerService {
   private fa5IconsPack: IconsPack;
   private fa6IconsPack: IconsPack;
   private matIconsPack: IconsPack;
+  private primeIconsPack: IconsPack;
 
   constructor(protected faIconLibrary: FaIconLibrary) {
     this.bsIconPack = new BootstrapIconsPack();
@@ -23,6 +25,7 @@ export class IconPickerService {
     this.fa5IconsPack = new FontAwesome5IconsPack();
     this.fa6IconsPack = new FontAwesome6IconsPack();
     this.matIconsPack = new MaterialIconsPack();
+    this.primeIconsPack = new PrimeIconsPack();
   }
 
   getIcons(ipIconPacks: string[]): Icon[] {
@@ -63,6 +66,13 @@ export class IconPickerService {
           return icon;
         });
         icons.push(...matIcons);
+      }
+      if (ipIconPack === 'pi' || ipIconPack === 'all') {
+        const primeIcons = this.primeIconsPack.getIcons().map(icon => {
+          icon.type = IconType.PrimeIcons;
+          return icon;
+        });
+        icons.push(...primeIcons);
       }
     });
     return icons;

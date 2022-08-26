@@ -15,4 +15,5 @@ export enum IconType {
   FontAwesome5,
   Material,
   FontAwesome6,
+  PrimeIcons
 }

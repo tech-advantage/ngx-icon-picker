@@ -100,7 +100,7 @@ export class IconPickerComponent implements OnInit {
   setInitialIcon(icon: string) {
     this.initialIcon = icon;
     this.selectedIcon = this.icons.find(el => el ?
-      `fa fa-${el.id}` === icon || `glyphicon glyphicon-${el.id}` === icon || `${el.id}` === icon :
+      `fa fa-${el.id}` === icon || `glyphicon glyphicon-${el.id}` === icon || `pi pi-${el.id}` === icon || `${el.id}` === icon :
       false
     );
     if (this.ipKeepSearchFilter && this.selectedIcon && icon !== this.ipFallbackIcon) {
@@ -130,6 +130,8 @@ export class IconPickerComponent implements OnInit {
       this.directiveInstance.iconSelected(`${icon.id}`);
     } else if (icon.type === IconType.Material) {
       this.directiveInstance.iconSelected(`${icon.id}`);
+    } else if (icon.type === IconType.PrimeIcons) {
+      this.directiveInstance.iconSelected(`pi pi-${icon.id}`)
     }
     this.closeIconPicker();
   }

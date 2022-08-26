@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   iconCssAll = new FormControl();
   iconCssFa5 = new FormControl();
   iconCssFa6 = new FormControl();
+  iconCssPrime = new FormControl();
   iconCssMat = new FormControl();
   iconCssA = new FormControl();
   iconCssButton = new FormControl();
@@ -21,6 +22,7 @@ export class AppComponent implements OnInit {
   fallbackIconAll = 'fa fa-book';
   fallbackIconFa5 = 'fas fa-igloo';
   fallbackIconFa6 = 'coffee';
+  fallbackIconPrime = 'pi pi-user'
   fallbackIconMat = 'explore';
   fallbackIconA = 'fas fa-question-circle';
   fallbackIconButton = 'fas fa-igloo';
@@ -37,6 +39,7 @@ export class AppComponent implements OnInit {
       iconCssAll: this.iconCssAll,
       iconCssFa5: this.iconCssFa5,
       iconCssFa6: this.iconCssFa6,
+      iconCssPrime: this.iconCssPrime,
       iconCssMat: this.iconCssMat,
       iconCssA: this.iconCssA,
       iconCssButton: this.iconCssButton,
@@ -62,6 +65,10 @@ export class AppComponent implements OnInit {
 
   onIconPickerMatSelect(icon: string): void {
     this.iconCssMat.setValue(icon);
+  }
+
+  onIconPickerPrimeSelect(icon: string): void {
+    this.iconCssPrime.setValue(icon);
   }
 
   onIconPickerASelect(icon: string): void {
