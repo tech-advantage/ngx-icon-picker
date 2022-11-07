@@ -35,6 +35,8 @@
         </span>
         <span *ngIf="icon.type === iconType.Material" class="material-icons"
               [style.font-size.px]="ipIconSize">{{icon.id}}</span>
+        <span *ngIf="icon.type === iconType.PrimeIcons" class="pi pi-{{icon.id}}"
+              [style.font-size.px]="ipIconSize"></span>
       </button>
     </div>
   </div>
