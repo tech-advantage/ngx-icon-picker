@@ -1,6 +1,6 @@
 import { Component, TemplateRef, OnInit } from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
 @Component({
@@ -9,8 +9,8 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 })
 export class ModalDialogComponent implements OnInit {
   modalRef: BsModalRef;
-  myFormGroup: FormGroup;
-  iconCss = new FormControl();
+  myFormGroup: UntypedFormGroup;
+  iconCss = new UntypedFormControl();
   fallbackIcon = 'glyphicon glyphicon-book';
   icon: string;
 
@@ -21,7 +21,7 @@ export class ModalDialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.myFormGroup = new FormGroup({iconCss: this.iconCss});
+    this.myFormGroup = new UntypedFormGroup({iconCss: this.iconCss});
   }
 
   onIconPickerSelect(icon: string): void {

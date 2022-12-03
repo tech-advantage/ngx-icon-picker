@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {UntypedFormControl, UntypedFormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,14 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./app.bulma.component.less']
 })
 export class AppBulmaComponent implements OnInit {
-  myFormGroup: FormGroup;
-  iconCssFas = new FormControl();
+  myFormGroup: UntypedFormGroup;
+  iconCssFas = new UntypedFormControl();
   fallbackIconFas = 'fas fa-user';
-  iconCssMat = new FormControl();
+  iconCssMat = new UntypedFormControl();
   fallbackIconMat = 'aspect_ratio';
 
   ngOnInit(): void {
-    this.myFormGroup = new FormGroup({
+    this.myFormGroup = new UntypedFormGroup({
       iconCssFas: this.iconCssFas,
       iconCssMat: this.iconCssMat
     });
