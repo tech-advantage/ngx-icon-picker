@@ -31,7 +31,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0",
+    "@fortawesome/fontawesome-free": "5.15.4",
     "ngx-bootstrap": "^6.2.0",
     "ngx-icon-picker": "file:",
     "primeicons": "^5.0.0",
