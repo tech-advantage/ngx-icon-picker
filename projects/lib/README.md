@@ -69,7 +69,7 @@ To integrate the icon picker with an another framework, you have to use the extr
 
 ### Installing from a brand new @angular/cli project based on Bootstrap
 
-Version of @angular/cli used is V11.2.4.
+Version of @angular/cli used is V15.0.2.
 
 * Generate a new project (here we use LESS preprocessor): `ng new myproject --style less`
 * `cd myproject`
@@ -77,14 +77,14 @@ Version of @angular/cli used is V11.2.4.
 
 ```json
       "bootstrap": "3.3.7",
-      "font-awesome": "4.7.0",
+      "@fortawesome/fontawesome-free": "5.15.4",
 ```
 
   or with npm command:
 
 ```bash
   npm install --save bootstrap@3.3.7
-  npm install --save font-awesome@4.7.0
+  npm install --save @fortawesome/fontawesome-free@5.15.4
 ```
 
 * Install dependancies: `yarn install` (or `npm install`).
@@ -92,7 +92,7 @@ Version of @angular/cli used is V11.2.4.
 
 ```less
 @import '~bootstrap/less/bootstrap.less';
-@import '~font-awesome/less/font-awesome.less';
+@import '~@fortawesome/fontawesome-free/less/fontawesome.less';
 ```
 
 * Import **IconPickerModule** in `app.module.ts` (also **CommonModule** and **ReactiveFormsModule**):
