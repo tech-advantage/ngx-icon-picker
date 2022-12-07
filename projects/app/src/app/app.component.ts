@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {UntypedFormControl, UntypedFormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,17 +7,17 @@ import {FormControl, FormGroup} from '@angular/forms';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent implements OnInit {
-  myFormGroup: FormGroup;
-  iconCssDefault = new FormControl();
-  iconCssAll = new FormControl();
-  iconCssFa5 = new FormControl();
-  iconCssFa6 = new FormControl();
-  iconCssPrime = new FormControl();
-  iconCssMat = new FormControl();
-  iconCssA = new FormControl();
-  iconCssButton = new FormControl();
-  iconCssSpan = new FormControl();
-  iconCssMulti: FormControl[] = [];
+  myFormGroup: UntypedFormGroup;
+  iconCssDefault = new UntypedFormControl();
+  iconCssAll = new UntypedFormControl();
+  iconCssFa5 = new UntypedFormControl();
+  iconCssFa6 = new UntypedFormControl();
+  iconCssPrime = new UntypedFormControl();
+  iconCssMat = new UntypedFormControl();
+  iconCssA = new UntypedFormControl();
+  iconCssButton = new UntypedFormControl();
+  iconCssSpan = new UntypedFormControl();
+  iconCssMulti: UntypedFormControl[] = [];
   fallbackIconDefault = 'fas fa-user';
   fallbackIconAll = 'fa fa-book';
   fallbackIconFa5 = 'fas fa-igloo';
@@ -32,9 +32,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     const size = this.fallbackIcons.length;
     for (let i = 0; i < size; i++) {
-      this.iconCssMulti.push(new FormControl());
+      this.iconCssMulti.push(new UntypedFormControl());
     }
-    this.myFormGroup = new FormGroup({
+    this.myFormGroup = new UntypedFormGroup({
       iconCssDefault: this.iconCssDefault,
       iconCssAll: this.iconCssAll,
       iconCssFa5: this.iconCssFa5,
