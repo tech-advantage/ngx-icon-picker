@@ -1,5 +1,5 @@
-import {IconsPack} from "../icons-pack";
-import {Icon} from "../icon";
+import {IconsPack} from '../icons-pack';
+import {Icon} from '../icon';
 
 export class PrimeIconsPack implements IconsPack {
   getIcons(): Icon[] {

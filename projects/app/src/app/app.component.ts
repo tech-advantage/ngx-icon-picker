@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   fallbackIconAll = 'fa fa-book';
   fallbackIconFa5 = 'fas fa-igloo';
   fallbackIconFa6 = 'coffee';
-  fallbackIconPrime = 'pi pi-user'
+  fallbackIconPrime = 'pi pi-user';
   fallbackIconMat = 'explore';
   fallbackIconA = 'fas fa-question-circle';
   fallbackIconButton = 'fas fa-igloo';

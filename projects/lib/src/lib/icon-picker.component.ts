@@ -131,7 +131,7 @@ export class IconPickerComponent implements OnInit {
     } else if (icon.type === IconType.Material) {
       this.directiveInstance.iconSelected(`${icon.id}`);
     } else if (icon.type === IconType.PrimeIcons) {
-      this.directiveInstance.iconSelected(`pi pi-${icon.id}`)
+      this.directiveInstance.iconSelected(`pi pi-${icon.id}`);
     }
     this.closeIconPicker();
   }
