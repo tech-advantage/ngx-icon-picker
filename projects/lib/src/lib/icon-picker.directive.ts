@@ -1,13 +1,12 @@
 import {
-  ComponentFactoryResolver,
   Directive,
   ElementRef,
   EventEmitter,
+  HostListener,
   Input,
   OnChanges,
   OnInit,
   Output,
-  ReflectiveInjector,
   ViewContainerRef
 } from '@angular/core';
 
@@ -15,11 +14,7 @@ import {IconPickerComponent} from './icon-picker.component';
 
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
-  selector: '[iconPicker]',
-  // eslint-disable-next-line @angular-eslint/no-host-metadata-property
-  host: {
-    '(click)': 'onClick()'
-  }
+  selector: '[iconPicker]'
 })
 export class IconPickerDirective implements OnInit, OnChanges {
   @Input() iconPicker: string;
@@ -47,9 +42,13 @@ export class IconPickerDirective implements OnInit, OnChanges {
 
   constructor(
     private vcRef: ViewContainerRef,
-    private el: ElementRef,
-    private cfr: ComponentFactoryResolver) {
+    private el: ElementRef) {
     this.created = false;
+  }
+
+  @HostListener('click')
+  onClick() {
+    this.openDialog();
   }
 
   ngOnChanges(changes: any): void {
@@ -63,18 +62,11 @@ export class IconPickerDirective implements OnInit, OnChanges {
     this.iconPickerSelect.emit(this.iconPicker);
   }
 
-  onClick() {
-    this.openDialog();
-  }
-
   openDialog() {
     if (!this.created) {
       this.created = true;
       const vcRef = this.vcRef;
-      const compFactory = this.cfr.resolveComponentFactory(IconPickerComponent);
-      // eslint-disable-next-line import/no-deprecated
-      const injector = ReflectiveInjector.fromResolvedProviders([], vcRef.parentInjector);
-      const cmpRef = vcRef.createComponent(compFactory, 0, injector, []);
+      const cmpRef = vcRef.createComponent(IconPickerComponent);
       cmpRef.instance.setDialog(this, this.el, this.iconPicker, this.ipPosition, this.ipHeight, this.ipMaxHeight,
         this.ipWidth, this.ipPlaceHolder, this.ipFallbackIcon, this.ipIconPack, this.ipIconSize,
         this.ipIconVerticalPadding, this.ipIconHorizontalPadding, this.ipButtonStyleClass, this.ipDivSearchStyleClass,
