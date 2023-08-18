@@ -6,12 +6,14 @@
   <h2>Icons with default Icon Pack</h2>
   <div>Bootstrap Glyphicons and Font Awesome 5</div>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
-          <span class="input-group-addon">
-            <i [ngClass]="iconCssDefault.value"></i>
+          <span class="input-group-prepend">
+            <div class="input-group-text">
+              <i [ngClass]="iconCssDefault.value"></i>
+            </div>
           </span>
           <input type="text" name="iconCssDefault" class="form-control" formControlName="iconCssDefault"
                  [iconPicker]="iconCssDefault.value" [ipPosition]="'bottom'"
@@ -21,7 +23,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker in an application.
@@ -30,12 +32,14 @@
   </div>
   <h2>Font Awesome 6 icons and panel size defined to 500px</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
-          <span class="input-group-addon">
-            <fa-icon [icon]="iconCssFa6.value"></fa-icon>
+          <span class="input-group-prepend">
+            <div class="input-group-text">
+              <fa-icon [icon]="iconCssFa6.value"></fa-icon>
+            </div>
           </span>
           <input type="text" name="iconCssFa6" class="form-control" formControlName="iconCssFa6" [iconPicker]="iconCssFa6.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['fa6']"
@@ -45,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker with Font Awesome 5 only.
@@ -54,12 +58,14 @@
   </div>
   <h2>Icons with Material icon pack</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
-          <span class="input-group-addon">
-            <i class="material-icons">{{iconCssMat.value}}</i>
+          <span class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="material-icons">{{iconCssMat.value}}</i>
+            </div>
           </span>
           <input type="text" name="iconCssMat" class="form-control" formControlName="iconCssMat"
                  [iconPicker]="iconCssMat.value" [ipPosition]="'bottom'" [ipIconPack]="['mat']"
@@ -69,7 +75,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker in an application.
@@ -78,12 +84,14 @@
   </div>
   <h2>Icons with Prime icon pack</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
-          <span class="input-group-addon">
-            <i [ngClass]="iconCssPrime.value"></i>
+          <span class="input-group-prepend">
+            <div class="input-group-text">
+              <i [ngClass]="iconCssPrime.value"></i>
+            </div>
           </span>
           <input type="text" name="iconCssPrime" class="form-control" formControlName="iconCssPrime"
                  [iconPicker]="iconCssPrime.value" [ipPosition]="'bottom'" [ipIconPack]="['pi', 'fa5']"
@@ -93,7 +101,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker in an application.
@@ -102,12 +110,14 @@
   </div>
   <h2>Change size</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
-          <span class="input-group-addon">
-            <i [ngClass]="iconCssAll.value"></i>
+          <span class="input-group-prepend">
+            <div class="input-group-text">
+              <i [ngClass]="iconCssAll.value"></i>
+            </div>
           </span>
           <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="iconCssAll.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['all']" [ipInputSearchStyleClass]="'my-icon-input-search'"
@@ -117,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker and modify the icon size.
@@ -126,7 +136,7 @@
   </div>
   <h2>Font Awesome 5 icons with the tag A</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
@@ -143,7 +153,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker with the tag A.
@@ -152,7 +162,7 @@
   </div>
   <h2>Font Awesome 5 icons with Button and padding define to 10px and 20 px</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon</label>
         <div class="input-group">
@@ -171,7 +181,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker with the tag button.
@@ -180,7 +190,7 @@
   </div>
   <h2>Font Awesome 5 icons with the tag Span and fill search field with selected icon</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon (click on the icon to change it)</label>
         <div class="input-group">
@@ -198,7 +208,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker with the tag span.
@@ -207,7 +217,7 @@
   </div>
   <h2>Font Awesome 5 icons with list of icon</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
         <label>Icon (click on the icon to change it)</label>
 
@@ -227,7 +237,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker with the list of icons.
@@ -237,10 +247,10 @@
 
   <h2>Modal dialog</h2>
   <div class="row">
-    <div class="col-md-5">
+    <div class="col-lg-5">
       <app-modal-dialog></app-modal-dialog>
     </div>
-    <div class="col-md-7">
+    <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
          Example to integrate the Icon Picker in a modal dialog

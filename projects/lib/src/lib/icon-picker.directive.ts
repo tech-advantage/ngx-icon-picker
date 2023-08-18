@@ -29,6 +29,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Input() ipIconHorizontalPadding = '10px'; // Left / Right
   @Input() ipIconPack = ['bs', 'fa5'];
   @Input() ipKeepSearchFilter = 'false';
+  @Input() ipUseRootViewContainer=false;
   // Default design with bootstrap
   @Input() ipButtonStyleClass = 'btn btn-default';
   @Input() ipDivSearchStyleClass = '';
@@ -70,7 +71,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
       cmpRef.instance.setDialog(this, this.el, this.iconPicker, this.ipPosition, this.ipHeight, this.ipMaxHeight,
         this.ipWidth, this.ipPlaceHolder, this.ipFallbackIcon, this.ipIconPack, this.ipIconSize,
         this.ipIconVerticalPadding, this.ipIconHorizontalPadding, this.ipButtonStyleClass, this.ipDivSearchStyleClass,
-        this.ipInputSearchStyleClass, this.ipKeepSearchFilter);
+        this.ipInputSearchStyleClass, this.ipKeepSearchFilter, this.ipUseRootViewContainer);
       this.dialog = cmpRef.instance;
 
       if (this.vcRef !== vcRef) {

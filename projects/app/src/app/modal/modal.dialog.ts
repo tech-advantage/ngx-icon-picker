@@ -9,9 +9,9 @@ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 })
 export class ModalDialogComponent implements OnInit {
   modalRef: BsModalRef;
-  myFormGroup: FormGroup;
+  myModalFormGroup: FormGroup;
   iconCss = new FormControl();
-  fallbackIcon = 'glyphicon glyphicon-book';
+  fallbackIcon = 'fas fa-igloo';
   icon: string;
 
   constructor(private modalService: BsModalService) {}
@@ -21,7 +21,7 @@ export class ModalDialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.myFormGroup = new FormGroup({iconCss: this.iconCss});
+    this.myModalFormGroup = new FormGroup({iconCss: this.iconCss});
   }
 
   onIconPickerSelect(icon: string): void {
