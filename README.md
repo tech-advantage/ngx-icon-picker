@@ -9,15 +9,15 @@
 
 Angular IconPicker Directive/Component with no dependencies required.
 
-This is an Icon Picker Directive/Component for Angular 13.3+.
+This is an Icon Picker Directive/Component for Angular.
 
-The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome 5 (5.15.4) and Material Icons.
+The icon Picker manages Font Awesome, Font Awesome 5 (5.15.4) and Material Icons.
 
 ## Version compatibility
 
 | Version | Angular     | Pack |
 |---------|-------------| ---- |
-| 1.11.x  | v16+        | Font Awesome / Font Awesome5 / Font Awesome6 / Bootstrap Glyphicon / Material / Prime |
+| 1.11.x  | v16+        | Font Awesome / Font Awesome5 / Font Awesome6 / Material / Prime |
 | 1.10.x  | v13.3 - V15 | Font Awesome / Font Awesome5 / Font Awesome6 / Bootstrap Glyphicon / Material / Prime |
 | 1.9.x   | v13.3 - V15 | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
 | 1.8.x   | v13 - V13.3 | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
@@ -56,7 +56,7 @@ Available inputs and output :
 [ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
 [ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                // Icon pack (Font Awesome / Font Awesome5 / Font Awesome6 / Bootstrap Glyphicon / Material / Prime): 'fa', 'fa5', 'fa6', 'bs', 'mat', 'pi', 'all' (default: ['bs', 'fa5']).
+[ipIconPack]                // Icon pack (Font Awesome / Font Awesome5 / Font Awesome6 / Material / Prime): 'fa', 'fa5', 'fa6', 'mat', 'pi', 'all' (default: ['bs', 'fa5']).
 [ipIconSize]                // Set the icon size in the selector (default: '16px')
 [ipIconVerticalPadding]     // Set the top and bottom padding (default: '6px') 
 [ipIconHorizontalPadding]   // Set the left and right button padding (default: '10px') 

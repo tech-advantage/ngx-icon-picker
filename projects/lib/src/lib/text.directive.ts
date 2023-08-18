@@ -5,8 +5,8 @@ import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/c
   selector: '[text]'
 })
 export class TextDirective {
-  @Output() newValue = new EventEmitter<any>();
-  @Input() text: any;
+  @Output() newValue = new EventEmitter<string>();
+  @Input() text: string;
 
   @HostListener('input', ['$event.target.value'])
   changeInput(value: string) {

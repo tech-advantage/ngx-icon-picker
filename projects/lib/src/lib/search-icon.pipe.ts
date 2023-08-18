@@ -7,7 +7,7 @@ import { Icon } from './icon';
 
 export class SearchIconPipe implements PipeTransform {
 
-  transform(value: Icon[], search: string): any {
+  transform(value: Icon[], search: string): Icon[] {
     if (!search) {
       return value;
     }

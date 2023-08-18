@@ -11,8 +11,7 @@ export class Icon {
 
 export enum IconType {
   FontAwesome,
-  Bootstrap,
-  FontAwesome5,
+  FontAwesome5 = 2,
   Material,
   FontAwesome6,
   PrimeIcons

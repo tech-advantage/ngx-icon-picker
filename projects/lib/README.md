@@ -9,13 +9,23 @@
 
 Angular IconPicker Directive/Component with no dependencies required.
 
-This is an Icon Picker Directive/Component for Angular 13+.
+This is an Icon Picker Directive/Component for Angular.
 
-The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome 5 (5.15.4) and Material Icons.
+The icon Picker manages Font Awesome, Font Awesome 5 (5.15.4) and Material Icons.
+
+## Version compatibility
+
+| Version | Angular     | Pack |
+|---------|-------------| ---- |
+| 1.11.x  | v16+        | Font Awesome / Font Awesome5 / Font Awesome6 / Material / Prime |
+| 1.10.x  | v13.3 - V15 | Font Awesome / Font Awesome5 / Font Awesome6 / Bootstrap Glyphicon / Material / Prime |
+| 1.9.x   | v13.3 - V15 | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
+| 1.8.x   | v13 - V13.3 | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
+| 1.7.x   | v11 - V13   | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
 
 ## Installing and usage
 
-   npm install ngx-icon-picker --save
+npm install ngx-icon-picker --save
 
 ### Load the module for your app
 
@@ -46,7 +56,7 @@ Available inputs and output :
 [ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
 [ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                // Icon pack (Font Awesome / Bootstrap Glyphicon / Font Awesome5 / Material): 'fa', 'bs', 'fa5', 'mat', 'all' (default: ['bs', 'fa5']).
+[ipIconPack]                // Icon pack (Font Awesome / Font Awesome5 / Font Awesome6 / Material / Prime): 'fa', 'fa5', 'fa6', 'mat', 'pi', 'all' (default: ['bs', 'fa5']).
 [ipIconSize]                // Set the icon size in the selector (default: '16px')
 [ipIconVerticalPadding]     // Set the top and bottom padding (default: '6px') 
 [ipIconHorizontalPadding]   // Set the left and right button padding (default: '10px') 
@@ -80,7 +90,7 @@ Version of @angular/cli used is V15.0.2.
       "@fortawesome/fontawesome-free": "5.15.4",
 ```
 
-  or with npm command:
+or with npm command:
 
 ```bash
   npm install --save bootstrap@3.3.7
@@ -307,9 +317,9 @@ npm run build
 
 The library will be build
 
-Go in your project and type `npm install NGX_ICON_PICKER_PATCH` where **NGX_ICON_PICKER_PATCH** is the ngx-icon-picker path repository (example: /git/ngx-icon-picker). 
+Go in your project and type `npm install NGX_ICON_PICKER_PATCH` where **NGX_ICON_PICKER_PATCH** is the ngx-icon-picker path repository (example: /git/ngx-icon-picker).
 
-The local build will be installed in your project. 
+The local build will be installed in your project.
 
 ## Build the library for production
 
@@ -334,3 +344,16 @@ Shahmir Noorani: <https://github.com/shahmirn/>
 Phoosha <https://github.com/Phoosha/>
 
 Sébastien Bousquet <https://github.com/sebbousquet>
+
+rodrigokamada <https://github.com/rodrigokamada>
+
+Jakob Schade <https://github.com/ProfEibe>
+
+Jaume <https://github.com/jaumarar>
+
+Michael Marcuccio <https://github.com/michaelmarcuccio>
+
+Evgenii Egorov <https://github.com/eewegorov>
+
+
+

@@ -1,7 +1,7 @@
-import {ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
-import {IconPickerService} from './icon-picker.service';
-import {Icon, IconType} from './icon';
+import { IconPickerService } from './icon-picker.service';
+import { Icon, IconType } from './icon';
 
 @Component({
   // eslint-disable-next-line @angular-eslint/component-selector
@@ -26,6 +26,7 @@ export class IconPickerComponent implements OnInit {
   public ipButtonStyleClass: string;
   public ipInputSearchStyleClass: string;
   public ipDivSearchStyleClass: string;
+  public ipUseRootViewContainer: boolean = false;
   // Icon and behaviors
   public ipKeepSearchFilter: boolean;
   public ipPlaceHolder: string;
@@ -64,7 +65,7 @@ export class IconPickerComponent implements OnInit {
   setDialog(instance: any, elementRef: ElementRef, icon: string, ipPosition: string, ipHeight: string, ipMaxHeight: string,
             ipWidth: string, ipPlaceHolder: string, ipFallbackIcon: string, ipIconPack: string[], ipIconSize: string,
             ipIconVerticalPadding: string, ipIconHorizontalPadding: string, ipButtonStyleClass: string, ipDivSearchStyleClass: string,
-            ipInputSearchStyleClass: string, ipKeepSearchFilter: string) {
+            ipInputSearchStyleClass: string, ipKeepSearchFilter: string, ipUseRootViewContainer?: boolean) {
     this.directiveInstance = instance;
     this.setInitialIcon(icon);
     this.directiveElementRef = elementRef;
@@ -85,6 +86,8 @@ export class IconPickerComponent implements OnInit {
     this.ipButtonStyleClass = ipButtonStyleClass;
     this.ipInputSearchStyleClass = ipInputSearchStyleClass;
     this.ipDivSearchStyleClass = ipDivSearchStyleClass;
+    this.ipUseRootViewContainer = ipUseRootViewContainer;
+
 
     this.buttonHeight = this.ipIconSize + 2 * this.ipIconVerticalPadding;
     this.buttonWidth = this.ipIconSize + 2 * this.ipIconHorizontalPadding;
@@ -122,8 +125,6 @@ export class IconPickerComponent implements OnInit {
   selectIcon(icon: Icon): void {
     if (icon.type === IconType.FontAwesome) {
       this.directiveInstance.iconSelected(`fa fa-${icon.id}`);
-    } else if (icon.type === IconType.Bootstrap) {
-      this.directiveInstance.iconSelected(`glyphicon glyphicon-${icon.id}`);
     } else if (icon.type === IconType.FontAwesome5) {
       this.directiveInstance.iconSelected(`${icon.id}`);
     } else if (icon.type === IconType.FontAwesome6) {
@@ -196,17 +197,21 @@ export class IconPickerComponent implements OnInit {
       node = node.parentNode;
     }
     const boxDirective = this.createBox(this.directiveElementRef.nativeElement, (position !== 'fixed'));
-    if (position !== 'fixed' || parentNode) {
+    if (this.ipUseRootViewContainer || (position === 'fixed' &&
+      (!parentNode || parentNode instanceof HTMLUnknownElement))) {
+      this.top = boxDirective.top;
+      this.left = boxDirective.left;
+    } else {
       if (parentNode === null) {
         parentNode = node;
       }
-      const boxParent = this.createBox(parentNode, true);
+
+      const boxParent = this.createBox(parentNode, (position !== 'fixed'));
+
       this.top = boxDirective.top - boxParent.top;
       this.left = boxDirective.left - boxParent.left;
-    } else {
-      this.top = boxDirective.top;
-      this.left = boxDirective.left;
     }
+
     if (position === 'fixed') {
       this.position = 'fixed';
     }
