@@ -13,6 +13,16 @@ This is an Icon Picker Directive/Component for Angular 13.3+.
 
 The icon Picker manages Font Awesome, Bootstrap Glyphicon, Font Awesome 5 (5.15.4) and Material Icons.
 
+## Version compatibility
+
+| Version | Angular     | Pack |
+|---------|-------------| ---- |
+| 1.11.x  | v16+        | Font Awesome / Font Awesome5 / Font Awesome6 / Bootstrap Glyphicon / Material / Prime |
+| 1.10.x  | v13.3 - V15 | Font Awesome / Font Awesome5 / Font Awesome6 / Bootstrap Glyphicon / Material / Prime |
+| 1.9.x   | v13.3 - V15 | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
+| 1.8.x   | v13 - V13.3 | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
+| 1.7.x   | v11 - V13   | Font Awesome / Font Awesome5 / Bootstrap Glyphicon / Material / Prime |
+
 ## Installing and usage
 
    npm install ngx-icon-picker --save
