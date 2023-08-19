@@ -67,6 +67,8 @@ Available inputs and output :
 [ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
 
 (iconPickerSelect)          // On selected icon value.
+(iconPickerOpen)            // On open dialog
+(iconPickerClose)           // On close dialog
 ```
 
 To integrate the icon picker with an another framework, you have to use the extra inputs:

@@ -152,6 +152,7 @@ export class IconPickerComponent implements OnInit {
         this.hidden = false;
         this.cdr.detectChanges();
       }, 0);
+      this.directiveInstance.stateChanged(true);
       document.addEventListener('mousedown', this.listenerMouseDown);
       window.addEventListener('resize', this.listenerResize);
     }
@@ -160,6 +161,7 @@ export class IconPickerComponent implements OnInit {
   closeIconPicker() {
     if (this.show) {
       this.show = false;
+      this.directiveInstance.stateChanged(false);
       document.removeEventListener('mousedown', this.listenerMouseDown);
       window.removeEventListener('resize', this.listenerResize);
       this.cdr.detectChanges();

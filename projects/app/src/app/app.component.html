@@ -4,7 +4,7 @@
   <a class="btn btn-primary" href="https://github.com/tech-advantage/ngx-icon-picker" target="blank">View on Github</a>
   <hr>
   <h2>Icons with default Icon Pack</h2>
-  <div>Bootstrap Glyphicons and Font Awesome 5</div>
+  <div>Font Awesome 5</div>
   <div class="row">
     <div class="col-lg-5">
       <div [formGroup]="myFormGroup">
@@ -19,7 +19,11 @@
                  [iconPicker]="iconCssDefault.value" [ipPosition]="'bottom'"
                  [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconDefault"
                  (iconPickerSelect)="onIconPickerDefaultSelect($event)"
+                 (iconPickerOpen)="onIconPickerOpen()" (iconPickerClose)="onIconPickerClose()"
           />
+          <div class="input-group-append">
+            <span class="input-group-text">State : {{stateIconPicker}}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +45,8 @@
               <fa-icon [icon]="iconCssFa6.value"></fa-icon>
             </div>
           </span>
-          <input type="text" name="iconCssFa6" class="form-control" formControlName="iconCssFa6" [iconPicker]="iconCssFa6.value"
+          <input type="text" name="iconCssFa6" class="form-control" formControlName="iconCssFa6"
+                 [iconPicker]="iconCssFa6.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['fa6']"
                  [ipWidth]="'500px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconFa6"
                  (iconPickerSelect)="onIconPickerFa6Select($event)"
@@ -119,7 +124,8 @@
               <i [ngClass]="iconCssAll.value"></i>
             </div>
           </span>
-          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll" [iconPicker]="iconCssAll.value"
+          <input type="text" name="iconCssAll" class="form-control" formControlName="iconCssAll"
+                 [iconPicker]="iconCssAll.value"
                  [ipPosition]="'bottom'" [ipIconPack]="['all']" [ipInputSearchStyleClass]="'my-icon-input-search'"
                  [ipWidth]="'500px'" [ipPlaceHolder]="'Choose an icon'" [ipIconSize]="'64px'"
                  [ipFallbackIcon]="fallbackIconAll" (iconPickerSelect)="onIconPickerAllSelect($event)"

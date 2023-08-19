@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +28,7 @@ export class AppComponent implements OnInit {
   fallbackIconButton = 'fas fa-igloo';
   fallbackIconSpan = 'fas fa-igloo';
   fallbackIcons: string[] = ['fas fa-question-circle', 'fas fa-igloo'];
+  stateIconPicker = "Closed";
 
   ngOnInit(): void {
     const size = this.fallbackIcons.length;
@@ -85,5 +86,13 @@ export class AppComponent implements OnInit {
 
   onIconPickerMultiSelect(icon: string, i: number): void {
     this.iconCssMulti[i].setValue(icon);
+  }
+
+  onIconPickerOpen(): void {
+    this.stateIconPicker = 'Opened';
+  }
+
+  onIconPickerClose(): void {
+    this.stateIconPicker = 'Closed';
   }
 }
