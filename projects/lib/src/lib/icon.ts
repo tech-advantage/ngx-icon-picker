@@ -7,6 +7,7 @@ export class Icon {
   aliases?: string[];
   type?: IconType;
   iconName?: IconName;
+  prefix?:string;
 }
 
 export enum IconType {
