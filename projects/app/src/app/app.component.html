@@ -20,17 +20,22 @@
                  [ipWidth]="'250px'" [ipPlaceHolder]="'Choose an icon'" [ipFallbackIcon]="fallbackIconDefault"
                  (iconPickerSelect)="onIconPickerDefaultSelect($event)"
                  (iconPickerOpen)="onIconPickerOpen()" (iconPickerClose)="onIconPickerClose()"
+                 (iconPickerFocus)="onIconPickerFocus()"
           />
           <div class="input-group-append">
-            <span class="input-group-text">State : {{stateIconPicker}}</span>
+            <span *ngIf="awaitingOpening" class="input-group-text"><i class="fas fa-spinner fa-pulse"></i></span>
           </div>
+        </div>
+        <div>
+          <span>State : {{stateIconPicker}} / Focus : {{awaitingOpening}}</span>
         </div>
       </div>
     </div>
     <div class="col-lg-7">
       <p>Usage:</p>
       <pre>
-         Example to integrate the Icon Picker in an application.
+        Example to integrate the Icon Picker in an application.
+        Use the emit events and display a awaiting pending icon.
       </pre>
     </div>
   </div>

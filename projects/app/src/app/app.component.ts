@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
   fallbackIconSpan = 'fas fa-igloo';
   fallbackIcons: string[] = ['fas fa-question-circle', 'fas fa-igloo'];
   stateIconPicker = "Closed";
+  awaitingOpening = false;
 
   ngOnInit(): void {
     const size = this.fallbackIcons.length;
@@ -90,9 +91,14 @@ export class AppComponent implements OnInit {
 
   onIconPickerOpen(): void {
     this.stateIconPicker = 'Opened';
+    this.awaitingOpening = false;
   }
 
   onIconPickerClose(): void {
     this.stateIconPicker = 'Closed';
+  }
+
+  onIconPickerFocus(): void {
+    this.awaitingOpening = true;
   }
 }

@@ -27,7 +27,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Input() ipIconSize = '16px';
   @Input() ipIconVerticalPadding = '6px'; // Top / Bottom
   @Input() ipIconHorizontalPadding = '10px'; // Left / Right
-  @Input() ipIconPack = ['bs', 'fa5'];
+  @Input() ipIconPack = ['fa5'];
   @Input() ipKeepSearchFilter = 'false';
   @Input() ipUseRootViewContainer = false;
   // Default design with bootstrap
@@ -38,6 +38,11 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Output() iconPickerSelect = new EventEmitter<string>(true);
   @Output() iconPickerOpen = new EventEmitter<void>(true);
   @Output() iconPickerClose = new EventEmitter<void>(true);
+  @Output() iconPickerFocus = new EventEmitter<void>(true);
+
+  @HostListener('focus') handleFocus(): void {
+    this.elementFocus();
+  }
 
   private dialog: any;
   private created: boolean;
@@ -96,4 +101,7 @@ export class IconPickerDirective implements OnInit, OnChanges {
     }
   }
 
+  public elementFocus(): void {
+    this.iconPickerFocus.emit();
+  }
 }
