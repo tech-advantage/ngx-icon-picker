@@ -10,7 +10,7 @@ import {
   ViewContainerRef
 } from '@angular/core';
 
-import {IconPickerComponent} from './icon-picker.component';
+import { IconPickerComponent } from './icon-picker.component';
 
 @Directive({
   // eslint-disable-next-line @angular-eslint/directive-selector
@@ -27,15 +27,22 @@ export class IconPickerDirective implements OnInit, OnChanges {
   @Input() ipIconSize = '16px';
   @Input() ipIconVerticalPadding = '6px'; // Top / Bottom
   @Input() ipIconHorizontalPadding = '10px'; // Left / Right
-  @Input() ipIconPack = ['bs', 'fa5'];
+  @Input() ipIconPack = ['fa5'];
   @Input() ipKeepSearchFilter = 'false';
-  @Input() ipUseRootViewContainer=false;
+  @Input() ipUseRootViewContainer = false;
   // Default design with bootstrap
   @Input() ipButtonStyleClass = 'btn btn-default';
   @Input() ipDivSearchStyleClass = '';
   @Input() ipInputSearchStyleClass = 'form-control input-sm';
 
   @Output() iconPickerSelect = new EventEmitter<string>(true);
+  @Output() iconPickerOpen = new EventEmitter<void>(true);
+  @Output() iconPickerClose = new EventEmitter<void>(true);
+  @Output() iconPickerFocus = new EventEmitter<void>(true);
+
+  @HostListener('focus') handleFocus(): void {
+    this.elementFocus();
+  }
 
   private dialog: any;
   private created: boolean;
@@ -86,4 +93,15 @@ export class IconPickerDirective implements OnInit, OnChanges {
     this.iconPickerSelect.emit(icon);
   }
 
+  public stateChanged(state: boolean): void {
+    if (state) {
+      this.iconPickerOpen.emit();
+    } else {
+      this.iconPickerClose.emit();
+    }
+  }
+
+  public elementFocus(): void {
+    this.iconPickerFocus.emit();
+  }
 }

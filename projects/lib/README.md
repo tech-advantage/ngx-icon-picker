@@ -50,23 +50,26 @@ import { IconPickerModule } from 'ngx-icon-picker';
 Available inputs and output :
 
 ```typescript
-[iconPicker]                // The icon to select in the grid.
+  [iconPicker]                // The icon to select in the grid.
 
-[ipWidth]                   // Use this option to set icon picker dialog width (default: '230px').
-[ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
-[ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
+  [ipWidth]                   // Use this option to set icon picker dialog width (default: '230px').
+  [ipHeight]                  // Use this option to force icon picker dialog height (default: 'auto').
+  [ipMaxHeight]               // Use this option to force icon picker dialog max-height (default: '200px').
 
-[ipIconPack]                // Icon pack (Font Awesome / Font Awesome5 / Font Awesome6 / Material / Prime): 'fa', 'fa5', 'fa6', 'mat', 'pi', 'all' (default: ['bs', 'fa5']).
-[ipIconSize]                // Set the icon size in the selector (default: '16px')
-[ipIconVerticalPadding]     // Set the top and bottom padding (default: '6px') 
-[ipIconHorizontalPadding]   // Set the left and right button padding (default: '10px') 
-[ipKeepSearchFilter]        // The search filter keep the value to filter  (default: 'false')    
+  [ipIconPack]                // Icon pack (Font Awesome / Font Awesome5 / Font Awesome6 / Material / Prime): 'fa', 'fa5', 'fa6', 'mat', 'pi', 'all' (default: ['bs', 'fa5']).
+  [ipIconSize]                // Set the icon size in the selector (default: '16px')
+  [ipIconVerticalPadding]     // Set the top and bottom padding (default: '6px') 
+  [ipIconHorizontalPadding]   // Set the left and right button padding (default: '10px') 
+  [ipKeepSearchFilter]        // The search filter keep the value to filter  (default: 'false')    
 
-[ipFallbackIcon]            // Is used when the icon is undefined (default: 'fas fa-user').
-[ipPosition]                // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
-[ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
+  [ipFallbackIcon]            // Is used when the icon is undefined (default: 'fas fa-user').
+  [ipPosition]                // Dialog position: 'right', 'left', 'top', 'bottom' (default: 'right').
+  [ipPlaceHolder]             // Search input placeholder (default: 'Search icon...').
 
-(iconPickerSelect)          // On selected icon value.
+  (iconPickerSelect)          // On selected icon value.
+  (iconPickerOpen)            // On open popup
+  (iconPickerClose)           // On close popup
+  (iconPickerClose)           // On focus element
 ```
 
 To integrate the icon picker with an another framework, you have to use the extra inputs:
