@@ -1,5 +1,5 @@
 {
-  "name": "inimco-ngx-icon-picker",
+  "name": "ngx-icon-picker",
   "version": "1.11.2",
   "dependencies": {
     "tslib": "^2.0.0"
@@ -10,6 +10,6 @@
     "@fortawesome/angular-fontawesome": ">=0.10.2",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "primeicons": ">=5.0.0"
+    "primeicons": "^5.0.0 | ^6.0.0"
   }
 }
